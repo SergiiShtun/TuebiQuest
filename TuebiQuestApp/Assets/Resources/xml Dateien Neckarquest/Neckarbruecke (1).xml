@@ -1,0 +1,74 @@
+<quest>
+    
+    <chapter cNum="1">
+        
+        <geopunkt>
+        	<!-- InfoPoint -->
+            <Latitude>48.518612</Latitude>
+			<Longitude>9.058112</Longitude>
+			<Altitude>380</Altitude>
+        </geopunkt>
+
+        <characters>
+            <character name="Eberhard" tag="E"/>
+            <character name="Nauclerus" tag="N"/>
+            <character name="Spielbeschreibung" tag="X"/>
+        </characters>
+       
+        <dialog>
+            <!-- Beginn des Spiels bis zur Neckarinsel-->
+            <plainText num="1" cTag="E" geo="n">Wo... wo bin ich? Ist das... Das kann doch nicht meine Neckarbrücke sein. Da hinten sehe ich ein bekanntes Gesicht. Nauclerus! Rasch, wir gehen zu ihm. Nur einmal über die Straße und die Treppe hinunter auf die Insel.</plainText>
+            
+            <plainText num="2" cTag="E" geo="j">Nauclerus, mein alter Freund und Berater, was muss ich da mit Schrecken auf meinem geliebten Neckar wahrnehmen?!
+                 <geoareal>
+                	 <geopunkt>
+                		<Latitude>48.5190470377</Latitude>
+                 		<Longitude>9.057424922</Longitude>
+                 		<Altitude>385</Altitude>
+                 	</geopunkt>
+                 	<geopunkt>
+                		<Latitude>48.5190915117</Latitude>
+                 		<Longitude>9.057755981</Longitude>
+                 		<Altitude>378</Altitude>
+                 	</geopunkt>
+                 	<geopunkt>
+                		<Latitude>48.5191687822</Latitude>
+                 		<Longitude>9.057538283</Longitude>
+                 		<Altitude></Altitude>
+                 	</geopunkt>
+                 	<geopunkt>
+                		<Latitude>48.5191629750</Latitude>
+                 		<Longitude>9.057764787</Longitude>
+                 		<Altitude>378</Altitude>
+                 	</geopunkt>
+                 </geoareal>
+            </plainText>
+
+            <plainText num="3" cTag="N" geo="n">Was meinst du denn?</plainText>
+
+            <plainText num="4" cTag="E" geo="n">Diese ganzen Gondeln! Wo kommen die denn her? Das ist ja schrecklich! Die stören meinen himmlischen Frieden!</plainText>
+
+            <plainText num="5" cTag="N" geo="n">Aber Eberhard, das sind doch keine Gondeln, sondern Zillen, man nennt sie auch Stocherkähne!</plainText>
+
+            <plainText num="6" cTag="E" geo="n">Stocherkähne?! So etwas habe ich hier nicht erlaubt! Und was sollen Zillen überhaupt sein?</plainText>
+
+            <plainText num="7" cTag="N" geo="n">Gondeln sehen anders aus: Sie sind asymmetrisch gebaut, Zillen symmetrisch. Außerdem werden Gondeln gerudert, wohingegen diese Zillen gestochert werden. Das ist also etwas ganz Besonderes! So besonders, dass es ein Tübinger Stocherkahn sogar bis zur Nordsee geschafft hat. Mehr als 1.100km. Ist das nicht fantastisch?</plainText>
+
+            <plainText num="8" cTag="E" geo="n">Nein, ganz und gar nicht! Die müssen weg!</plainText>
+                          
+            <minispiel mId="Stocherkahnversenken">
+                <!-- Spielregeln auf Pergament -->          
+                <plainText num="9" cTag="X" geo="n">Hilf Eberhard, seinen Standpunkt deutlich zu machen. Schieße in 60 Sekunden so viele Stocherkähne wie möglich mit der Steinschleuder ab. Du hast gewonnen, wenn du mindestens 200 Punkte erreichst. Aber Vorsicht: Triffst du ein Boot mit Kindern, werden dir Punkte abgezogen.</plainText>
+
+                <gewonnenText>Geschafft! Du hast {} Punkte erhalten.</gewonnenText>
+                <verlorenText>Schade, das hat noch nicht gereicht. Wagen wir es noch einmal!</verlorenText>
+
+            </minispiel>
+
+            <plainText num="10" cTag="E" geo="n">Ich kann nicht mehr...</plainText>
+            
+            <plainText num="11" cTag="N" geo="n">Sieh es ein, Eberhard, die Stocherkähne gehören zu Tübingen. Aber als Trost nimm diese Karte. Sie wird dich zu einem Bekannten führen. Vielleicht kann er ein paar deiner Gedächtnislücken schließen.</plainText>
+
+        </dialog>
+    </chapter>
+</quest>

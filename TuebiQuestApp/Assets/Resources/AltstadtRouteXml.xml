@@ -1,0 +1,611 @@
+<quest>
+  <characters>
+    <character name="Eberhard_Guide" tag="EG"/>
+    <character name="Auktorialer_Guide" tag="AG"/>
+    <character name="Hölderlin" tag="H"/>
+    <character name="Eberhard_Mini" tag="EM"/>
+    <character name="Astronom" tag="AST"/>
+    <character name="AugustusKopf" tag="AuKo"/>
+  </characters>
+  <Animations>
+    <Animation name="Verzweifelt" tag="0"/>
+    <Animation name="Froh" tag="1"/>
+  </Animations>
+  <randomfacts>
+    <fact>
+      <geopunkt name="Tourist_Information">
+        <Latitude>48.518612</Latitude>
+        <Longitude>9.058112</Longitude>
+        <Altitude>380</Altitude>
+      </geopunkt>
+      <text cTag="AG">
+        Mögen die Spiele beginnen! Starte die Schnitzeljagd, indem du zur
+        Altstadt läufst.
+      </text>
+      <!-- Bzw. ein anderer Text, den die andere Gruppe auch übernimmt. -->
+    </fact>
+    <fact>
+      <geopunkt name="Nach_links_zur_Altstadt">
+        <Latitude>48.519615</Latitude>
+        <Longitude>9.058174</Longitude>
+        <Altitude>380 </Altitude>
+      </geopunkt>
+      <text cTag="AG">
+        Gehe hier nach links über die Straße. Dann hast du die Altstadt erreicht
+        und die Schnitzeljagd beginnt.
+      </text>
+    </fact>
+    <fact>
+      <geopunkt name="Hölderlinturm">
+        <Latitude>48.519363</Latitude>
+        <Longitude>9.055865</Longitude>
+        <Altitude>369</Altitude>
+      </geopunkt>
+      <text num="1" cTag="AG">
+        Dieses wunderschöne Gebäude am Neckar ist der Hölderlinturm. Er
+        ist ein markantes Wahrzeichen von Tübingen. Ursprünglich stellte er einen Teil der
+        mittelalterlichen Stadtmauer dar. Erst ab dem 18. Jahrhundert wurde er als Wohnraum
+        genutzt. Der Dichter Friedrich Hölderlin (1770-1843) verbrachte die zweite Hälfte
+        seines Lebens von 1807 bis zu seinem Tod in diesem Turm.
+      </text>
+      <plaintext num="2" cTag="AG">
+        Das Logo der Stadt verkörpert den Hölderlinturm. Das kleine
+        't' greift dessen Form auf.
+      </plaintext>
+    </fact>
+    <fact>
+      <geopunkt name="Alte_Burse">
+        <Latitude>48.519405</Latitude>
+        <Longitude>9.054992</Longitude>
+        <Altitude>382</Altitude>
+      </geopunkt>
+      <text num="1" cTag="AG">
+        Das hier ist die alte Burse, das älteste erhaltene Gebäude der
+        Universität Tübingen. Das Gebäude wurde 1478 zunächst als Studentenwohnhaus gebaut,
+        was sich auch in der bis heute währenden Bezeichnung niederschlägt: Burse leitet
+        sich aus dem mittelhochdeutschen burse ab, was Beutel, Kasse bedeutet. Burse meint
+        also eine Gemeinschaft, die aus einer Kasse lebt.
+      </text>
+      <text num="2" cTag="AG">
+        Heute lehren und lernen in der alten Burse die Philosophen und
+        Kunsthistoriker. Zeitweise (zwischen 1803 und 1805) war die Burse ein Klinikum und
+        beherbergte auch für 231 Tage Friedrich Hölderlin, der als unheilbar entlassen
+        wurde.
+      </text>
+      <text num="3" cTag="AG" href="https://postimg.cc/4YsMThKd">
+        Im Eingangsbereich der Burse
+        sind das Logo der Universität und mein Wahlspruch „Attempto“ (lateinisch für „Ich
+        wag’s!“) zu sehen.
+      </text>
+    </fact>
+    <fact>
+      <geopunkt name="Stift">
+        <Latitude>48.519344</Latitude>
+        <Longitude>9.054979</Longitude>
+        <Altitude>388</Altitude>
+      </geopunkt>
+      <text num="1" cTag="AG">
+        Das Tübinger bzw. Evangelische Stift ist ein Studienhaus bzw.
+        eine Art Studentenwohnheim der evangelischen Landeskirche in Württemberg und wurde
+        1537 von Herzog Ulrich von Württemberg erbaut. Aktuell dürfen ca. 170 Studierende
+        des Lehramts evangelische Religion an Gymnasien oder eines Pfarramts für 9 Semester
+        mit einem begleitenden Stipendium (Verpflegung, Unterkunft, wissenschaftliche Hilfe)
+        in dem Gebäude wohnen.
+      </text>
+      <text num="2" cTag="AG">
+        Zu dessen berühmten Bewohnern zählen neben Friedrich Hölderlin
+        auch Johannes Kepler (16. Jahrhundert), Georg Wilhelm Friedrich Hegel (18.
+        Jahrhundert), Wilhelm Hauff und Eduard Mörike (19. Jahrhundert).
+      </text>
+      <text num="3" cTag="EG">
+        Hölderlin war wohl viel auf Reisen. So viel unterwegs zu sein
+        kann einem aber gehörig auf den Magen schlagen … Goethe kann davon ein Lied
+        schreiben. Willst du wissen, was ich meine? Dann lass uns weitergehen.
+      </text>
+    </fact>
+    <fact>
+      <event id="G_Kotzen_Sound" HREF="https://freesound.org/people/vikuserro/sounds/246308/">
+      </event>
+        <geopunkt name="Hier_kotzte_Goethe">
+          <Latitude>48.51992</Latitude>
+          <Longitude>9.055552</Longitude>
+          <Altitude>379</Altitude>
+        </geopunkt>
+        <text cTag="AG">
+          Im Nachbarhaus, dem ehemaligen Haus des Buchhändlers und Verlegers
+          Johann Friedrich Cottas, logierte der berühmte Dichter Johann Wolfgang von
+          Goethe für einige Tage im September 1797, was eine Marmortafel bezeugt. Hier, im
+          benachbarten Cotta-Haus (das heutige Studentenwohnheim ‚Martinianum‘) hielt er
+          sich gar nicht auf. Dieses Schild „Hier kotzte Goethe“ parodiert stattdessen die
+          Erinnerungstafel des kurzen Aufenthalts im Nachbarhaus.
+        </text>
+    </fact>
+    <fact>
+      <geopunkt name="Alte Aula">
+        <Latitude>48.51987</Latitude>
+        <Longitude>9.055573</Longitude>
+        <Altitude>391</Altitude>
+      </geopunkt>
+      <text num="1" cTag="AG">
+        Das schöne Gebäude im klassizistischen Stil ist die bekannte
+        Alte Aula der Universität Tübingen. Es wurde vermutlich 1547 auf den Resten zweier
+        Vorgängerbauten errichtet, von denen der ältere im Jahre 1477 erbaut worden war und
+        der jüngere im Jahr 1534 abbrannte.
+      </text>
+      <text num="2" cTag="AG">
+        Damals wurde das Gebäude mit Archiv, Bibliothek und Hörsälen
+        als Hauptgebäude der Universität eingerichtet, bis 1845 die Neue Aula fertiggestellt
+        wurde. Anlässlich des 300 Jahren Universitätsjubiläums wurde 1777 die Alte Aula im
+        Auftrag Herzog Karl Eugens von Württemberg von seinem Sohn Reinhard Fischer mit
+        klassischem Geschmack umgebaut und als Geschenk „Aula Nova“ der Universität
+        gewidmet.
+      </text>
+      <text num="3" cTag="AG">
+        Heutzutage dient die Alte Aula unter Denkmalschutz immer noch
+        zur Beherbergung Universitätsbibliothek Tübingen vor allem des Institutes für
+        Erziehungswissenschaften.
+      </text>
+    </fact>
+    <fact>
+      <geopunkt name="Stiftskirche_von_der_Münzgasse_aus">
+        <Latitude>48.519936</Latitude>
+        <Longitude>9.055636</Longitude>
+        <Altitude>393</Altitude>
+      </geopunkt>
+      <text num="1" cTag="AG">
+        Lust auf einen Besuch in den 169 stufigen Turm der
+        dreischiffigen, spätgotischen Kirche? Aus 45 Metern Höhe kann man nicht nur ganz
+        Tübingen überblicken, sondern auch alle neun Glocken der Kirche besichtigen. Neben
+        der größten und schwersten Glocke Gloriosa ist auch Dominica, die mit über
+        sechshundert Jahren älteste noch geläutete Glocke der Stiftskirche,
+        bemerkenswert.
+      </text>
+      <text num="2" cTag="AG">
+        Eins der Highlights der Kirche ist die Orgel ist mit ihren fast
+        5000 Pfeifen. Sie ist das größte Musikinstrument Tübingens. Regelmäßig finden in der
+        Stiftskirche Orgelkonzerte (zum Beispiel der Motette Tübingen) oder das alljährliche
+        Bachfest statt.
+      </text>
+      <text num="3" cTag="AG">
+        In der Stiftskirche sind einige Persönlichkeiten begraben, die
+        für Tübingen von besonderer Wichtigkeit waren. Auch mein Grab befindet sich im Chor
+        der Kirche. Auf meiner Grabplatte sind die Palmwedel und der Wahlspruch der
+        Universität zu erkennen. <br/> Graf Eberhard im Bart (1445-1496) war der erste
+        Herzog von Württemberg und ein Anhänger des Humanismus. Als seine größte politische
+        Leistung gilt die Wiedervereinigung Württembergs, das 40 Jahre lang gespalten
+        war.
+      </text>
+    </fact>
+    <fact>
+      <geopunkt name="Hesse Kabinett">
+        <Latitude>48.52043</Latitude>
+        <Longitude>9.055923</Longitude>
+        <Altitude>392</Altitude>
+      </geopunkt>
+      <text num="1" cTag="AG">
+        Auf dem Holzmarkt gibt es viele spannende Dinge zu entdecken.
+        Beispielsweise das Hermann Hesse Kabinett: <br/> Das Hesse-Kabinett stellt einige
+        Dokumente und Reproduktionen von und über das Leben und Werk Hermann Hesses aus.
+      </text>
+      <text num="2" cTag="AG">
+        Hermann Hesse (1877-1962) gilt als einer der meistgelesenen
+        deutschsprachigen Autoren des 20. Jahrhunderts und erhielt unter anderem den
+        Nobelpreis für Literatur für sein Gesamtwerk und den Friedenspreis des Deutschen
+        Buchhandels für seine Werke während der NS-Zeit. <br/> Zu seinen bekanntesten Werken
+        zählen wohl „Siddhartha“ und „Der Steppenwolf“.
+      </text>
+      <text num="3" cTag="AG">
+        In diesem Antiquariat Heckenhauer begann Hesse 1895 seine Lehre
+        als Buchhändler. <br/> Im Kabinett findet sich ein über 150 Jahre altes Bücherlager
+        und eine ebenso alte Wendeltreppe.
+      </text>
+    </fact>
+    <fact>
+      <geopunkt name="Schlosstrivia1">
+        <Latitude>48.51993023</Latitude>
+        <Longitude>9.05317962</Longitude>
+        <Altitude>344</Altitude>
+      </geopunkt>
+
+      <text num="1" cTag="AG">Hohentübingen war oft in seiner Geschichte Opfer von Kriegen und Belagerungen. Beispielsweise wurde während des 30-jährigen Krieges der Südostturm durch französische Belagern gesprengt.</text>
+    </fact>
+
+    <fact>
+      <geopunkt name="Schlosstrivia2">
+        <Latitude>48.51991602</Latitude>
+        <Longitude>9.05247152</Longitude>
+        <Altitude>347</Altitude>
+      </geopunkt>
+
+      <text num="2" cTag="AG">Erstmals erwähnt wurde das Schloss 1078. Wahrscheinlich wurde sie 1037 fertig gestellt.</text>
+    </fact>
+
+    <fact>
+      <geopunkt name="Schlosstrivia3">
+        <Latitude>48.51978455</Latitude>
+        <Longitude>9.05232131</Longitude>
+        <Altitude>347</Altitude>
+      </geopunkt>
+
+      <text num="3" cTag="AG">Das Tübinger Schloss war neben Stuttgart und Urach Residenz der Herzöge von Württemberg bis 1816 die gesamte Anlage der Universität überlassen wurde.</text>
+    </fact>
+
+    <fact>
+      <geopunkt name="Schlosstrivia4">
+        <Latitude>48.51971348</Latitude>
+        <Longitude>9.05230522</Longitude>
+        <Altitude>347</Altitude>
+      </geopunkt>
+
+      <text num="4" cTag="AG">Hohentübingen und Hohentwiel am Bodensee sind namentlich Schwesterberge. Im Keltischen bedeutet die Silbe Ho Berg, Hen Kopf oder Spitze und Twyn Glanz. Damit bedeutet Hohentübingen „weiße glänzende Bergspitze“. Das lag vermutlich an dem weißen Fels, den man noch an so mancher Stelle um das Schloss herum erkennen kann. Hohentwiel wiederum bedeutet „dunkle Bergspitze“ wegen dem dichten Tannenwald auf dem Berg. Das Duo komplettiert in Württemberg noch Hohenasperg.</text>
+    </fact>
+
+    <fact>
+      <geopunkt name="Schlosstrivia5">
+        <Latitude>48.51940436</Latitude>
+        <Longitude>9.05135572</Longitude>
+        <Altitude>355</Altitude>
+      </geopunkt>
+
+      <text num="5" cTag="AG">Seit der Festlegung 1817 durch Johann Gottlieb Bohnenberger gilt der Nordostturm des Schlosses Hohentübingen als der kartographische Nullpunkt von Württemberg.Von diesem aus vermaß er das damalige Königreich Württemberg.</text>
+    </fact>
+  </randomfacts>
+
+  <chapter cNum="1" name="Hölderlinturm">
+    <dialog>
+      <event id="H_Weinen_Sound_25%"
+          HREF="https://freesound.org/people/qubodup/sounds/200428/">
+        <geopunkt name="Altstadt_Schild">
+          <Latitude>48.519608</Latitude>
+          <Longitude>9.057949</Longitude>
+          <Altitude>376</Altitude>
+        </geopunkt>
+        <text cTag="EG">
+          Hörst du das auch? Da weint doch jemand! Es scheint von da vorne zu
+          kommen. Lass uns mal nachsehen!
+        </text>
+      </event>
+      <event id="H_Weinen_Sound_50%"
+          HREF="https://freesound.org/people/qubodup/sounds/200428/">
+        <geopunkt name="links_halten_zur_Bursagasse">
+          <Latitude>48.5198</Latitude>
+          <Longitude>9.056739</Longitude>
+          <Altitude>386</Altitude>
+        </geopunkt>
+        <text cTag="EG">
+          Das scheint von der Bursagasse zu kommen. Hier müssen wir also nach
+          links!
+        </text>
+      </event>
+      <event id="H_Weinen_Sound_75%"
+          HREF="https://freesound.org/people/qubodup/sounds/200428/">
+        <geopunkt name="nach_links_Treppen_runter">
+          <Latitude>48.51956</Latitude>
+          <Longitude>9.055798</Longitude>
+          <Altitude>381</Altitude>
+        </geopunkt>
+        <text cTag="EG">
+          Das kommt vom Hölderlinturm. Dann müssen wir hier links die Treppen
+          nach unten.
+        </text>
+      </event>
+      <event id="H_Weinen_Sound_100%"
+          HREF="https://freesound.org/people/qubodup/sounds/200428/">
+        <geopunkt name="Hölderlinturm">
+          <Latitude>48.519363</Latitude>
+          <Longitude>9.055865</Longitude>
+          <Altitude>369</Altitude>
+        </geopunkt>
+        <text cTag="EG">Von hier kommt also dieses schreckliche Weinen.</text>
+      </event>
+      <plainText num="1" cTag="H" emo="0">Ach</plainText>
+      <plainText num="2" cTag="EG">Wer bist du denn und was seufzt du so schwer?</plainText>
+      <plainText num="3" cTag="H" emo="0">
+        Ich bin Friedrich Hölderlin. Ein Dichter. 
+        Und
+        deswegen seufze ich auch so schwer. Ich habe eine Schreibblockade.
+      </plainText>
+      <plainText num="4" cTag="EG">Kann man dir helfen?</plainText>
+      <plainText num="5" cTag="H" emo="0">
+        Ach. Ich schreibe über die Erinnerung. Kennst du
+        dich in diesem Gebiet aus?
+      </plainText>
+      <plainText num="6" cTag="EG">
+        Ich habe selbst Probleme mit der Erinnerung. Ich habe große
+        Teile meines Gedächtnisses verloren.
+      </plainText>
+      <plainText num="7" cTag="H" emo="0">Ach, wie schön.</plainText>
+      <plainText num="8" cTag="EG">
+        Das ist nicht schön. Ich will mich wieder
+        erinnern.
+      </plainText>
+      <plainText num="9" cTag="H" emo="0">Warum?</plainText>
+      <plainText num="10" cTag="EG">
+        Warum? Man muss sich doch an die Vergangenheit erinnern,
+        um zu wissen, wo die Zukunft hinführt.
+      </plainText>
+      <plainText num="11" cTag="H" emo="0">
+        Ja, das meine ich auch. Die Bewahrung der
+        Erinnerung macht Liebe und ein lebenswertes Leben erst möglich. Aber wenn sie sich
+        auf traumatische Erlebnisse bezieht, wirkt sie auch zerstörerisch.</plainText>
+      <plainText num="12" cTag="H">
+        Diese Ambiguität will ich in meiner neusten Elegie festhalten, aber die Worte werden in meinen Kopf
+        nicht konkret. Die Buchstaben vermischen sich. Ich brauche Hilfe.
+      </plainText>
+      <minispiel num="13" mId="Wortschatz">
+          <startText cTag="AG">
+          Hilf Hölderlin dabei, seinen
+          Wortschatz zu sortieren! Dazu musst du alle sinnhaften und korrekt geschriebenen
+          Worte, die er verzweifelt aus dem Fenster wirft, in der Schatztruhe fangen.
+          Tippe dazu an die Stelle deines Displays, an die die Truhe rutschen soll. Mit
+          jedem richtig gefangenen Wort erhältst du 5 Punkte. Ein falsches Wort zieht dir
+          einen Punkt ab.
+        </startText>
+        <gewonnenText num="1">
+          Ach! wo bist du, <hi rend="bold">Liebende</hi>, nun? Sie haben
+          mein Auge <br/> Mir genommen, mein <hi rend="bold">Herz</hi> hab ich verloren
+          mit ihr. <br/> Darum irr ich umher, und wohl, wie die <hi rend="bold"
+                        >Schatten</hi>, so muß ich <br/>
+          <hi rend="bold">Leben</hi> und <hi rend="bold">sinnlos</hi> dünkt lange das
+          Übrige mir. <br/> Danken möcht ich, aber wofür? verzehret das Letzte <br/>
+          Selbst die <hi rend="bold">Erinnerung</hi> nicht? nimmt von der Lippe denn nicht
+          <br/> Bessere Rede mir der Schmerz, und lähmet ein Fluch nicht <br/> Mir die
+          Sehnen und wirft, wo ich beginne, mich weg?
+          <!-- Bitte darauf achten, dass die line breaks dann übernommen werden. Hab das html br Element benutzt - stimmt natürlich hier nicht, aber
+                    ich glaub, sonst kann man line breaks nur mit tei kennzeichnen -->
+        </gewonnenText>
+        <gewonnenText num="2">
+          Herzlichen Glückwunsch. Du hast Hölderlins Panikattacke
+          beendet, Eberhards Erinnerung auf die Sprünge geholfen und {} Punkte
+          gesammelt.
+        </gewonnenText>
+      </minispiel>
+      <plainText num="14" cTag="H" emo="1">
+        Vielen Dank! Jetzt sehe ich wieder klar und kann
+        weiterschreiben. Ich fühle mich so erleichtert!
+      </plainText>
+      <plainText num="15" cTag="EG">
+        Und ich erinnere mich wieder. Zumindest etwas. Gibt es da
+        nicht ein Haus, in dem so philosophiert wird, wie hier bei dir? Möchtest du dir das
+        mit mir anschauen, Hölderlin?
+      </plainText>
+      <plainText num="16" cTag="H" emo="0">
+        Die Burse? Da gehe ich niemals wieder
+        hin!
+      </plainText>
+    </dialog>
+  </chapter>
+  
+  <chapter cNum="2" name="Stiftskirche">
+    <Animations>
+      <Animation name="Fro" tag="0"/>
+      <Animation name="Traurig" tag="1"/>
+    </Animations>
+    <dialog>
+      <event id="Glocke" HREF="https://freesound.org/people/Audeption/sounds/425172/">
+        <geopunkt name="Stiftskirche_von_der_Münzgasse_aus">
+          <Latitude>48.519936</Latitude>
+          <Longitude>9.055636</Longitude>
+          <Altitude>393</Altitude>
+        </geopunkt>
+        <text cTag="EG">
+          Wie schön! Kommt das Geläute von der Stiftskirche? Das schaue ich
+          mir doch mal näher an!
+        </text>
+      </event>
+      <plainText num="1" cTag="EG">
+        Bei meinem Bart! Ich erinnere mich! Die Stiftskirche wurde
+        1470 bis 1490 unter meiner Leitung von den Baumeistern Peter von Koblenz und Hans
+        Augsteindreyer erbaut. Heutzutage ist die Stiftskirche die Pfarrkirche der
+        Evangelischen Stiftskirchengemeinde Tübingen und Dekanatskirche im Kirchenbezirk
+        Tübingen.
+      </plainText>
+      <!-- Trivia -->
+      <plainText num="2" cTag="EG">
+        Am 11. März 1477 gründete ich die Tübinger Universität.
+        Dies geschah aber erst, nachdem ich die Tübinger Bewohner verpflichtet hatte, alle
+        Juden aus der Stadt zu vertreiben. Somit gelte ich als einer der fanatischsten
+        Antisemiten meiner Zeit.
+      </plainText>
+      <plainText num="3" cTag="EG">
+        Dunkel erinnere ich mich an diese Zeit. Ich war jung,
+        wollte an die Macht und das Volk für mich gewinnen. Ohje. Hölderlin hatte recht! Die
+        Erinnerung an diese Geschehen sind zermürbend. Hätte ich mich doch niemals daran
+        erinnert!
+        <geopunkt name="Spielstart vor dem Tor">
+          <Latitude>48.520428</Latitude>
+          <Longitude>9.055871</Longitude>
+          <Altitude>391</Altitude>
+        </geopunkt>
+      </plainText>
+      <minispiel num = "4" mId="Ebarhard_im_Bart">
+        <startText cTag="AG">
+          Verhelfe Eberhard zur Buße für seine antisemitischen Taten und
+          schneide seinen geliebten Bart! Dazu musst du ihn erst einfangen. Am besten
+          sperrst du ihn dafür in das Gitter vor dem Tor in der Stiftskirche. Du kannst
+          Eberhard zum Gitter treiben, indem du die lockeren Ziegel der Stiftskirche auf
+          ihn ziehst. Er wird versuchen, auszuweichen und Schutz unter dem Dach hinter dem
+          Gitter suchen.
+        </startText>
+        <gewonnenText num="1">
+          Super! Du hast Eberhard innerhalb von {} Sekunden eingefangen
+          und {} Punkte erzielt.
+        </gewonnenText>
+        <!-- Zoom Eberhards Gesicht -->
+        <plaintext num="2" cTag="EM">
+          Bitte, lass mir meinen Bart! Ich weiß zwar nicht
+          warum, aber ich fühle einen starken Unwillen, meinen Bart schneiden zu lassen.
+        </plaintext>
+        <question num="1" qType="MC">
+          <text> Willst du seinen Bart trotzdem schneiden? </text>
+          <antwort type="a">Klar, er soll büßen!</antwort>
+          <antwort type="b">
+            Hm. Nein. Ich habe Mitleid und lasse ihm seinen
+            Bart.
+          </antwort>
+          <if atwort="b">
+            <then>
+              <plainText cTag="EM" emo="0">
+                Vielen lieben Dank! Ich erinnere mich jetzt
+                nämlich wieder, warum mir mein Bart so wichtig ist: Auf einer sehr
+                bewegenden Pilgerfahrt, die ich 1468 nach Jerusalem antrat, gelobte
+                ich, fortan meinen Bart niemals wieder zu schneiden. Seither trage
+                ich den Spitznamen: „Im Bart“.
+              </plainText>
+            </then>
+            <else>
+              <plainText cTag="EM" emo="1">
+                Was soll ich jetzt nur tun? Mein
+                armer, schöner Bart! Ich erinnere mich jetzt nämlich wieder, warum
+                mir mein Bart so wichtig ist: Auf einer sehr bewegenden Pilgerfahrt,
+                die ich 1468 nach Jerusalem antrat, gelobte ich, fortan meinen Bart
+                niemals wieder zu schneiden. Seither trage ich den Spitznamen: „Im
+                Bart“.
+              </plainText>
+            </else>
+          </if>
+        </question>
+      </minispiel>
+    </dialog>
+  </chapter>
+
+
+  <!--Rathausspiel
+Erst wenn man das Rathaus fotographiert und die Konturen des Rathauses erkannt wird, kann das Spiel losgehen.
+Umriss des Rathaus muss mit Springen auf Plattformen von einem Astronom erklommen werden ohne eine zu verfehlen und herunterzufallen (doodle jump style). 
+Oben wirft ein Kaufmann Salzfässer herunter denen man dabei ausweichen muss. Die Astromfigur hat 3 Leben. 
+Sie läuft von allein und muss nur mit Knöpfen auf dem Bildschirm nach rechts oder links gesteuert werden. 
+Hüpfen kann sie, wenn man z.B. nach oben wischt o.ä..
+Ziel ganz oben ist eine Plattform mit einer Uhr, die der Astromom erreichen muss um sie zu reparieren. Er muss die 3 Zeiger  (Mond- , Sonnen- und Drachenzeiger) nacheinander in 3 immer schwierigeren Leveln nach oben bringen. 
+Eventuelle Erweiterungsidee: Es gibt Bonuspunkte wenn man unterwegs Gegenstände (Sterne o.ä.) einsammelt.
+
+Sound: evtl. Hintergrundmusik während Doodle Jump? -->
+
+  <chapter cNum="3" name="Rathaus">
+    <geopunkt name="Rathaus_Brunnen">
+      <Latitude>48.52035305</Latitude>
+      <Longitude>9.05357927</Longitude>
+      <Altitude>342</Altitude>
+    </geopunkt>
+    <dialog>
+      <plainText num="1" cTag="AG"> Du hast das Herz der Tübinger Altstadt erreicht, das Rathaus.</plainText>
+      <minispiel num="2" mId="Rathausspiel">
+
+        <startText cTag="STOE"> Du hast das Herz der Tübinger Altstadt erreicht, das Rathaus. Das Tübinger Rathaus wurde 1435 als Martkhalle erbaut und diente ursprünglich für Bäcker, Metzger und das städtische Salzlager. 1511 baute ich, Johannes Stöffler, die astronomische Uhr für das Rathaus, welche noch bis heute die Tag-und Nachtstunden, Mondphasen, Uhrzeit und Datum an. Die Uhr ist mittlerweile ein Replikat, da es zu einigen Reparaturen kam, Teile der Originaluhr können aber noch im Stadtmuseum besichtigt werden. Bis heute ist sie die älteste astronomische Uhr überhaupt, die Sonnen- und Mondfinsternisse anzeigt. Wenn du um 9, 12, 16 oder 18 Uhr an den Marktplatz kommst, kannst du dem Glockenspiel des Rathauses lauschen. Mein Auftrag der Stadt Tübingen ist es die Uhr des Rathauses zu reparieren. Dafür müssen wir alle drei Zeiger wieder hoch bringen: Den Mondzeiger, den Sonnenzeiger und den Drachenzeiger. Aber es wird keine einfache Aufgabe. Siehst dort oben den Kaufmann? Gerade jetzt wirft er die Salzsäcke zur Abholung herunter. Aber das werden wir schon schaffen: Los geht‘s!</startText>
+
+        <!-- Spiel -->
+
+        <gewonnenText>Glückwunsch! Du hast es geschafft und {} Punkte gesammelt! Endlich funktioniert die Rathausuhr wieder!</gewonnenText>
+        <verlorenText>Schade. Leider hat es dieses Mal nicht geklappt.</verlorenText>
+        <question num="1" qType="MC">
+          <text>Sollen wir es nochmal versuchen?</text>
+          <antwort type="a">Ja!</antwort>
+          <antwort type="b">Nein. Ich will lieber weiter gehen.</antwort>
+        </question>
+      </minispiel>
+    </dialog>
+  </chapter>
+
+
+  <chapter cNum="4" name="Augustus">
+    <geopunkt name="Schlosscafe">
+      <Latitude>48.51994444</Latitude>
+      <Longitude>9.05257612</Longitude>
+      <Altitude>347</Altitude>
+    </geopunkt>
+    <dialog>
+      <plainText num="1" cTag="AuKo">Hiiilfe…e…e…e!!!</plainText>
+      <minispiel num="2" mId="Augustusspiel">
+        <!-- Augustuskopf rollt runter. Option ihm zu helfen. -->
+
+        <gewonnenText>
+          Danke, du bist meine Rettung! Ich bin der große Augustus, es ist mir eine außerordentliche Ehre einen so noblen Menschen, wie dich kennenzulernen. Hallo Eberhard, du bist ja auch da!
+          Kommt kommt, es gibt viel zu tun.
+        </gewonnenText>
+        <verlorenText>Schade. Leider hat es dieses Mal nicht geklappt.</verlorenText>
+        <question num="1" qType="MC">
+          <text>Willst du es nochmal versuchen?</text>
+          <antwort type="a">Ja!</antwort>
+          <antwort type="b">Nein. Ich will lieber weiter gehen.</antwort>
+        </question>
+
+      </minispiel>
+
+      <!--Bärenspiel
+Nach Eberhards Gedächtnisverlust soll Augustus seine Aushilfe auf dem Schloss sein. Aber Augustus hat keine Hände, weswegen er die Bären im Schlossgraben nicht füttern kann. Die Bären sind mittlerweile wegen des Hungers rasend geworden und drohen auf die Schlossbesucher loszugehen. Füttere sie mit Fleisch oder Honig und verhindere den Massenausbruch. Aber Achtung: Fängt ein Bär einen Honigtopf, dann kann er nicht anders und fängt gleich an, ihn auszuschlecken. Solange er frisst, lässt er jedoch keinen in seine Nähe.(Nächste Spracheinheit)
+Füttere alle Bären und erhöhe deinen Highscore. Hast du für 300 Punkte Bären gefüttert, dann sollten die Schlossbesucher in Sicherheit sein.-->
+      <plainText num="3" cTag="AuKo">Warte, da können wir noch nicht rein. Die Bären sind hungrig, hilf mir, sie zu füttern. Ich bin leider nicht in der Lage, das selber zu tun. Wie du siehst, fehlen mir dazu die Hände.</plainText>
+      <minispiel num="4" mId="Baerenfuetterungsspiel">
+        <!-- Baerenfuetterungsspiel -->
+
+        <gewonnenText>Gut gemacht!</gewonnenText>
+        <verlorenText>Schade. Bären zu füttern musst du wohl noch etwas üben.</verlorenText>
+        <question num="1" qType="MC">
+          <text>Willst du es nochmal versuchen?</text>
+          <antwort type="a">Ja!</antwort>
+          <antwort type="b">Nein. Ich will lieber hoch zum Schloss.</antwort>
+        </question>
+      </minispiel>
+    </dialog>
+  </chapter>
+
+  <!--Schlossspiel
+Der Spieler bekommt 10 Fragen gestellt, die mit Hilfe den gesammelten Trivia beantwortet werden können. Zunächst kommen vier leichte, dann drei mittlere und dann drei schwere Fragen. Hierzu werden 40 Fragen bereitgestellt. Beantwortet der Spieler eine Frage falsch, dann muss er diese Spieleeinheit wieder bei der ersten Frage (neuer Fragensatz) beginnen. Als Antworthilfe erhält der Spieler vier Antwortmöglichkeiten, von denen nur eine richtig sein wirÜber das Anklicken einer Antwort kann der Spieler seine Wahl treffen. Ist die Antwort richtig, wird sie grün hinterlegt, ist sie falsch, dann wird sie rot hinterlegt und die richtige Antwort wird grün hinterlegt. 
+Dann wird der Spieler darauf aufmerksam gemacht, dass sein Wissen leider noch nicht reicht, um das alte Schlosstor zu öffnen. Das Schloss springt zurück in seinen Ausgangszustand und muss erneut versucht werden geöffnet zu werden.
+Als weitere Hilfestellung kann er die Trivia aus dieser Schnitzeljagd anschauen. Verlässt der Spieler die App, um eine Antwort zu googlen oder eine andere App zu öffnen, dann kann nicht mehr auf die Frageebene zurückgekehrt werden. Man muss wieder von vorne anfangen.
+Es gibt zwei 50/50-Joker und wenn möglich einen Google-Joker, bei dem man eine Minute Zeit hat zu googeln. Für die Beantwortung der Fragen hat man nur 45 Sekunden Zeit, ansonsten erscheint der Falsch-Sound, die richtige Antwort wird eingeblendet und man hat verloren.
+
+Beim Klick auf die richtigen Antwort kommmt folgender Sound: https://freesound.org/people/LittleRainySeasons/sounds/335908/
+Beim Klick auf die falsche Antwort soll folgender Sound kommen: https://freesound.org/people/guitarguy1985/sounds/52079/-->
+
+  <chapter cNum="5" name="Schloss">
+    <dialog>
+      <plainText num="1" cTag="AuKo">Jetzt roll mich zurück an meinen Platz.</plainText>
+      <!--Kopf erscheint an seinem Platz in der Mitte des Schlosshofs.-->
+      <plainText num="2" cTag="AuKo">Sehr schön. Vielen Dank.</plainText>
+
+      <plainText num="3" cTag="AG">Ich habe eine letzte Aufgabe für dich. Um Eberhards Erinnerungen freizuschalten, musst du dein eigenes Wissen unter Beweis stellen. Wirst du dich würdig erweisen?</plainText>
+
+      <minispiel num="4" mId="Schlossspiel">
+        <geopunkt name="Schlosshof_Eingang">
+          <Latitude>48.51952516</Latitude>
+          <Longitude>9.05113846</Longitude>
+          <Altitude>356</Altitude>
+        </geopunkt>
+
+        <!--Hält der Spieler sein Handy vor das in der Regel geöffnete Schlosstor, sieht er, wie virtuell das Tor geschlossen ist und ein Schloss daran hängt. 
+Dieses Schloss muss er öffnen. Dies kann er, in dem er sein Wissen aus den Trivia anwendet.-->
+
+        <startText cTag="EM">
+          Das Schlosstor ist verschlossen! Um eintreten zu dürfen, musst du das Vorhängeschloss knacken. Dies schaffst du nur, wenn du 10 Fragen erfolgreich beantworten kannst. Als kleine Hilfestellung erhältst du 3 Jocker:
+          - 50:50-Joker (zwei falsche Antwortmöglichkeiten fallen weg),
+          - Trivia-Joker (Nachschlagen in den gesammelten Trivia)
+          - Google-Joker (Recherche im Internet).
+          Aber Vorsicht: Wenn du die App einfach so verlässt, dann musst du wieder von vorne anfangen und genauso, wenn du eine Frage falsch beantwortest. Aber keine Sorge, das Vorhängeschloss ist nicht nachtragend. Du kannst es so oft, wie nötig versuchen, hineinzugelangen.
+        </startText>
+
+        <gewonnenText>Geschafft! Du hast {} Punkte im finalen Spiel erreicht.</gewonnenText>
+        <!--Sind alle Fragen beantwortet, taucht ein altes verrostete Schloss auf, bei dem der Bügel mit einem Klick aufspringt.-->
+        <plainText num="1" cTag="EG" emo="0" geo="n">Ich kann mich nun tatsächlich an alles wieder erinnern. Mir hat die Reise mit dir großen Spaß gemacht. Geht es dir auch so? Wenn du willst, darfst du mich gerne mal wieder besuchen, damit wir unsere Rekorde bei den Minispielen brechen.</plainText>
+        <question num="1" qType="MC">
+          <text> Möchtest du zum Abschluss nun unseren Erfolg auf Facebook posten?</text>
+          <antwort type="a">Erfolg auf Facebook posten.</antwort>
+          <antwort type="b">Erfolg für mich behalten.</antwort>
+        </question>
+
+        <verlorenText>Schade. Scheinbar hast du während des Spiels nicht gut genug aufgepasst.</verlorenText>
+        <!--Wenn der Spieler verloren hat: Das Schloss springt zurück in seinen Ausgangszustand und muss erneut versucht werden geöffnet zu werden.-->
+        <question num="2" qType="MC">
+          <text>Willst du es noch einmal probieren?</text>
+          <antwort type="a">Ja!</antwort>
+          <antwort type="b">Nein. Ich habe keine Lust mehr.</antwort>
+        </question>
+      </minispiel>
+
+      <plainText num="5" cTag="EG">Ach, und noch eine Kleinigkeit. Wenn du schon mal da bist, besuch doch die Ausstellung. Du wirst es nicht bereuen!</plainText>
+    </dialog>
+
+    <!--Evtl in der Mitte des Schlosshofs – 48.51941502, 9.05030966, 361 m: In jedem Turm befindet sich ein anderes Institut (wenn man mit der Kamera ein Turm einfängt, dann taucht der Name bzw. Beschreibung des Instituts auf.-->
+
+  </chapter>
+</quest>

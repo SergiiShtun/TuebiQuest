@@ -1,0 +1,204 @@
+<!--  Die Geopunkte aller Pflanzen im Bota -->
+
+	<minispiel mId="Blumen sammeln">
+			<geopunkt num="1">
+				<Latitude>48.52366367982392</Latitude>
+				<Longitude>9.05902047703228</Longitude>
+				<Altitude>388.1802948902414</Altitude>
+			</geopunkt>
+			<geopunkt num="2">
+				<Latitude>48.52352845844305</Latitude>
+                <Longitude>9.058859370278924</Longitude>
+                <Altitude>364.9340239162739</Altitude>
+			</geopunkt>
+			<geopunkt num="3">
+				<Latitude>48.52370085143378</Latitude>
+				<Longitude>9.05885921766466</Longitude>
+				<Altitude>390.18459530671004</Altitude> 
+			</geopunkt>
+			<geopunkt num="4">
+                <Latitude>48.52343450981048</Latitude>
+                <Longitude>9.058678234699256</Longitude>
+                <Altitude>367.8821449162769</Altitude>
+			</geopunkt>
+			<geopunkt num="5">
+				<Latitude>48.52376838105232</Latitude>
+				<Longitude>9.058576841178645</Longitude>
+				<Altitude>391.99469131971045</Altitude>
+			</geopunkt>
+			<geopunkt num="6">
+				<Latitude>48.52331264855335</Latitude>
+				<Longitude>9.058379931454045</Longitude>
+				<Altitude>369.91836254161973</Altitude>
+			</geopunkt>
+			<geopunkt num="7">
+				<Latitude>48.523770664387285</Latitude>
+				<Longitude>9.058454276859601</Longitude>
+				<Altitude>392.68273057519787</Altitude>
+			</geopunkt>
+			<geopunkt num="8">
+				<Latitude>48.52341743896544</Latitude>
+				<Longitude>9.058275670054522</Longitude>
+				<Altitude>371.8406387094275</Altitude>
+			</geopunkt>
+			<geopunkt num="9">
+				<Latitude>48.52361146212632</Latitude>
+				<Longitude>9.057932321827275</Longitude>
+				<Altitude>390.01862412732197</Altitude>
+			</geopunkt>
+			<geopunkt num="10">
+				<Latitude>48.523196101762615</Latitude>
+				<Longitude>9.058017516660948</Longitude>
+				<Altitude>371.57210419271814</Altitude>
+			</geopunkt>
+			<geopunkt num="11">
+				<Latitude>48.523335453101151</Latitude>
+				<Longitude>9.057424473461397</Longitude>
+				<Altitude>387.4453060105697</Altitude>
+			</geopunkt>
+			<geopunkt num="12">
+				<Latitude>48.52318163463534</Latitude>
+				<Longitude>9.05776768378732</Longitude>
+				<Altitude>372.1235544899336</Altitude>
+			</geopunkt>
+			<geopunkt num="13">
+				<Latitude>48.52353926896461</Latitude>
+				<Longitude>9.057152980668933</Longitude>
+				<Altitude>384.644964388211</Altitude>
+			</geopunkt>
+			<geopunkt num="14">
+				<Latitude>48.523028857951864</Latitude>
+				<Longitude>9.057336777288283</Longitude>
+				<Altitude>371.81405881658424</Altitude>
+			</geopunkt>
+			<geopunkt num="15">
+				<Latitude>48.52365573689802</Latitude>
+				<Longitude>9.056961990872864</Longitude>
+				<Altitude>382.28700665481745</Altitude>
+			</geopunkt>
+			<geopunkt num="16">
+				<Latitude>48.52289917037873</Latitude>
+				<Longitude>9.057275524982987</Longitude>
+				<Altitude>374.3071522704556</Altitude>
+			</geopunkt>
+			<geopunkt num="17">
+				<Latitude>48.52390071387481</Latitude>
+				<Longitude>9.05707164014247</Longitude>
+				<Altitude>380.10310912329857</Altitude>
+			</geopunkt>
+			<geopunkt num="18">
+				<Latitude>48.522784190175685</Latitude>
+				<Longitude>9.0573776832101</Longitude>
+                <Altitude>377.747236246786</Altitude>
+			</geopunkt>
+			<geopunkt num="19">
+				<Latitude>48.52396776108105</Latitude>
+				<Longitude>9.057499039453623</Longitude>
+				<Altitude>378.3085680824625</Altitude>
+			</geopunkt>
+			<geopunkt num="20">
+				<Latitude>48.52275619945424</Latitude>
+                <Longitude>9.057100582052364</Longitude>
+                <Altitude>379.99510217950876</Altitude>
+			</geopunkt>
+			<geopunkt num="21">
+				<Latitude>48.52367362696125</Latitude>
+				<Longitude>9.056790024371963</Longitude>
+				<Altitude>381.8504907487282</Altitude>
+			</geopunkt>
+			<geopunkt num="22">
+				<Latitude>48.52284837020409</Latitude>
+                <Longitude>9.056830913612226</Longitude>
+                <Altitude>377.8157368800667</Altitude>
+			</geopunkt>
+			<geopunkt num="23">
+				<Latitude>48.523634088238836</Latitude>
+				<Longitude>9.056574455720524</Longitude>
+				<Altitude>383.0735857723758</Altitude>
+			</geopunkt>
+			<geopunkt num="24">
+				<Latitude>48.52309331774478</Latitude>
+                <Longitude>9.05680224301219</Longitude>
+                <Altitude>376.6463841786994</Altitude>
+			</geopunkt>
+			<geopunkt num="25">
+				<Latitude>48.52349902305088</Latitude>
+				<Longitude>9.056463727737365</Longitude>
+				<Altitude>384.582339065887</Altitude>
+			</geopunkt>
+			<geopunkt num="26">
+				<Latitude>48.52322294617464</Latitude>
+                <Longitude>9.05694056837739</Longitude>
+                <Altitude>375.5746797465202</Altitude>
+			</geopunkt>
+			<geopunkt num="27">
+				<Latitude>48.52341554584952</Latitude>
+				<Longitude>9.056222558507402</Longitude>
+				<Altitude>386.3065198366306</Altitude>
+			</geopunkt>
+			<geopunkt num="28">
+				<Latitude>48.523108009303705</Latitude>
+                <Longitude>9.056614833945881</Longitude>
+                <Altitude>373.50557117570344</Altitude>
+			</geopunkt>
+			<geopunkt num="29">
+				<Latitude>48.52352580337053</Latitude>
+				<Longitude>9.056464996938727</Longitude>
+				<Altitude>385.25872752893065</Altitude>
+			</geopunkt>
+			<geopunkt num="30">
+				<Latitude>48.52294986261626</Latitude>
+                <Longitude>9.056450626127452</Longitude>
+                <Altitude>372.48438710787144</Altitude>
+			</geopunkt>
+			<geopunkt num="31">
+				<Latitude>48.52345911907366</Latitude>
+				<Longitude>9.057021357724611</Longitude>
+				<Altitude>382.2167834419736</Altitude>
+			</geopunkt>
+			<geopunkt num="32">
+				<Latitude>48.52335326326325</Latitude>
+                <Longitude>9.05688626549463</Longitude>
+                <Altitude>373.3602271054474</Altitude>
+			</geopunkt>
+			<geopunkt num="33">
+				<Latitude>48.523434069754856</Latitude>
+				<Longitude>9.057024377428235</Longitude>
+				<Altitude>381.07708796548735</Altitude>
+			</geopunkt>
+			<geopunkt num="34">
+				<Latitude>48.52332328513135</Latitude>
+                <Longitude>9.05720760865891</Longitude>
+                <Altitude>372.0908627533859</Altitude>
+			</geopunkt>
+			<geopunkt num="35">
+				<Latitude>48.52331723562763</Latitude>
+				<Longitude>9.057398116145686</Longitude>
+				<Altitude>380.06648630263066</Altitude>
+			</geopunkt>
+			<geopunkt num="36">
+				<Latitude>48.523138124416874</Latitude>
+                <Longitude>9.057293974165496</Longitude>
+                <Altitude>368.66535282946006</Altitude>
+			</geopunkt>
+			<geopunkt num="37">
+				<Latitude>48.52330036272173</Latitude>
+				<Longitude>9.057597548225145</Longitude>
+				<Altitude>380.41109770857804</Altitude>
+			</geopunkt>
+			<geopunkt num="38">
+				<Latitude>48.52299577164547</Latitude>
+                <Longitude>9.057842854905935</Longitude>
+                <Altitude>370.6747910347498</Altitude>
+			</geopunkt>
+			<geopunkt num="39">
+				<Latitude>48.523363467949295</Latitude>
+				<Longitude>9.05811731635778</Longitude>
+				<Altitude>380.30445667504875</Altitude>
+			</geopunkt>
+			<geopunkt num="40">
+				<Latitude>48.5231154700304</Latitude>
+                <Longitude>9.058115831816913</Longitude>
+                <Altitude>369.4973135484842</Altitude>
+			</geopunkt>
+		</minispiel>

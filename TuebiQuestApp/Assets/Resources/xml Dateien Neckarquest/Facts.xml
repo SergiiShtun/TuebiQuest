@@ -1,0 +1,94 @@
+<quest>
+    <randomfacts>
+        <fact>
+            <geopunkt>
+                <Latitude>48.5237549</Latitude>
+                <Longitude>9.0596444</Longitude>
+                <Altitude>378.5</Altitude>
+            </geopunkt>
+            <character name="x" tag="x"/> <!-- Das sagt kein Charakter, das sind einfach nur Fakts auf einer Schriftrolle-->
+            <text>Die Wilhelmstraße ist nach König Wilhelm I. benannt, weil er Förderer der Neuen Aula war.</text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.52260974292667</Latitude>
+                <Longitude>9.057388401663015</Longitude>
+                <Altitude>373.5220583667849</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text>Bis 1970 stand im alten Botanischen Garten das sogenannte Palmenhaus. Es beinhaltete 4 Gewächshäuser, die Wohnung der Gärtner, eine Kammer für den Gartenknecht, ein Auditorium sowie Bühnen für Uni-Veranstaltungen. </text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.522317493085005</Latitude>
+                <Longitude>9.057391909299636</Longitude>
+                <Altitude>375.0446013445706</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> In diesem Gebäude befand sich nie ein Museum. Es wurde nur nach den Eigentümern, der Museumgesellschaft Tübingen, benannt. </text>
+        </fact>
+      <fact>
+            <geopunkt>
+                <Latitude>48.52182108411305</Latitude>
+                <Longitude>9.057703607634412</Longitude>
+                <Altitude>388.11510983116864</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Der Wächter behielt Recht. Das Tor wurde 1829 abgerissen. Um Kosten zu sparen verkaufte die Stadt das Tor und mit dem Steinen wurde ein Wohnhaus errichtet (heutiges Schimpfhaus).</text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.52067227580587</Latitude>
+                <Longitude>9.05705668727423</Longitude>
+                <Altitude>385.9065087865732</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Der Pfleghof hatte schon viele Verwendungszwecke. Bevor es zu dem Studentenwohnheim wurde, das es heute ist, beherbergte es schon viele Verwundete als Krankenlazarett, wurde als Fechtsaal und auch als Wirtschaftshof verwendet.</text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.520238399084185</Latitude>
+                <Longitude>9.056597817918446</Longitude>
+                <Altitude>381.2884746226625</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Stiftskirche </text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.51967767310675</Latitude>
+                <Longitude>9.056931584961227</Longitude>
+                <Altitude>388.2039551402331</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Die Mühlstraße wurde erst 1887 ausgebaut. Davor war dort nur ein schmaler Mühlgraben durch den der Ammerkanal floß und alle Händler mussten immer durch die enge Altstadt gehen. </text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.51919980428881</Latitude>
+                <Longitude>9.057901514836852</Longitude>
+                <Altitude>370.34769664674985</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Der Sprengstoff war schon angebracht und dennoch wurde die Neckarbrücke nicht gesprengt. Ein Wirt hat 1945 beim Abzug der Wehrmacht die Sprengmannschaft mit einem Vesper abgelenkt, bis die Franzosen in der Stadt waren. </text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.52314883168301</Latitude>
+                <Longitude>9.057990368540153</Longitude>
+                <Altitude>379.0738975486786</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Bist du sicher, dass du hier noch richtig bist? Vielleicht solltest du besser umkehren. </text>
+        </fact>
+        <fact>
+            <geopunkt>
+                <Latitude>48.51980881906611</Latitude>
+                <Longitude>9.05088393412003</Longitude>
+                <Altitude>372.99165608735944</Altitude>
+            </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
+            <text> Bist du sicher, dass du hier noch richtig bist? Vielleicht solltest du besser umkehren. </text>
+        </fact>
+    </randomfacts>
+</quest>

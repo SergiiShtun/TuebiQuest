@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quest>
+	<chapter cNum="3">
+        <geopunkt>
+            <Latitude>48.52288993437515</Latitude>
+            <Longitude>9.057678380713686</Longitude>
+            <Altitude>375.3769046148231</Altitude>
+        </geopunkt>
+        <characters>
+            <character name="Fuchs" tag="F"/>
+            <character name="Eberhard" tag="E"/>
+			<character name="Spielbeschreibung" tag="X"/>
+        </characters>
+     
+	 
+        <dialog> 
+            <plainText num="1" cTag="F" emo="0" geo="n">Eberhard! Dich schickt der Himmel. Ich brauche dringend deine Hilfe. Ein Sturm hat gestern meinen schönen botanischen Garten verwüstet. Ich kann das unmöglich alleine schaffen...</plainText>
+            <plainText num="2" cTag="B" emo="0" geo="n">Es tut mir sehr leid werter Freund, aber ich kann mich nicht mehr an dich erinnern. Ich habe aber leider so einige Dinge vergessen... </plainText>
+            <plainText num="3" cTag="F" emo="0" geo="n">Aber Eberhard, du musst mich doch erkennen. Ich bin Leonhart Fuchs - einer der berühmtesten Botaniker. Man zählt mich sogar zu den "Vätern der Botanik". Nach mir wurde eine Pflanze benannt: die Fuchsie. </plainText>
+            <plainText num="4" cTag="B" emo="0" geo="n"> Ja natürlich! Jetzt fällt es mir wieder ein! Ich bitte vielmals um Entschuldigung.</plainText>
+            <plainText num="5" cTag="F" emo="0" geo="n">Nicht der Rede wert. Aber was ist nun, hilfst du mir mit den Kräutern? </plainText>
+	    <plainText num="6" cTag="B" emo="0" geo="n">Natürlich helfe ich dir gerne, aber woher weiß ich denn, welche Kräuter ich einsammeln soll? Ich kenne mich doch gar nicht aus. </plainText>
+	    <plainText num="7" cTag="F" emo="0" geo="n">Himmel hilf! Du hast ja wirklich alles vergessen...Hier. Nimm diese Karte, sie wird dir helfen und nachher erzähle ich dir ein bisschen was über meinen Garten, vielleicht erinnerst du dich dann wieder! </plainText>
+  
+
+            <minispiel mId="ID">
+			<plainText num="8" cTag="X" geo="n"> Sammle so schnell wie möglich alle 10 Pflanzen für Leonhart ein. Du hast maximal 5 Minuten Zeit! Es gibt 4 Arten. Auf dem Bildschirm ist angezeigt, wie viele Blumen du von jeder Art einsammeln musst. Aber achte genau auf Details, es haben sich auch giftige Kräuter eingeschlichen, die den Gesuchten sehr ähnlich sehen. Wenn du eine Fuchsie findest, kannst du diese auch einsammeln, sie schenkt dir extra Zeit. Tippe einfach auf die Blumen, um sie einzusammeln.Nimmst du die Herausforderung an? </plainText>
+                <gewonnenText>Glückwunsch! Du hast {0} Punkte erreicht.</gewonnenText>
+                <verlorenText>Schade, das hat leider nicht funktioniert. Versuche es doch nochmal!</verlorenText>
+            </minispiel>
+            
+
+        <dialog>
+            
+            <plainText num="9" cTag="F" emo="0" geo="n">Klasse! Danke Eberhard, dass du mir geholfen hast. Ohne dich hätte ich das nicht geschafft.</plainText>
+            <plainText num="10" cTag="B" emo="0" geo="n">Gerne! Aber erzähl mir nun endlich etwas über diesen Garten, beim Einsammeln der Kräuter bin ich schon ganz neugierig geworden.</plainText>
+            <plainText num="11" cTag="F" emo="0" geo="j">Geduld Eberhard. Also der Garten in dem du stehst ist 9 württembergische Morgen groß, ganz schön beachtlich, was? </plainText>
+			<plainText num="12" cTag="B" emo="0" geo="j"> Sehr beachtlich! Und was ist mit den Kräutern? Was sind das alles für Arten? </plainText>
+			<plainText num="13" cTag="F" emo="0" geo="j">Die Pflanzen, die hier wachsen sind sehr unterschiedlich. Aus vielen wird Medizin hergestellt. Wir haben Gebirgs- und Alpenplfanzen, aber auch Sumpf- und Wasserpflanzen. Wenn du durch den Garten gehst, kannst du an allen ovale Schilder mit den Namen erkennen und dir selbst ein Bild von der Artenvielfalt machen, wenn du magst. </plainText>
+			<plainText num="14" cTag="B" emo="0" geo="j"> Danke für das Angebot, aber ich ziehe gerade ein paar gute Bücher vor. Wo kann ich denn eine nahegelegene Bildungsstätte finden? </plainText>
+			<plainText num="15" cTag="F" emo="0" geo="j"> Oh weh, dich muss es ja wirklich arg erwischt haben. Kannst du dich nicht mehr an die Tübinger Uni erinnern?! Dann suche mal nach der Neuen Aula. Die ist quasi nebenan. Ich hoffe, dass es dir dann etwas besser geht... </plainText>
+		</dialog>	
+	    
+        
+    </chapter>
+</quest>

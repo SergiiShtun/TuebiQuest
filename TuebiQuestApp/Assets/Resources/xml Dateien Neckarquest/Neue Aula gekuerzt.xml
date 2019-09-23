@@ -1,0 +1,501 @@
+<quest>
+    <chapter cNum="4">
+	
+         <geoareal>
+			<geopunkt num="1">
+				<Latitude>48.5244743362554</Latitude>
+				<Longitude>9.059997348891798</Longitude>
+				<Altitude>384.49502655496804</Altitude>
+			</geopunkt>
+			<geopunkt num="2">
+				<Latitude>48.52415673798471</Latitude>
+				<Longitude>9.059722834965692</Longitude>
+				<Altitude>384.72111927438107</Altitude>
+			</geopunkt>
+			<geopunkt num="3">
+				<Latitude>48.52419199194199</Latitude>
+				<Longitude>9.059523942881249</Longitude>
+				<Altitude>385.2513786576742</Altitude> 
+			</geopunkt>
+			<geopunkt num="4">
+				<Latitude>48.524533655733954</Latitude>
+				<Longitude>9.059862513132002</Longitude>
+				<Altitude>386.84547321176717</Altitude>
+			</geopunkt>
+		</geoareal>
+			
+			
+			
+	
+			
+        <characters>
+            <character name="Eberhard" tag="E"/>
+            <character name="Georg von Barth" tag="G"/>
+        </characters>
+		
+        <dialog>
+            
+            <plainText num="1" cTag="E" emo="0">An die Aula kann ich mich noch dumpf erinnern. Es zog immer mehr Studenten nach Tübingen. Dadurch, wurde die Alte Aula, die unter meiner Aufsicht errichtet wurde, zu klein.</plainText>
+            <plainText num="2" cTag="G" emo="0">Ist sie nicht schön? 77 Meter lang, 3 Geschosse mit Mittel- und Eckrisaliten und ein Balkon auf vier römisch-dorischen Säulen...</plainText>
+			<plainText num="3" cTag="E" emo="0">Ja, sieht ganz nett aus. Und wer bist du?</plainText>
+            <plainText num="4" cTag="G" emo="0">Mein Name ist Georg Gottlob von Barth. Ich bin der Architekt dieses Bauwerks.</plainText>
+			<plainText num="5" cTag="E" emo="0">Dann kannst du mir doch mit Sicherheit ein wenig über die Neue Aula erzählen? Ich habe mein Gedächtnis verloren und versuche es wieder zurück zu erlangen.</plainText>
+            <plainText num="6" cTag="G" emo="0">Aber natürlich. Nachdem ich meine Entwürfe nach vielen Jahren endlich fertiggestellt hatte, kam es am 25. März 1841 zur Grundsteinlegung und schon 4 ½ Jahre später wurde die Neue Aula eingeweiht. Die beiden Gebäude nebenan wurden bis 1846 errichtet. Und hier über dem Balkon wurde deine Lebensdevise „Attempto“ eingraviert, Eberhard. Eine vorzügliche Wahl wie ich finde.</plainText>
+			<plainText num="7" cTag="E" emo="0">Meine Lebensdevise? Daran kann ich mich gar nicht mehr erinnern?! Erzähl mir mehr.</plainText>
+            <plainText num="8" cTag="G" emo="0">Du kannst dich nicht an deine eigene Lebensdevise erinnern? Dann erinnerst du dich also auch nicht mehr an deinen Onkel?</plainText>
+			<plainText num="9" cTag="E" emo="0">Nein. Hilf mir auf die Sprünge.</plainText>
+            <plainText num="10" cTag="G" emo="0">Dann musst du mir aber zuerst einen Gefallen tun. Ich habe einfach niemanden, der mein Interesse für Kunstgeschichte teilt. Deswegen machen wir ein kleines Spiel, Eberhard. Pass auf...</plainText>
+			<plainText num="11" cTag="G" emo="0">Als die Studentenzahlen von 867 auf 3001 anstiegen, musste die Neue Aula im Jahre 1928 umgebaut und erweitert werden. Es wurden viele antike Skulpturen herangeschafft und überall in der Neuen Aula aufgestellt. Ich gebe dir nun ein wenig Zeit, dich in der Aula umzusehen, die wunderschönen Skulpturen zu betrachten und etwas über ihre Geschichte herauszufinden.</plainText>
+            <plainText num="12" cTag="G" emo="0">Wenn du wiederkommst, stelle ich dir Fragen über diese Personen. Wenn du alle Fragen beantworten kannst, verrate ich dir, was es mit ‚Attempto‘ auf sich hat.</plainText>
+			<plainText num="13" cTag="E" emo="0">Diese Herausforderung nehme ich gerne an. Wir treffen uns wieder hier.</plainText>
+			
+           
+	   
+            <minispiel mId="Skulpturen">
+			<sculpture name="Aphrodite"> </sculpture>
+			<sculpture name="Apollonius"> </sculpture>
+			<sculpture name="Die Entschwebende"> </sculpture>
+			<sculpture name="Hölderlin"> </sculpture>
+			<sculpture name="Schiller"> </sculpture>
+			<sculpture name="Goethe"> </sculpture>
+			<sculpture name="Eberhard"> 
+			<plainText num="14" cTag="E" emo="0">Wer ist denn dieser gutaussehende Bursche? Oh das bin natürlich ich! Vielleicht erfahre ich ja Dinge über mich, die ich vergessen habe...</plainText>
+			 <!-- jetzt kommt die Information zu der Skulptur und danach nochmals Dialog...-->
+			 <plainText num="15" cTag="E" emo="0">Ich habe zu meinen Lebzeiten zwar vieles erreicht, doch für manche meiner Taten schäme ich mich nun. Ich wünschte an die Judenvertreibung wäre ich nicht wieder erinnert worden.</plainText>
+			</sculpture>
+			<sculpture name="König Wilhelm"> </sculpture>
+			<sculpture name="Homer"> </sculpture>
+			<sculpture name="Weizsäcker"> </sculpture>
+			<sculpture name="Miltiades"> </sculpture>
+			<sculpture name="Perikles"> </sculpture>
+			<sculpture name="Venus Medici"> </sculpture>
+			<sculpture name="Venus Capitol"> </sculpture>
+            </minispiel>
+            
+		<geoareal>
+			<geopunkt num="1">
+				<Latitude>48.5244743362554</Latitude>
+				<Longitude>9.059997348891798</Longitude>
+				<Altitude>384.49502655496804</Altitude>
+			</geopunkt>
+			<geopunkt num="2">
+				<Latitude>48.52415673798471</Latitude>
+				<Longitude>9.059722834965692</Longitude>
+				<Altitude>384.72111927438107</Altitude>
+			</geopunkt>
+			<geopunkt num="3">
+				<Latitude>48.52419199194199</Latitude>
+				<Longitude>9.059523942881249</Longitude>
+				<Altitude>385.2513786576742</Altitude>
+			</geopunkt3>
+			<geopunkt num="4">
+				<Latitude>48.524533655733954</Latitude>
+				<Longitude>9.059862513132002</Longitude>
+				<Altitude>386.84547321176717</Altitude>
+			</geopunkt>
+		</geoareal>
+			
+			<plainText num="16" cTag="G" emo="0">Na Eberhard, bist du bereit für ein kleines Quiz? Um die Sache ein wenig zu erschweren, habe ich noch ein paar Fragen zu Standorten in der Stadt eingebaut.</plainText>
+			
+			<!-- jetzt muss der Attempto-Button auftauchen --> 
+			
+			<minispiel mId="WWM-Quiz">
+			<!-- Spielregeln: Der Spieler bekommt 10 Fragen gestellt, die mit Hilfe den gesammelten Trivia und den Informationen über die Skulpturen beantwortet werden können. 
+			Zunächst kommen vier leichte (Level 1), dann drei mittlere (Level 2) und dann drei schwere Fragen (Level 3). Hierzu werden 40 Fragen bereitgestellt. Bei der Beantwortung der ersten 4 Fragen
+			bekommt der Spieler in einem Punktebarometer am Rand 15 Punkte. Bei den drei mittleren Fragen 30 Punkte und für die 3 schweren Fragen 50 Punkte. Beantwortet der Spieler eine Frage falsch, 
+			dann wird er gefragt, ob er das Quiz nochmals von vorne beginnen möchte, oder ob er die Punkte behalten will. Als Antworthilfe erhält der Spieler vier Antwortmöglichkeiten, von denen 
+			nur eine richtig sein wird. Über das Anklicken einer Antwort kann der Spieler seine Wahl treffen. Ist die Antwort richtig, wird sie grün hinterlegt und es erfolgt ein Sound,
+			ist sie falsch, dann wird sie rot hinterlegt und die richtige Antwort wird grün hinterlegt. Auch hierfür gibt es einen eigenen Sound. Verlässt der Spieler die App, um eine Antwort 
+			zu googlen oder eine andere App zu öffnen, dann kann nicht mehr auf die Frageebene zurückgekehrt werden. Man muss wieder von vorne anfangen. 
+			
+			Es gibt außerdem einen 50/50-Joker, einen Google-Joker, bei dem man eine zusätzliche Minute Zeit hat zu googeln und einen Trivia-Joker, bei dem man die zur Frage passende Trivia
+			bzw. Skulpturenbeschreibung aufgerufen bekommt. Für die Beantwortung der Fragen hat man nur 45 Sekunden Zeit, ansonsten
+			erscheint der Falsch-Sound, die richtige Antwort wird eingeblendet und man hat verloren.
+			
+			Beim Klick auf die richtigen Antwort kommmt folgender Sound: https://freesound.org/people/LittleRainySeasons/sounds/335908/ 
+			Beim Klick auf die falsche Antwort soll folgender Sound kommen: https://freesound.org/people/guitarguy1985/sounds/52079/ -->
+				<plainText num="16" cTag="X" geo="n"> Beantworte 10 Fragen und erreiche 300 Punkte, um Georg zu schlagen. Deinen Punktestand siehst du an der Seite. Du hast für die Beantwortung jeder Frage 45 Sekunden Zeit. Nutze auch die drei Joker: 1. 50/50-Joker: zwei Antwortmöglichkeiten fallen weg. 2. Google-Joker: du hast eine zusätzliche Minute Zeit nach der Lösung zu googeln.3. Inventar-Joker, Es wird dir aus dem Inventar die passende Trivia oder Skulpturenbeschreibung bereitgestellt, bei der du nochmals nachlesen kannst. Verlässt du die App während des Spiels, hast du automatisch verloren. Wagst du es? </plainText>
+				<question num="1" qType="MC" level="1">
+					<text>
+						Perikles Plan sah vor sich mit seinem Heer hinter den eigenen Mauern zurückzuziehen. Was wurde ihm zum Verhängnis?
+					</text>
+					<antwort type="w">Eine Seuche rottete die athenische Bevölkerung aus.</antwort>
+					<antwort type="f">Die brüchigen Mauern konnten den Spartanern nicht standhalten.</antwort>
+					<antwort type="f">Das athenische Wassersystem wurde durch die Spartaner vergiftet.</antwort>
+					<antwort type="f">Ein Verräter öffnete den Spartanern die Tore.</antwort>
+				</question>
+				<question num="2" qType="MC" level="1">
+					<text>
+						Warum wurde die Statue der Aphrodite von Praxiteles von den Bürgern der Insel Kos abgelehnt?
+					</text>
+					<antwort type="w">Weil Aphrodite nackt dargestellt wurde.</antwort>
+					<antwort type="f">Weil noch nie zuvor eine Statue einer weiblichen Göttin errichtet wurde.</antwort>
+					<antwort type="f">Weil Kos kurz vor der Fertigstellung der Statue in römisches Herrschaftsgebiet fiel und statt einer Statue von Aphrodite ein Abbild der römischen Göttin Venus aufgestellt werden sollte. </antwort>
+					<antwort type="f">Weil die Statue keinen Kopf besaß.</antwort>
+				</question>
+				<question num="3" qType="MC" level="1">
+					<text>
+						Mit welcher Sinnesbehinderung musste Homer leben?
+					</text>
+					<antwort type="w">Blindheit</antwort>
+					<antwort type="f">Gehörlosigkeit</antwort>
+					<antwort type="f">Taubblindheit</antwort>
+					<antwort type="f">Taubstummheit</antwort>
+				</question>
+				<question num="4" qType="MC" level="1">
+					<text>
+						Wie war Goethes Verhältnis zu Schiller?
+					</text>
+					<antwort type="w">Freund und Rivale zugleich</antwort>
+					<antwort type="f">Freund</antwort>
+					<antwort type="f">Rivale</antwort>
+					<antwort type="f">Sie kannten sich nicht</antwort>
+				</question>
+				<question num="5" qType="MC" level="1">
+					<text>
+						Welche Schlacht verhalf Miltiades zu Ruhm?
+					</text>
+					<antwort type="w">die Schlacht bei Marathon</antwort>
+					<antwort type="f">die Schlacht um Korinth</antwort>
+					<antwort type="f">die Schlacht von Syrakus</antwort>
+					<antwort type="f">die Schlacht in Aigospotamoi</antwort>
+				</question>
+				<question num="6" qType="MC" level="1">
+					<text>
+						Welches Tier begleitet die Venus von Medici?
+					</text>
+					<antwort type="w">ein Delphin</antwort>
+					<antwort type="f">eine Taube</antwort>
+					<antwort type="f">ein Jaguar</antwort>
+					<antwort type="f">eine Schildkröte</antwort>
+				</question>
+				<question num="7" qType="MC" level="1">
+					<text>
+						Wer war als deutscher Dichterfürst bekannt?
+					</text>
+					<antwort type="w">Johann Wolfgang von Goethe</antwort>
+					<antwort type="f">Friedrich von Schiller</antwort>
+					<antwort type="f">Friedrich Hölderlin</antwort>
+					<antwort type="f">Karl Heinrich von Weizsäcker</antwort>
+				</question>
+				<question num="8" qType="MC" level="1">
+					<text>
+						Wie lässt sich "Aphrodite" ins Deutsche übersetzen?
+					</text>
+					<antwort type="w">"die Schaumgeborene"</antwort>
+					<antwort type="f">"die Meeresgeburt"</antwort>
+					<antwort type="f">"die Afroamerikanerin"</antwort>
+					<antwort type="f">"die Wellengeborene"</antwort>
+				</question>
+				<question num="9" qType="MC" level="1">
+					<text>
+						Wen ließ Apollonius zur Besiegung der Pest steinigen?
+					</text>
+					<antwort type="w">einen Bettler</antwort>
+					<antwort type="f">einen Krüppel</antwort>
+					<antwort type="f">einen Scharlatan</antwort>
+					<antwort type="f">einen Dieb</antwort>
+				</question>
+				<question num="10" qType="MC" level="1">
+					<text>
+						Die Ilias behandelt welchen Mythos?
+					</text>
+					<antwort type="w">den Trojanischen Krieg</antwort>
+					<antwort type="f">die Abenteuer des Odysseus</antwort>
+					<antwort type="f">das Labyrinth des Minos </antwort>
+					<antwort type="f">das Orakel von Delphi</antwort>
+				</question>
+				<question num="11" qType="MC" level="1">
+					<text>
+						Warum reiste Goethe nach Tübingen?
+					</text>
+					<antwort type="w">um einen Verleger zu treffen</antwort>
+					<antwort type="f">um sich von Tübingen für seine Gedichte inspirieren zu lassen</antwort>
+					<antwort type="f">um Schiller wiederzusehen</antwort>
+					<antwort type="f">um die Stiftskirche zu besuchen</antwort>
+				</question>
+				<question num="12" qType="MC" level="1">
+					<text>
+						Der Herzog welcher Stadt feierte jedes Jahr eine symbolische Hochzeit mit der Göttin des Meeres?
+					</text>
+					<antwort type="w">Venedig</antwort>
+					<antwort type="f">Verona</antwort>
+					<antwort type="f">Genua</antwort>
+					<antwort type="f">Napoli</antwort>
+				</question>
+				<question num="13" qType="MC" level="1">
+					<text>
+						Warum erhielt Graf Eberhard im Bart seinen Beinamen?
+					</text>
+					<antwort type="w">Weil er ein Gelübde ablegte, sich seinen Bart nicht schneiden zu lassen</antwort>
+					<antwort type="f">Weil er eine Wette verlor, wodurch er sich seinen Bart wachsen lassen musste</antwort>
+					<antwort type="f">Weil er ein Tübinger Hipster war, der sich nie rasierte</antwort>
+					<antwort type="f">Weil seine Residenz in Urach im Barte lag</antwort>
+				</question>
+				<question num="14" qType="MC" level="1">
+					<text>
+						Mit welcher Herausforderung war Wilhelm I. gleich zu Beginn seiner Regierungszeit konfrontiert?
+					</text>
+					<antwort type="w">Hungersnot</antwort>
+					<antwort type="f">Pestepidemie</antwort>
+					<antwort type="f">Arbeiterstreiks</antwort>
+					<antwort type="f">Belagerung durch die Franzosen</antwort>
+				</question>
+				<question num="15" qType="MC" level="1">
+					<text>
+						Wo steht jetzt der Hölderlinturm, in dem Friedrich Hölderlin viele seiner Werke verfasste?
+					</text>
+					<antwort type="w">am Neckar</antwort>
+					<antwort type="f">an der Ammer</antwort>
+					<antwort type="f">an der Steinlach</antwort>
+					<antwort type="f">an der Echaz</antwort>
+				</question>
+				<question num="16" qType="MC" level="1">
+					<text>
+						Um die übertriebene Goethe-Verehrung zu schmähen wurde an einem Tübinger Haus ein Schild angebracht, welches darauf anspielt, dass Goethe eines Nachts vor diesem Haus angeblich...
+					</text>
+					<antwort type="w">betrunken vor die Tür erbrach.</antwort>
+					<antwort type="f">betrunken vor die Tür urinierte.</antwort>
+					<antwort type="f">betrunken vor der Tür übernachtete.</antwort>
+					<antwort type="f">betrunken einen Pfarrer anpöbelte.</antwort>
+				</question>
+				<question num="17" qType="MC" level="2">
+					<text>
+						Womit Schnitt Kronos seinem Vater Uranus die Geschlechtsteile ab?
+					</text>
+					<antwort type="w">einer Sichel</antwort>
+					<antwort type="f">einem Messer</antwort>
+					<antwort type="f">einem Beil</antwort>
+					<antwort type="f">einer Klinge</antwort>
+				</question>
+				<question num="18" qType="MC" level="2">
+					<text>
+						Weswegen wurde Hölderlin angeklagt?
+					</text>
+					<antwort type="w">Beihilfe zum Hochverrats</antwort>
+					<antwort type="f">Beihilfe zur Volksverhetzung</antwort>
+					<antwort type="f">Beihilfe zur Flucht</antwort>
+					<antwort type="f">Beihilfe zur Betrügerei und Manipulation</antwort>
+				</question>
+				<question num="19" qType="MC" level="2">
+					<text>
+						Was bedeutet "Venus pudica"?
+					</text>
+					<antwort type="w">die schamhafte Venus</antwort>
+					<antwort type="f">die nackte Venus</antwort>
+					<antwort type="f">die schaumgeborene Venus</antwort>
+					<antwort type="f">die bezaubernde Venus</antwort>
+				</question>
+				<question num="20" qType="MC" level="3">
+					<text>
+						Wie hieß die Bibelübersetzung, an der Karl Heinrich von Weizsäcker mitwirkte?
+					</text>
+					<antwort type="w">Textbibel-Übersetzung</antwort>
+					<antwort type="f">Volksbibel-Übersetzung</antwort>
+					<antwort type="f">Schlachter-Übersetzung-</antwort>
+					<antwort type="f">Neue Genfer Übersetzung</antwort>
+				</question>
+				<question num="21" qType="MC" level="3">
+					<text>
+						Wie bezeichnete Goethe die Stadt Tübingen in einem Brief an seine Frau?
+					</text>
+					<antwort type="w">abscheulich</antwort>
+					<antwort type="f">abgrundtief hässlich</antwort>
+					<antwort type="f">verschmutzt</antwort>
+					<antwort type="f">unwürdig</antwort>
+				</question>
+				<question num="22" qType="MC" level="2">
+					<text>
+						Wie hieß das Gewächshaus im Alten Botanischen Garten?
+					</text>
+					<antwort type="w">Palmenhaus</antwort>
+					<antwort type="f">Tannenhaus</antwort>
+					<antwort type="f">Tropenhaus</antwort>
+					<antwort type="f">Lilienhaus</antwort>
+				</question>
+				<question num="23" qType="MC" level="2">
+					<text>
+						Wo befand sich Johann Friedrich Cottas Verlag, welcher Schriften von Schiller, als auch von Goethe publizierte?
+					</text>
+					<antwort type="w">gegenüber der Stiftskirche</antwort>
+					<antwort type="f">unterhalb des alten Rathauses</antwort>
+					<antwort type="f">neben dem Pflegehof</antwort>
+					<antwort type="f">hinter dem alten Botanischen Garten</antwort>
+				</question>
+				<question num="24" qType="MC" level="3">
+					<text>
+						Welcher dieser bekannten Persönlichkeiten der Weizsäcker-Familie wurde 1890 zum Kanzler der Universität Tübingen ernannt?
+					</text>
+					<antwort type="w">Karl Heinrich von Weizsäcker</antwort>
+					<antwort type="f">Richard Karl von Weizsäcker</antwort>
+					<antwort type="f">Carl Christian Freiherr von Weizsäcker</antwort>
+					<antwort type="f">Gottlieb Jacob Weizsäcker </antwort>
+				</question>
+				<question num="25" qType="MC" level="2">
+					<text>
+						Welchem Gott wurde der Helm des Miltiades geweiht?
+					</text>
+					<antwort type="w">dem Göttervater Zeus</antwort>
+					<antwort type="f">dem Kriegsgott Ares</antwort>
+					<antwort type="f">der Jagdgöttin Artemis</antwort>
+					<antwort type="f">dem Gott der Künste Apollon</antwort>
+				</question>
+				<question num="26" qType="MC" level="2">
+					<text>
+						Was übersetzte der Tübinger Universitäts-Kanzler Weizsäcker in seiner Zeit als Theologe?
+					</text>
+					<antwort type="w">das Neue Testament</antwort>
+					<antwort type="f">die Psalmen</antwort>
+					<antwort type="f">die Briefe Paulus</antwort>
+					<antwort type="f">die fünf Bücher Mose</antwort>
+				</question>
+				<question num="27" qType="MC" level="2">
+					<text>
+						Welchen Beruf sollte der junge Schiller ursprünglich in Tübingen erlernen?
+					</text>
+					<antwort type="w">Pfarrer</antwort>
+					<antwort type="f">Arzt</antwort>
+					<antwort type="f">Anwalt</antwort>
+					<antwort type="f">Schriftsteller</antwort>
+				</question>
+				<question num="28" qType="MC" level="2">
+					<text>
+						In was verwandelte sich Apollonius Pestdämon nach der Steinigung?
+					</text>
+					<antwort type="w">in einen löwengroßen Hund</antwort>
+					<antwort type="f">in eine löwenähnliche Raubkatze</antwort>
+					<antwort type="f">in ein bärenähnliches Raubtier</antwort>
+					<antwort type="f">in einen hundeartigen Bär</antwort>
+				</question>
+				<question num="29" qType="MC" level="3">
+					<text>
+						Wie geht das Gedicht des Traumes weiter? Ich bin der Traum, aus meinen Sinnen steigt der Menschheit ungeborene Tat ins...
+					</text>
+					<antwort type="w">Licht</antwort>
+					<antwort type="f">Verderben</antwort>
+					<antwort type="f">Sein</antwort>
+					<antwort type="f">Leben</antwort>
+				</question>
+				<question num="30" qType="MC" level="3">
+					<text>
+						Wie alt war Eberhard im Bart ungefähr, als er offiziell die Regierung über die Grafschaft Württemberg-Urach antrat?
+					</text>
+					<antwort type="w">13</antwort>
+					<antwort type="f">15</antwort>
+					<antwort type="f">9</antwort>
+					<antwort type="f">17</antwort>
+				</question>
+				<question num="31" qType="MC" level="3">
+					<text>
+						Welchen Beruf übte Ernst Zimmer aus, der Hölderlin in seiner Turmstube wohnen ließ?
+					</text>
+					<antwort type="w">Tischler</antwort>
+					<antwort type="f">Zimmerer</antwort>
+					<antwort type="f">Schuster</antwort>
+					<antwort type="f">Schlosser</antwort>
+				</question>
+				<question num="32" qType="MC" level="3">
+					<text>
+						Wo befand sich das Stift, bevor es von Eberhard im Bart nach Tübingen verlegt wurde?
+					</text>
+					<antwort type="w">Sindelfingen</antwort>
+					<antwort type="f">Balingen</antwort>
+					<antwort type="f">Marbach</antwort>
+					<antwort type="f">Urach</antwort>
+				</question>
+				<question num="33" qType="MC" level="3">
+					<text>
+						Württemberg hatte insgesamt 4 Könige. König Wilhelm I. war der...
+					</text>
+					<antwort type="w">zweite König Württembergs</antwort>
+					<antwort type="f">erste König Württembergs</antwort>
+					<antwort type="f">dritte König Württembergs</antwort>
+					<antwort type="f">vierte und letzte König Württembergs</antwort>
+				</question>
+				<question num="34" qType="MC" level="3">
+					<text>
+						Friedrich von Schiller war ein...
+					</text>
+					<antwort type="w">Schwabe</antwort>
+					<antwort type="f">Franke</antwort>
+					<antwort type="f">Hesse</antwort>
+					<antwort type="f">Badener</antwort>
+				</question>
+				<question num="35" qType="MC" level="3">
+					<text>
+						Welches Museum befand sich früher im Kino Museum?
+					</text>
+					<antwort type="w">gar keins</antwort>
+					<antwort type="f">ein Museum historischer Fahrräder</antwort>
+					<antwort type="f">ein Museum für Architektur und Kunst</antwort>
+					<antwort type="f">das offizelle Stadtmuseum Tübingens</antwort>
+				</question>
+				<question num="36" qType="MC" level="2">
+					<text>
+						Warum wurde das Lustnauer Tor abgerissen?
+					</text>
+					<antwort type="w">Es wurde zu klein für das wachsende Verkehrsaufkommen.</antwort>
+					<antwort type="f">Durch das hohe Alter bestand Einsturzgefahr. </antwort>
+					<antwort type="f">Es wurde während des zweiten Weltkrieges stark beschädigt.</antwort>
+					<antwort type="f">Es war durch ein Feuer fast vollständig niedergebrannt.</antwort>
+				</question>
+				<question num="37" qType="MC" level="3">
+					<text>
+						Was wurde aus dem alten Stadttor?
+					</text>
+					<antwort type="w">ein Wohnhaus</antwort>
+					<antwort type="f">ein Autotunnel</antwort>
+					<antwort type="f">der Eingang zur Stadtbücherei</antwort>
+					<antwort type="f">der Eingang zum Botanischen Garten</antwort>
+				</question>
+				<question num="38" qType="MC" level="2">
+					<text>
+						Zu welchem Zweck wurde der Pfleghof noch nie genutzt?
+					</text>
+					<antwort type="w">als Zufluchtsort für Obdachlose und Waisen</antwort>
+					<antwort type="f">als Krankenlazarett für verwundete Soldaten des ersten Weltkriegs</antwort>
+					<antwort type="f">als Wirtschaftshof eines nahegelegenen Klosters</antwort>
+					<antwort type="f">als Austragungsort für den studentischen Fechtbetrieb</antwort>
+				</question>
+				<question num="39" qType="MC" level="3">
+					<text>
+						Wann wurde die Mühlstraße ausgebaut?
+					</text>
+					<antwort type="w">1887</antwort>
+					<antwort type="f">1902</antwort>
+					<antwort type="f">1779</antwort>
+					<antwort type="f">1617</antwort>
+				</question>
+				<question num="40" qType="MC" level="2">
+					<text>
+						Warum wurde die Neckarbrücke nicht gesprengt?
+					</text>
+					<antwort type="w">Ein Wirt lenkte die Sprengmannschaft mit einem schwäbischen Vesper ab.</antwort>
+					<antwort type="f">Ein Tübinger ermoderte die komplette Sprengmannschaft.</antwort>
+					<antwort type="f">Ein dreitägiges Unwetter verhinderte die Sprengung.</antwort>
+					<antwort type="f">Durch ein Missgeschick ging die Sprengladung zu früh hoch und tötete die gesamte Sprengmannschaft.</antwort>
+				</question>
+				<question num="41" qType="MC" level="1">
+					<text>
+						Nach wem ist die Wilhelmstraße benannt?
+					</text>
+					<antwort type="w">nach König Wilhelm I.</antwort>
+					<antwort type="f">nach Wilhelm Tell</antwort>
+					<antwort type="f">nach Kaiser Wilhelm II.</antwort>
+					<antwort type="f">nach Wilhelm von Tübingen, Graf von Gießen</antwort>
+				</question>
+				
+			<!-- anstatt, dass nach dem Spiel ein normaler Text mit "gewonnen" oder "verloren" erscheint, soll Georg nochmals was sagen. -->
+			<gewonnenText> 
+                <plainText cTag="G">Ich bin beeindruckt, Eberhard. Du konntest dein Wissen tatsächlich sehr gut unter Beweis stellen. Ich helfe deinem Gedächtnis mal ein wenig auf die Sprünge. "Attempto" ist lateinisch und bedeutet übersetzt "Ich wag’s". Diesen Spruch hast du dir zu deinem Lebensmotto gemacht, als du dich als junger Graf gegen deinen griesgrämigen Onkel zur Wehr setzten musstest. Dieser hatte Anspruch auf deinen Landsteil erhoben. Doch du hast diese Herausforderung angenommen und deinen Onkel in seine Schranken gewiesen. Fortan war dir kein Problem mehr zu groß und du hast dich an jede schwierige Aufgabe herangewagt. So hast du es letztendlich auch geschafft, aus Tübingen eine Universitätsstadt zu machen. Bis heute ist "Attempto" der Wahlspruch der Universität.</plainText> 
+                  <plainText num="1" cTag="E">Wow. Jetzt habe ich schon einiges an Wissen zurückerlangt. Ich danke dir für deine Hilfe mein Freund. Aber ich habe das Gefühl, dass es noch einiges über mein Leben und Tübingen zu erfahren gibt, was wir bisher noch nicht herausgefunden haben.</plainText>
+                  <question num="42" qType="MC">
+             <text>Willst du mir helfen auch die zweite Karte zu vervollständigen?</text>
+                 <antwort type="a">Ja na klar. Ich lasse dich doch nicht hängen.</antwort>
+                 <antwort type="b">Vielleicht ein anderes Mal.</antwort>
+            </gewonnenText>
+			<verlorenText> <plainText cTag="G">Schade Eberhard. Scheinbar hast du dich nicht gut genug mit den Kunstskulpturen befasst. Willst du noch einen Versuch? </plainText>
+			</minispiel>
+        </dialog>
+    </chapter>
+</quest>

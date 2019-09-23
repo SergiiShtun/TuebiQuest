@@ -1,0 +1,328 @@
+<quest>
+    <characters>
+        <character name="Eberhard_Guide" tag="EG"/>
+        <character name="Auktorialer_Guide" tag="AG"/>
+    </characters> Im Dialog das weinen <randomfacts>
+        <fact>
+            <geopunkt name="Tourist_Information">
+                <Latitude>48.518612</Latitude>
+                <Longitude>9.058112</Longitude>
+                <Altitude>380</Altitude>
+            </geopunkt>
+            <text cTag="AG">Mögen die Spiele beginnen! Starte die Schnitzeljagd, indem du zur
+                Altstadt läufst.</text>
+            <!-- Bzw. ein anderer Text, den die andere Gruppe auch übernimmt. -->
+        </fact>
+        <fact>
+            <geopunkt name="Nach_links_zur_Altstadt">
+                <Latitude>48.519615</Latitude>
+                <Longitude>9.058174</Longitude>
+                <Altitude>380 </Altitude>
+            </geopunkt>
+            <text cTag="AG">Gehe hier nach links über die Straße. Dann hast du die Altstadt erreicht
+                und die Schnitzeljagd beginnt.</text>
+        </fact>
+        <fact>
+            <geopunkt name="Hölderlinturm">
+                <Latitude>48.519363</Latitude>
+                <Longitude>9.055865</Longitude>
+                <Altitude>369</Altitude>
+            </geopunkt>
+            <text num="1" cTag="AG">Dieses wunderschöne Gebäude am Neckar ist der Hölderlinturm. Er
+                ist ein markantes Wahrzeichen von Tübingen. Ursprünglich stellte er einen Teil der
+                mittelalterlichen Stadtmauer dar. Erst ab dem 18. Jahrhundert wurde er als Wohnraum
+                genutzt. Der Dichter Friedrich Hölderlin (1770-1843) verbrachte die zweite Hälfte
+                seines Lebens von 1807 bis zu seinem Tod in diesem Turm. </text>
+            <plaintext num="2" cTag="AG">Das Logo der Stadt verkörpert den Hölderlinturm. Das kleine
+                't' greift dessen Form auf.</plaintext>
+        </fact>
+        <fact>
+            <geopunkt name="Alte_Burse">
+                <Latitude>48.519405</Latitude>
+                <Longitude>9.054992</Longitude>
+                <Altitude>382</Altitude>
+            </geopunkt>
+            <text num="1" cTag="AG">Das hier ist die alte Burse, das älteste erhaltene Gebäude der
+                Universität Tübingen. Das Gebäude wurde 1478 zunächst als Studentenwohnhaus gebaut,
+                was sich auch in der bis heute währenden Bezeichnung niederschlägt: Burse leitet
+                sich aus dem mittelhochdeutschen burse ab, was Beutel, Kasse bedeutet. Burse meint
+                also eine Gemeinschaft, die aus einer Kasse lebt. </text>
+            <text num="2" cTag="AG">Heute lehren und lernen in der alten Burse die Philosophen und
+                Kunsthistoriker. Zeitweise (zwischen 1803 und 1805) war die Burse ein Klinikum und
+                beherbergte auch für 231 Tage Friedrich Hölderlin, der als unheilbar entlassen
+                wurde.</text>
+            <text num="3" cTag="AG" href="https://postimg.cc/4YsMThKd">Im Eingangsbereich der Burse
+                sind das Logo der Universität und mein Wahlspruch „Attempto“ (lateinisch für „Ich
+                wag’s!“) zu sehen.</text>
+        </fact>
+        <fact>
+            <geopunkt name="Stift">
+                <Latitude>48.519344</Latitude>
+                <Longitude>9.054979</Longitude>
+                <Altitude>388</Altitude>
+            </geopunkt>
+            <text num="1" cTag="AG"> Das Tübinger bzw. Evangelische Stift ist ein Studienhaus bzw.
+                eine Art Studentenwohnheim der evangelischen Landeskirche in Württemberg und wurde
+                1537 von Herzog Ulrich von Württemberg erbaut. Aktuell dürfen ca. 170 Studierende
+                des Lehramts evangelische Religion an Gymnasien oder eines Pfarramts für 9 Semester
+                mit einem begleitenden Stipendium (Verpflegung, Unterkunft, wissenschaftliche Hilfe)
+                in dem Gebäude wohnen. </text>
+            <text num="2" cTag="AG"> Zu dessen berühmten Bewohnern zählen neben Friedrich Hölderlin
+                auch Johannes Kepler (16. Jahrhundert), Georg Wilhelm Friedrich Hegel (18.
+                Jahrhundert), Wilhelm Hauff und Eduard Mörike (19. Jahrhundert). </text>
+            <text num="3" cTag="EG"> Hölderlin war wohl viel auf Reisen. So viel unterwegs zu sein
+                kann einem aber gehörig auf den Magen schlagen … Goethe kann davon ein Lied
+                schreiben. Willst du wissen, was ich meine? Dann lass uns weitergehen. </text>
+        </fact>
+        <fact>
+            <event id="G_Kotzen_Sound" HREF="https://freesound.org/people/vikuserro/sounds/246308/">
+                <geopunkt name="Hier_kotzte_Goethe">
+                    <Latitude>48.51992</Latitude>
+                    <Longitude>9.055552</Longitude>
+                    <Altitude>379</Altitude>
+                </geopunkt>
+                <text cTag="AG">Im Nachbarhaus, dem ehemaligen Haus des Buchhändlers und Verlegers
+                    Johann Friedrich Cottas, logierte der berühmte Dichter Johann Wolfgang von
+                    Goethe für einige Tage im September 1797, was eine Marmortafel bezeugt. Hier, im
+                    benachbarten Cotta-Haus (das heutige Studentenwohnheim ‚Martinianum‘) hielt er
+                    sich gar nicht auf. Dieses Schild „Hier kotzte Goethe“ parodiert stattdessen die
+                    Erinnerungstafel des kurzen Aufenthalts im Nachbarhaus.</text>
+            </event>
+        </fact>
+        <fact>
+            <geopunkt name="Alte Aula">
+                <Latitude>48.51987</Latitude>
+                <Longitude>9.055573</Longitude>
+                <Altitude>391</Altitude>
+            </geopunkt>
+            <text num="1" cTag="AG"> Das schöne Gebäude im klassizistischen Stil ist die bekannte
+                Alte Aula der Universität Tübingen. Es wurde vermutlich 1547 auf den Resten zweier
+                Vorgängerbauten errichtet, von denen der ältere im Jahre 1477 erbaut worden war und
+                der jüngere im Jahr 1534 abbrannte.</text>
+            <text num="2" cTag="AG"> Damals wurde das Gebäude mit Archiv, Bibliothek und Hörsälen
+                als Hauptgebäude der Universität eingerichtet, bis 1845 die Neue Aula fertiggestellt
+                wurde. Anlässlich des 300 Jahren Universitätsjubiläums wurde 1777 die Alte Aula im
+                Auftrag Herzog Karl Eugens von Württemberg von seinem Sohn Reinhard Fischer mit
+                klassischem Geschmack umgebaut und als Geschenk „Aula Nova“ der Universität
+                gewidmet. </text>
+            <text num="3" cTag="AG"> Heutzutage dient die Alte Aula unter Denkmalschutz immer noch
+                zur Beherbergung Universitätsbibliothek Tübingen vor allem des Institutes für
+                Erziehungswissenschaften. </text>
+        </fact>
+        <fact>
+            <geopunkt name="Stiftskirche_von_der_Münzgasse_aus">
+                <Latitude>48.519936</Latitude>
+                <Longitude>9.055636</Longitude>
+                <Altitude>393</Altitude>
+            </geopunkt>
+            <text num="1" cTag="AG"> Lust auf einen Besuch in den 169 stufigen Turm der
+                dreischiffigen, spätgotischen Kirche? Aus 45 Metern Höhe kann man nicht nur ganz
+                Tübingen überblicken, sondern auch alle neun Glocken der Kirche besichtigen. Neben
+                der größten und schwersten Glocke Gloriosa ist auch Dominica, die mit über
+                sechshundert Jahren älteste noch geläutete Glocke der Stiftskirche,
+                bemerkenswert.</text>
+            <text num="2" cTag="AG"> Eins der Highlights der Kirche ist die Orgel ist mit ihren fast
+                5000 Pfeifen. Sie ist das größte Musikinstrument Tübingens. Regelmäßig finden in der
+                Stiftskirche Orgelkonzerte (zum Beispiel der Motette Tübingen) oder das alljährliche
+                Bachfest statt.</text>
+            <text num="3" cTag="AG"> In der Stiftskirche sind einige Persönlichkeiten begraben, die
+                für Tübingen von besonderer Wichtigkeit waren. Auch mein Grab befindet sich im Chor
+                der Kirche. Auf meiner Grabplatte sind die Palmwedel und der Wahlspruch der
+                Universität zu erkennen. <br/> Graf Eberhard im Bart (1445-1496) war der erste
+                Herzog von Württemberg und ein Anhänger des Humanismus. Als seine größte politische
+                Leistung gilt die Wiedervereinigung Württembergs, das 40 Jahre lang gespalten
+                war.</text>
+        </fact>
+        <fact>
+            <geopunkt name="Hesse Kabinett">
+                <Latitude>48.52043</Latitude>
+                <Longitude>9.055923</Longitude>
+                <Altitude>392</Altitude>
+            </geopunkt>
+            <text num="1" cTag="AG"> Auf dem Holzmarkt gibt es viele spannende Dinge zu entdecken.
+                Beispielsweise das Hermann Hesse Kabinett: <br/> Das Hesse-Kabinett stellt einige
+                Dokumente und Reproduktionen von und über das Leben und Werk Hermann Hesses aus. </text>
+            <text num="2" cTag="AG"> Hermann Hesse (1877-1962) gilt als einer der meistgelesenen
+                deutschsprachigen Autoren des 20. Jahrhunderts und erhielt unter anderem den
+                Nobelpreis für Literatur für sein Gesamtwerk und den Friedenspreis des Deutschen
+                Buchhandels für seine Werke während der NS-Zeit. <br/> Zu seinen bekanntesten Werken
+                zählen wohl „Siddhartha“ und „Der Steppenwolf“. </text>
+            <text num="3" cTag="AG"> In diesem Antiquariat Heckenhauer begann Hesse 1895 seine Lehre
+                als Buchhändler. <br/> Im Kabinett findet sich ein über 150 Jahre altes Bücherlager
+                und eine ebenso alte Wendeltreppe. </text>
+        </fact>
+    </randomfacts>
+    <chapter cNum="1" name="Hölderlinturm">
+        <characters>
+            <character name="Hölderlin" tag="H"/>
+        </characters>
+        <Animations>
+            <Animation name="Verzweifelt" tag="0"/>
+            <Animation name="Froh" tag="1"/>
+        </Animations>
+        <dialog>
+            <event id="H_Weinen_Sound_25%"
+                HREF="https://freesound.org/people/qubodup/sounds/200428/">
+                <geopunkt name="Altstadt_Schild">
+                    <Latitude>48.519608</Latitude>
+                    <Longitude>9.057949</Longitude>
+                    <Altitude>376</Altitude>
+                </geopunkt>
+                <text cTag="EG">Hörst du das auch? Da weint doch jemand! Es scheint von da vorne zu
+                    kommen. Lass uns mal nachsehen!</text>
+            </event>
+            <event id="H_Weinen_Sound_50%"
+                HREF="https://freesound.org/people/qubodup/sounds/200428/">
+                <geopunkt name="links_halten_zur_Bursagasse">
+                    <Latitude>48.5198</Latitude>
+                    <Longitude>9.056739</Longitude>
+                    <Altitude>386</Altitude>
+                </geopunkt>
+                <text cTag="EG">Das scheint von der Bursagasse zu kommen. Hier müssen wir also nach
+                    links!</text>
+            </event>
+            <event id="H_Weinen_Sound_75%"
+                HREF="https://freesound.org/people/qubodup/sounds/200428/">
+                <geopunkt name="nach_links_Treppen_runter">
+                    <Latitude>48.51956</Latitude>
+                    <Longitude>9.055798</Longitude>
+                    <Altitude>381</Altitude>
+                </geopunkt>
+                <text cTag="EG">Das kommt vom Hölderlinturm. Dann müssen wir hier links die Treppen
+                    nach unten.</text>
+            </event>
+            <geopunkt name="Hölderlinturm">
+                <Latitude>48.519363</Latitude>
+                <Longitude>9.055865</Longitude>
+                <Altitude>369</Altitude>
+            </geopunkt>
+            <event id="H_Weinen_Sound_100%"
+                HREF="https://freesound.org/people/qubodup/sounds/200428/">
+                <text cTag="EG">Von hier kommt also dieses schreckliche Weinen.</text>
+            </event>
+            <plainText num="1" cTag="H" emo="0">Ach</plainText>
+            <plainText num="2" cTag="EG">Wer bist du denn und was seufzt du so schwer?</plainText>
+            <plainText num="3" cTag="H" emo="0">Ich bin Friedrich Hölderlin. Ein Dichter. Und
+                deswegen seufze ich auch so schwer. Ich habe eine Schreibblockade.</plainText>
+            <plainText num="4" cTag="EG">Kann man dir helfen?</plainText>
+            <plainText num="5" cTag="H" emo="0">Ach. Ich schreibe über die Erinnerung. Kennst du
+                dich in diesem Gebiet aus?</plainText>
+            <plainText num="6" cTag="EG">Ich habe selbst Probleme mit der Erinnerung. Ich habe große
+                Teile meines Gedächtnisses verloren.</plainText>
+            <plainText num="7" cTag="H" emo="0">Ach, wie schön.</plainText>
+            <plainText num="8" cTag="EG">Das ist nicht schön. Ich will mich wieder
+                erinnern.</plainText>
+            <plainText num="9" cTag="H" emo="0">Warum?</plainText>
+            <plainText num="10" cTag="EG">Warum? Man muss sich doch an die Vergangenheit erinnern,
+                um zu wissen, wo die Zukunft hinführt.</plainText>
+            <plainText num="11" cTag="H" emo="0">Ja, das meine ich auch. Die Bewahrung der
+                Erinnerung macht Liebe und ein lebenswertes Leben erst möglich. Aber wenn sie sich
+                auf traumatische Erlebnisse bezieht, wirkt sie auch zerstörerisch. Diese Ambiguität
+                will ich in meiner neusten Elegie festhalten, aber die Worte werden in meinen Kopf
+                nicht konkret. Die Buchstaben vermischen sich. Ich brauche Hilfe.</plainText>
+            <minispiel mId="Wortschatz">d <startText cTag="AG">Hilf Hölderlin dabei, seinen
+                    Wortschatz zu sortieren! Dazu musst du alle sinnhaften und korrekt geschriebenen
+                    Worte, die er verzweifelt aus dem Fenster wirft, in der Schatztruhe fangen.
+                    Tippe dazu an die Stelle deines Displays, an die die Truhe rutschen soll. Mit
+                    jedem richtig gefangenen Wort erhältst du 5 Punkte. Ein falsches Wort zieht dir
+                    einen Punkt ab.</startText>
+                <gewonnenText num="1">Ach! wo bist du, <hi rend="bold">Liebende</hi>, nun? Sie haben
+                    mein Auge <br/> Mir genommen, mein <hi rend="bold">Herz</hi> hab ich verloren
+                    mit ihr. <br/> Darum irr ich umher, und wohl, wie die <hi rend="bold"
+                        >Schatten</hi>, so muß ich <br/>
+                    <hi rend="bold">Leben</hi> und <hi rend="bold">sinnlos</hi> dünkt lange das
+                    Übrige mir. <br/> Danken möcht ich, aber wofür? verzehret das Letzte <br/>
+                    Selbst die <hi rend="bold">Erinnerung</hi> nicht? nimmt von der Lippe denn nicht
+                    <br/> Bessere Rede mir der Schmerz, und lähmet ein Fluch nicht <br/> Mir die
+                    Sehnen und wirft, wo ich beginne, mich weg?
+                    <!-- Bitte darauf achten, dass die line breaks dann übernommen werden. Hab das html br Element benutzt - stimmt natürlich hier nicht, aber
+                    ich glaub, sonst kann man line breaks nur mit tei kennzeichnen -->
+                </gewonnenText>
+                <gewonnenText num="2">Herzlichen Glückwunsch. Du hast Hölderlins Panikattacke
+                    beendet, Eberhards Erinnerung auf die Sprünge geholfen und {} Punkte
+                    gesammelt.</gewonnenText>
+            </minispiel>
+            <plainText num="12" cTag="H" emo="1">Vielen Dank! Jetzt sehe ich wieder klar und kann
+                weiterschreiben. Ich fühle mich so erleichtert!</plainText>
+            <plainText num="13" cTag="EG">Und ich erinnere mich wieder. Zumindest etwas. Gibt es da
+                nicht ein Haus, in dem so philosophiert wird, wie hier bei dir? Möchtest du dir das
+                mit mir anschauen, Hölderlin?</plainText>
+            <plainText num="14" cTag="H" emo="0">Die Burse? Da gehe ich niemals wieder
+                hin!</plainText>
+        </dialog>
+    </chapter>
+    <chapter cNum="2" name="Stiftskirche">
+        <characters>
+            <character name="Eberhard_Mini" tag="EM"/>
+        </characters>
+        <Animations>
+            <Animation name="Fro" tag="0"/>
+            <Animation name="Traurig" tag="1"/>
+        </Animations>
+        <dialog>
+            <event id="Glocke" HREF="https://freesound.org/people/Audeption/sounds/425172/">
+                <geopunkt name="Stiftskirche_von_der_Münzgasse_aus">
+                    <Latitude>48.519936</Latitude>
+                    <Longitude>9.055636</Longitude>
+                    <Altitude>393</Altitude>
+                </geopunkt>
+                <text cTag="EG">Wie schön! Kommt das Geläute von der Stiftskirche? Das schaue ich
+                    mir doch mal näher an!</text>
+            </event>
+            <plainText num="1" cTag="EG">Bei meinem Bart! Ich erinnere mich! Die Stiftskirche wurde
+                1470 bis 1490 unter meiner Leitung von den Baumeistern Peter von Koblenz und Hans
+                Augsteindreyer erbaut. Heutzutage ist die Stiftskirche die Pfarrkirche der
+                Evangelischen Stiftskirchengemeinde Tübingen und Dekanatskirche im Kirchenbezirk
+                Tübingen. </plainText>
+            <!-- Trivia -->
+            <plainText num="2" cTag="EG"> Am 11. März 1477 gründete ich die Tübinger Universität.
+                Dies geschah aber erst, nachdem ich die Tübinger Bewohner verpflichtet hatte, alle
+                Juden aus der Stadt zu vertreiben. Somit gelte ich als einer der fanatischsten
+                Antisemiten meiner Zeit. </plainText>
+            <plainText num="3" cTag="EG"> Dunkel erinnere ich mich an diese Zeit. Ich war jung,
+                wollte an die Macht und das Volk für mich gewinnen. Ohje. Hölderlin hatte recht! Die
+                Erinnerung an diese Geschehen sind zermürbend. Hätte ich mich doch niemals daran
+                erinnert! </plainText>
+            <geopunkt name="Spielstart vor dem Tor">
+                <Latitude>48.520428</Latitude>
+                <Longitude>9.055871</Longitude>
+                <Altitude>391</Altitude>
+            </geopunkt>
+            <minispiel mId="Ebarhards_im_Bart">
+                <startText cTag="AG">Verhelfe Eberhard zur Buße für seine antisemitischen Taten und
+                    schneide seinen geliebten Bart! Dazu musst du ihn erst einfangen. Am besten
+                    sperrst du ihn dafür in das Gitter vor dem Tor in der Stiftskirche. Du kannst
+                    Eberhard zum Gitter treiben, indem du die lockeren Ziegel der Stiftskirche auf
+                    ihn ziehst. Er wird versuchen, auszuweichen und Schutz unter dem Dach hinter dem
+                    Gitter suchen.</startText>
+                <gewonnenText num="1">Super! Du hast Eberhard innerhalb von {} Sekunden eingefangen
+                    und {} Punkte erzielt.</gewonnenText>
+                <!-- Zoom Eberhards Gesicht -->
+                <plaintext num="2" cTag="EM"> Bitte, lass mir meinen Bart! Ich weiß zwar nicht
+                    warum, aber ich fühle einen starken Unwillen, meinen Bart schneiden zu lassen. </plaintext>
+                <question num="1" qType="MC">
+                    <text> Willst du seinen Bart trotzdem schneiden? </text>
+                    <antwort type="a">Klar, er soll büßen!</antwort>
+                    <antwort type="b">Hm. Nein. Ich habe Mitleid und lasse ihm seinen
+                        Bart.</antwort>
+                    <if atwort="b">
+                        <then>
+                            <plainText cTag="EM" emo="0">Vielen lieben Dank! Ich erinnere mich jetzt
+                                nämlich wieder, warum mir mein Bart so wichtig ist: Auf einer sehr
+                                bewegenden Pilgerfahrt, die ich 1468 nach Jerusalem antrat, gelobte
+                                ich, fortan meinen Bart niemals wieder zu schneiden. Seither trage
+                                ich den Spitznamen: „Im Bart“. </plainText>
+                        </then>
+                        <else>
+                            <plainText cTag="EM" emo="1">Eberhard: Was soll ich jetzt nur tun? Mein
+                                armer, schöner Bart! Ich erinnere mich jetzt nämlich wieder, warum
+                                mir mein Bart so wichtig ist: Auf einer sehr bewegenden Pilgerfahrt,
+                                die ich 1468 nach Jerusalem antrat, gelobte ich, fortan meinen Bart
+                                niemals wieder zu schneiden. Seither trage ich den Spitznamen: „Im
+                                Bart“. </plainText></else>
+                    </if>
+                </question>
+            </minispiel>
+        </dialog>
+    </chapter>
+</quest>

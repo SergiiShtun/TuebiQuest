@@ -1,0 +1,282 @@
+<fragenspiel>
+  
+  <question num="1" qType="MC" level="1"> <text>Worin war der heutige Hölderlinturm im Ursprung integriert?</text>
+        <antwort type="w"> In die Stadtmauer </antwort>
+        <antwort type="f"> In das alte Klinikum </antwort>
+        <antwort type="f"> In die neue Aula </antwort>
+        <antwort type="f"> In die Irrenanstalt </antwort>
+    </question>
+    
+    <question num="2" qType="MC" level="3"> <text>Ab welchem Jahrhundert wurde aus dem heutigen Hölderlinturm ein Wohngebäude?</text>
+        <antwort type="f"> 16. Jahrhundert </antwort>
+        <antwort type="f"> 17. Jahrhundert </antwort>
+        <antwort type="w"> 18. Jahrhundert </antwort>
+        <antwort type="f"> 19. Jahrhundert </antwort>
+    </question>
+
+    <question num="3" qType="MC" level="3"> <text>Ab wann zog Hölderlin in seinen Turm?</text>
+        <antwort type="f"> 1607 </antwort>
+        <antwort type="f"> 1707 </antwort>
+        <antwort type="w"> 1807 </antwort>
+        <antwort type="f"> 1907 </antwort>
+    </question>
+
+    <question num="4" qType="MC" level="1"> <text>Wo starb Hölderlin?</text>
+        <antwort type="w"> Im Krankenhaus </antwort>
+        <antwort type="f"> Zuhause </antwort>
+        <antwort type="f"> Im Altenheim </antwort>
+        <antwort type="f"> In einer Kutsche </antwort>
+    </question>
+    
+    <question num="5" qType="MC" level="1"> <text>Nach wem ist der gelbgestrichene Turm benannt, der von der Neckarbrücke aus zu sehen ist?</text>
+        <antwort type="f"> Goethe </antwort>
+        <antwort type="f"> Schiller </antwort>
+        <antwort type="f"> Eberhart im Bart </antwort>
+        <antwort type="w"> Hölderlin </antwort>
+    </question>
+    
+    <question num="6" qType="MC" level="3"> <text>Für was steht das ‚t‘ im Stadtlogo Tübingens?</text>
+        <antwort type="f"> Für die Attempto-Palme </antwort>
+        <antwort type="f"> Für den keltischen Namen Tübingens </antwort>
+        <antwort type="w"> Für den Hölderlinturm </antwort>
+        <antwort type="f"> Für das christliche Kreuz </antwort>
+    </question>
+
+    <question num="7" qType="MC" level="2"> <text>Welches ist das älteste erhaltene Gebäude der Universität Tübingen?</text>
+        <antwort type="w"> Die alte Burse </antwort>
+        <antwort type="f"> Die alte Aula </antwort>
+        <antwort type="f"> Der Brechtbau </antwort>
+        <antwort type="f"> Die alte Physik </antwort>
+    </question>
+    
+    <question num="8" qType="MC" level="2"> <text>Was war die alte Burse ursprünglich?</text>
+        <antwort type="f"> Obdachlosenheim </antwort>
+        <antwort type="w"> Studentenwohnheim </antwort>
+        <antwort type="f"> Altenheim </antwort>
+        <antwort type="f"> Vorlesungsgebäude </antwort>
+    </question>
+
+    <question num="9" qType="MC" level="1"> <text>Wie wird „burse“ aus dem Mittelhochdeutschen übersetzt?</text>
+        <antwort type="w"> Beutel oder Kasse </antwort>
+        <antwort type="f"> Mantel oder Jacke </antwort>
+        <antwort type="f"> Papier oder Pergament </antwort>
+        <antwort type="f"> Raum oder Wohnung </antwort>
+    </question>
+ 
+    <question num="10" qType="MC" level="3"> <text>Welche universitäre Fachrichtung ist heute in der alten Burse untergebracht?</text>
+        <antwort type="f"> Mathematiker </antwort>
+        <antwort type="w"> Philosophen und Kunsthistoriker </antwort>
+        <antwort type="f"> Philologen </antwort>
+        <antwort type="f"> Archäologen </antwort>
+    </question>    
+ 
+    <question num="11" qType="MC" level="1"> <text> Welcher berühmte Patient wurde als unheilbar Kranker aus der Klinik entlassen?</text>
+        <antwort type="f"> Eberhard im Bart </antwort>
+        <antwort type="w"> Hölderlin </antwort>
+        <antwort type="f"> Kafka </antwort>
+        <antwort type="f"> Ottfried Preußler </antwort>
+    </question>  
+    
+    <question num="12" qType="MC" level="1"> <text>Eberhard im Bart hatte welchen Wahlspruch?</text>
+        <antwort type="f"> Carpe noctem </antwort>
+        <antwort type="f"> Veni vidi vici </antwort>
+        <antwort type="f"> In Vino veritas </antwort>
+        <antwort type="w"> Attempto </antwort>
+    </question>
+    
+    <question num="13" qType="MC" level="2"> <text>Übersetzt heißt „Attempto“ was?</text>
+        <antwort type="f"> Achtung! </antwort>
+        <antwort type="f"> Los geht’s! </antwort>
+        <antwort type="w"> Ich wag’s! </antwort>
+        <antwort type="f"> Bis gleich! </antwort>
+    </question>
+
+    <question num="14" qType="MC" level="1"> <text>Was ist auf dem Logo der Universität zu sehen?</text>
+        <antwort type="w"> Eine Palme </antwort>
+        <antwort type="f"> Ein Haus </antwort>
+        <antwort type="f"> Ein Mann </antwort>
+        <antwort type="f"> Eine Eule </antwort>
+    </question>
+    
+    <question num="15" qType="MC" level="1"> <text>Wer wohnte nie im Tübinger Stift?</text>
+        <antwort type="f"> Hölderlin </antwort>
+        <antwort type="f"> Hegel </antwort>
+        <antwort type="f"> Mörike </antwort>
+        <antwort type="w"> Brecht </antwort>
+    </question>
+
+    <question num="16" qType="MC" level="1"> <text> Welcher berühmte Verleger beherbergte Goethe im September 1797?</text>
+        <antwort type="f"> Cotta </antwort>
+        <antwort type="f"> Klett </antwort>
+        <antwort type="f"> Carlsen </antwort>
+        <antwort type="w"> Brockhaus </antwort>
+    </question>
+
+    <question num="17" qType="MC" level="1"> <text>Welches Wort fehlt: „Hier… Goethe“?</text>
+        <antwort type="f"> schlief </antwort>
+        <antwort type="w"> kotzte </antwort>
+        <antwort type="f"> trank </antwort>
+        <antwort type="f"> lebte </antwort>
+    </question>
+
+    <question num="18" qType="MC" level="3"> <text>Wie heißt das Cotta-Haus heute noch?</text>
+        <antwort type="f"> Franziscanium </antwort>
+        <antwort type="w"> Martinianum </antwort>
+        <antwort type="f"> Alexandrium </antwort>
+        <antwort type="f"> Claudium </antwort>
+    </question>
+
+    <question num="19" qType="MC" level="3"> <text>Aus welchem Jahrhundert stammt die alte Aula?</text>
+        <antwort type="f"> 12. Jahrhundert </antwort>
+        <antwort type="f"> 14. Jahrhundert </antwort>
+        <antwort type="w"> 16. Jahrhundert </antwort>
+        <antwort type="f"> 18. Jahrhundert </antwort>
+    </question>    
+    
+    <question num="20" qType="MC" level="3"> <text>Wer gab den Auftrag für den Bau der Neuen Aula?</text>
+        <antwort type="f"> Herzog Karl Eugen </antwort>
+        <antwort type="f"> Herzog Ulrich </antwort>
+        <antwort type="w"> Herzog Ludwig </antwort>
+        <antwort type="f"> Herzog Friedrich II. </antwort>
+    </question>   
+    
+    <question num="21" qType="MC" level="3"> <text>Welches Institut befindet sich heute in der alten Aula?</text>
+        <antwort type="f"> IANES </antwort>
+        <antwort type="w"> Erziehungswissenschaften </antwort>
+        <antwort type="f"> Politikwissenschaften </antwort>
+        <antwort type="f"> Sprachwissenschaften </antwort>
+    </question>   
+
+    <question num="22" qType="MC" level="2"> <text>Anlässlich welches Jubiläums wurde die neue Aula in Auftrag gegeben?</text>
+        <antwort type="w"> 300 Jahre Universitätsbestehen </antwort>
+        <antwort type="f"> 100 Jahre Leibniz Kolleg </antwort>
+        <antwort type="f"> 400. Todestag Eberhard im Barts </antwort>
+        <antwort type="f"> 400. Geburtstag Eberhard im Barts </antwort>
+    </question> 
+ 
+    <question num="23" qType="MC" level="2"> <text>Wer gab die Stiftskirche in Auftrag?</text>
+        <antwort type="w"> Eberhard im Bart </antwort>
+        <antwort type="f"> Papst Sixtus IV. </antwort>
+        <antwort type="f"> Bischof Otto IV. von Sonnenberg </antwort>
+        <antwort type="f"> Kaiser Friedrich III. </antwort>
+    </question> 
+
+    <question num="24" qType="MC" level="3"> <text>Wie viele Stufen hat der Turm der Stiftskirche?</text>
+        <antwort type="w"> 152 </antwort>
+        <antwort type="f"> 169 </antwort>
+        <antwort type="f"> 187 </antwort>
+        <antwort type="f"> 201 </antwort>
+    </question> 
+
+    <question num="25" qType="MC" level="2"> <text>Wie lautet der Name der über 600 Jahre alten Glocke der Stiftskirche?</text>
+        <antwort type="f"> Gloriosa </antwort>
+        <antwort type="w"> Fantastica </antwort>
+        <antwort type="f"> Dominica </antwort>
+        <antwort type="f"> Sophia </antwort>
+    </question> 
+
+    <question num="26" qType="MC" level="2"> <text>Wie lautet der Name der schwersten Glocke der Stiftskirche?</text>
+        <antwort type="w"> Gloriosa </antwort>
+        <antwort type="f"> Fantastica </antwort>
+        <antwort type="f"> Dominica </antwort>
+        <antwort type="f"> Sophia </antwort>
+    </question> 
+
+    <question num="27" qType="MC" level="1"> <text>Wo befindet sich das Grab Eberhard im Barts?</text>
+        <antwort type="f"> In der alten Aula </antwort>
+        <antwort type="f"> In der alten Burse </antwort>
+        <antwort type="w"> In der Stiftskirche </antwort>
+        <antwort type="f"> Auf dem alten Friedhof </antwort>
+    </question> 
+
+    <question num="28" qType="MC" level="1"> <text>Wer war der erste Herzog von Württemberg?</text>
+        <antwort type="w"> Eberhard im Bart </antwort>
+        <antwort type="f"> Friedrich I. </antwort>
+        <antwort type="f"> Ulrich I. </antwort>
+        <antwort type="f"> Karl Eugen </antwort>
+    </question> 
+
+    <question num="29" qType="MC" level="2"> <text>Welche größte politische Leistung hat Eberhard im Bart erbracht?</text>
+        <antwort type="w"> Wiedervereinigung Württembergs </antwort>
+        <antwort type="f"> 50 Jahre dauernder Frieden mit Frankreich </antwort>
+        <antwort type="f"> Sieg über die kaiserliche Armee </antwort>
+        <antwort type="f"> Ehe mit Katharina der Großen </antwort>
+    </question>  
+
+    <question num="30" qType="MC" level="2"> <text>Wozu diente das alte Rathaus ursprünglich?</text>
+        <antwort type="f"> Gefängnis </antwort>
+        <antwort type="w"> Markthalle </antwort>
+        <antwort type="f"> Krankenhaus </antwort>
+        <antwort type="f"> Studentenwohnheim </antwort>
+    </question>
+
+    <question num="31" qType="MC" level="1"> <text>Welcher römische Gott thront in der Mitte des Marktplatzbrunnens?</text>
+        <antwort type="f"> Jupiter </antwort>
+        <antwort type="w"> Neptun </antwort>
+        <antwort type="f"> Mars </antwort>
+        <antwort type="f"> Merkur </antwort>
+    </question>
+
+    <question num="32" qType="MC" level="1"> <text>Die Astronomische Uhr besteht aus 3 Zeigern: dem Mondzeiger, dem Sonnenzeiger und …?</text>
+        <antwort type="w"> Drachenzeiger </antwort>
+        <antwort type="f"> Schmiedezeiger </antwort>
+        <antwort type="f"> Feuerzeiger </antwort>
+        <antwort type="f"> Neptunzeiger </antwort>
+    </question>
+
+    <question num="33" qType="MC" level="1"> <text>Was zeigt der Drachenzeiger an?</text>
+        <antwort type="f"> Nostradamus Ende der Welt </antwort>
+        <antwort type="w"> Mond- und Sonnenfinsternis </antwort>
+        <antwort type="f"> Sommersonnenwende </antwort>
+        <antwort type="f"> Große Konjunktion (Planetenlinie aller Planeten) </antwort>
+    </question>
+
+    <question num="34" qType="MC" level="2"> <text>Was hält Eberhard im Bart auf der Malerei des Rathauses in der Hand?</text>
+        <antwort type="f"> Schild und Schwert </antwort>
+        <antwort type="w"> Schwert und Urkunde </antwort>
+        <antwort type="f"> Reichsapfel und -zepter </antwort>
+        <antwort type="f"> Feder und Schriftrolle </antwort>
+    </question>    
+
+    <question num="35" qType="MC" level="1"> <text>Welcher römische Feldherr wird im Schlosshof von Hohentübingen gezeigt?</text>
+        <antwort type="w"> Augustus </antwort>
+        <antwort type="f"> Claudius </antwort>
+        <antwort type="f"> Nero </antwort>
+        <antwort type="f"> Antonius </antwort>
+    </question>
+
+    <question num="36" qType="MC" level="3"> <text>Wann wurde Schloss Hohentübingen der Universität Tübingen einverleibt?</text>
+        <antwort type="w"> 1816 </antwort>
+        <antwort type="f"> 1716 </antwort>
+        <antwort type="f"> 1785 </antwort>
+        <antwort type="f"> 1870 </antwort>
+    </question> 
+
+    <question num="37" qType="MC" level="2"> <text>Was bedeutet der keltische Namen Hohentübingens?</text>
+        <antwort type="w"> Weiße, glänzende Bergspitze </antwort>
+        <antwort type="f"> Erhabener Thron </antwort>
+        <antwort type="f"> Sitz der Höchsten </antwort>
+        <antwort type="f"> Berg der Ahnen </antwort>
+    </question>  
+
+    <question num="38" qType="MC" level="1"> <text>Wo starb Eberhard im Bart?</text>
+        <antwort type="f"> Auf dem Schlachtfeld gegen die Franzosen </antwort>
+        <antwort type="w"> In Schloss Hohentübingen </antwort> 
+        <antwort type="f"> In seiner Universitätsbibliothek </antwort>
+        <antwort type="f"> Im Reich des keltischen Fürsten </antwort>
+    </question>
+    
+    <question num="39" qType="MC" level="2"> <text> In welchem Kunststil wurde die Sgraffito-Malerei des Rathauses gehalten</text>
+        <antwort type="w"> Neo-Renaissance </antwort>
+        <antwort type="f"> Barock </antwort>
+        <antwort type="f"> Klassizismus </antwort>
+        <antwort type="f"> Biedermeier </antwort>
+    </question>
+    
+    <question num="40" qType="MC" level="1"> <text> Welchen Nobelpreis erhielt Hermann Hesse?</text>
+        <antwort type="f"> Friedensnobelpreis </antwort>
+        <antwort type="w"> Literaturnobelpreis </antwort> 
+        <antwort type="f"> Wirtschaftswissenschaften </antwort>
+        <antwort type="f"> Physiologie </antwort>
+    </question>
+</fragenspiel>

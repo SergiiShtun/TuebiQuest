@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quest>
+	<chapter cNum="2">
+        <geopunkt1><!-- Tor soll von diesem Punkt1 aufgespannt werden, bis zum Punkt2-->
+            <Latitude>48.52147409633242</Latitude>
+            <Longitude>9.05732562444965</Longitude>
+            <Altitude>387.7319708274306</Altitude>
+        </geopunkt1>
+        
+        <geopunkt2><!-- Punkt2-->
+            <Latitude>48.52147149384241</Latitude>
+            <Longitude>9.057338155731783</Longitude>
+            <Altitude>388.2770951595046</Altitude>
+        </geopunkt2>
+        
+        <characters>
+            <character name="ID" tag="tag in chapter"/>
+            <character name="Wächter" tag="W"/>
+            <character name="Eberhard" tag="E"/>
+			<character name="Spielbeschreibung" tag="X"/>
+        </characters>
+<!-- keine Emotionen benötigt-->
+        <dialog>
+            
+            <plainText num="1" cTag="W" emo="0" geo="n">Guten Tag der Herr, wohin des Weges? </plainText>
+            <plainText num="2" cTag="E" emo="0" geo="n">Die magische Karte hat mich hierher geführt. Ich glaube an dieser Stelle muss etwas ganz Besonderes sein. </plainText>
+            <plainText num="3" cTag="W" emo="0" geo="n">Etwas ganz Besonderes? Ja, dann meist du bestimmt das Lustnauer Stadttor. Es ist das wichtigste von den fünf Stadttoren.</plainText>
+	    <plainText num="4" cTag="E" emo="0" geo="n">Ich erinnere mich, dass das Schmiedtor jahrhundertelang das Haupttor war. Warum hat sich das geändert? Oder bin ich mal wieder ganz falsch?</plainText>
+	    <plainText num="5" cTag="W" emo="0" geo="n">Das ist richtig. Aber da dieser Weg zu unserer Schwabenhauptstadt und nach Lustnau führt, wurde es immer wichtiger. Viele Händler kommen hier jeden Tag vorbei. Aber langsam nimmt der Verkehr zu und die Tore werden zu klein. Ich glaube, lange kann das nicht mehr so weitergehen. </plainText>
+	    <plainText num="6" cTag="E" emo="0" geo="n">Ach nach Lustnau! Das muss ich mir genauer ansehen.</plainText>
+	    <plainText num="7" cTag="W" emo="0" geo="n">Um das Tor passieren zu dürfen, musst du mir aber erst noch das Passwort nennen. </plainText>
+	    <plainText num="8" cTag="E" emo="0" geo="n">Passwort?! Ich weiß von keinem Passwort!</plainText>
+	    <plainText num="9" cTag="W" emo="0" geo="n">Dann tut es mir leid, aber ich kann dich nicht durchlassen.</plainText>
+	    <plainText num="10" cTag="E" emo="0" geo="n">So ein Mist...</plainText>
+            
+            
+            
+            <minispiel mId="ID">
+				<!-- Spielregeln auf Pergament --> 
+				<plainText num="11" cTag="X" geo="n">Versuche die Stadtmauer zu erklimmen, indem du von einer Stufe zur nächsten springst. Drücke auf der rechten Seite, um nach rechts zu laufen und umgekehrt. Wenn du springen willst, drücke auf beiden Seiten gleichzeitig. Aber sei auf der Hut und laufe nicht in die Arme der Wächter! Wenn du über sie springt, bekommst du 5 Extra-Punkte, wenn du auf sie springen kannst, erhälst du sogar 10 Extra-Punkte. Versuche die drei Sterne einzusammeln, denn sie können dich auch ohne Passwort durch das Tor bringen, falls du alle Leben verlierst und das Spiel nicht nochmal starten möchtest.</plainText>
+                
+				<gewonnenText>Glückwunsch! Du hast {0} Punkte erreicht.</gewonnenText>
+                <verlorenText>Schade, das hat leider nicht funktioniert. Versuche es doch nochmal!</verlorenText>
+                <!-- Button für "Nochmal spielen" und "Vielleicht später" -->
+                <verlorenText>Schade, das hat leider nicht funktioniert. Aber da du alle Sterne eingesammelt hast, kannst du das Tor auch ohne Passwort passieren, wenn du das Spiel nicht nochmal spielen möchtest. </verlorenText>
+                <!-- Button für "Tor passieren" und "Nochmal spielen" -->
+            </minispiel>
+            
+        </dialog>
+        <!-- wenn das Spiel beendet wurde muss sich die Karte öffnen und dann sagt Eberhard -->
+        <dialog>
+            
+            <plainText num="1" cTag="E" emo="0" geo="n">Geschafft! Den Wächter bin ich los. Oh, was ist das? Die Karte scheint einen neuen Punkt anzugeben. Sieht so aus, als müssten wir als nächstes zum Alten Botanischen Garten. Mal sehen, was uns dort erwartet!</plainText>
+            
+		</dialog>	
+	    
+        
+    </chapter>
+</quest>

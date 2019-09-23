@@ -1,0 +1,181 @@
+<quest>
+    <characters>
+        <character name="Eberhard_Guide" tag="EG"/>        
+        <character name="Hoelderlin" tag="H"/>
+        <character name="Auktorialer_Guide" tag="AG"/>
+    </characters>
+    <Animations>
+        <Animation name="Verzweifelt" tag="0"/>
+        <Animation name="Froh" tag="1"/>
+    </Animations>
+
+    <randomfacts>        
+      <fact>
+            <geopunkt name="Tourist_Information">
+                <Latitude>48.518612</Latitude>
+                <Longitude>9.058112</Longitude>
+                <Altitude>380</Altitude>
+            </geopunkt>
+            <text cTag="AG">Mögen die Spiele beginnen! Starte die Schnitzeljagd, indem du zur
+                Altstadt läufst.</text>
+        </fact>
+        <fact>
+            <geopunkt name="Nach_links_zur_Altstadt">
+                <Latitude>48.519615</Latitude>
+                <Longitude>9.058174</Longitude>
+                <Altitude>380 </Altitude>
+            </geopunkt>
+            <text cTag="AG">Gehe hier nach links über die Straße. Dann hast du die Altstadt
+                erreicht.</text>
+        </fact>
+        <fact>
+            <geopunkt name="Altstadt_Schild">
+                <Latitude>48.519608</Latitude>
+                <Longitude>9.057949</Longitude>
+                <Altitude>376</Altitude>
+            </geopunkt>
+            <text>Fact</text>
+        </fact>
+        <fact>
+            <geopunkt name="links_halten_zur_Bursagasse">
+                <Latitude>48.5198</Latitude>
+                <Longitude>9.056739</Longitude>
+                <Altitude>386</Altitude>
+            </geopunkt>
+            <text cTag="EG">Das scheint von der Bursagasse zu kommen. Hier müssen wir also nach links!</text>
+            <event id="H_Weinen_Sound" type="50%"
+                HREF="https://freesound.org/people/qubodup/sounds/200428/">
+            </event>
+        </fact>
+        <fact>
+            <geopunkt name="nach_links_Treppen_runter">
+                <Latitude>48.51956</Latitude>
+                <Longitude>9.055798</Longitude>
+                <Altitude>381</Altitude>
+            </geopunkt>
+            <text cTag="EG">Das kommt vom Hölderlinturm. Dann müssen wir hier links die Treppen
+                nach unten.</text>
+            <event id="H_Weinen_Sound" type="75%"
+                HREF="https://freesound.org/people/qubodup/sounds/200428/">
+            </event>
+        </fact>
+    </randomfacts>
+    
+    <chapter cNum="1" name="Hölderlinturm">
+        <geopunkt>
+            <Latitude>48.519363</Latitude>
+            <Longitude>9.055865</Longitude>
+            <Altitude>369</Altitude>
+        </geopunkt>
+        <dialog>
+            <plainText num="1" cTag="H" emo="0" geo="j">Ach</plainText>
+            <plainText num="2" cTag="EG" geo="j">Wer bist du denn und was seufzt du so
+                schwer?</plainText>
+            <plainText num="3" cTag="H" emo="0" geo="j">Ich bin Friedrich Hölderlin. Ein Dichter.
+                Und deswegen seufze ich auch so schwer. Ich habe eine Schreibblockade.</plainText>
+            <plainText num="4" cTag="EG" geo="j">Kann man dir helfen?</plainText>
+            <plainText num="5" cTag="H" emo="0" geo="j">Ach. Ich schreibe über die Erinnerung.
+                Kennst du dich in diesem Gebiet aus?</plainText>
+            <plainText num="6" cTag="EG" geo="j">Ich habe selbst Probleme mit der Erinnerung. Ich
+                habe große Teile meines Gedächtnisses verloren.</plainText>
+            <plainText num="7" cTag="H" emo="0" geo="j">Ach, wie schön.</plainText>
+            <plainText num="8" cTag="EG" geo="j">Das ist nicht schön. Ich will mich wieder
+                erinnern.</plainText>
+            <plainText num="9" cTag="H" emo="0" geo="j">Warum?</plainText>
+            <plainText num="10" cTag="EG" geo="j">Warum? Man muss sich doch an die Vergangenheit
+                erinnern, um zu wissen, wo die Zukunft hinführt.</plainText>
+            <plainText num="11" cTag="H" emo="0" geo="j">Ja, das meine ich auch. Die Bewahrung der
+                Erinnerung macht Liebe und ein lebenswertes Leben erst möglich. Aber wenn sie sich
+                auf traumatische Erlebnisse bezieht, wirkt sie auch zerstörerisch. Diese Ambiguität
+                will ich in meiner neusten Elegie festhalten, aber die Worte werden in meinen Kopf
+                nicht konkret. Die Buchstaben vermischen sich. Ich brauche Hilfe.</plainText>
+
+            <minispiel num="12" mId="Wortschatz">
+                <startText cTag="AG">Hilf Hölderlin dabei, seinen
+                    Wortschatz zu sortieren! Dazu musst du alle sinnhaften und korrekt geschriebenen
+                    Worte, die er verzweifelt aus dem Fenster wirft, in der Schatztruhe fangen. Mit
+                    jedem richtig gefangenen Wort erhältst du 5 Punkte. Ein falsches Wort zieht dir
+                    einen Punkt ab.</startText>
+                <gewonnenText num="1">Ach! wo bist du, <hi rend="bold">Liebende</hi>, nun? Sie haben
+                    mein Auge <br/> Mir genommen, mein <hi rend="bold">Herz</hi> hab ich verloren
+                    mit ihr. <br/> Darum irr ich umher, und wohl, wie die <hi rend="bold"
+                        >Schatten</hi>, so muß ich <br/>
+                    <hi rend="bold">Leben</hi> und <hi rend="bold">sinnlos</hi> dünkt lange das
+                    Übrige mir. <br/> Danken möcht ich, aber wofür? verzehret das Letzte <br/>
+                    Selbst die <hi rend="bold">Erinnerung</hi> nicht? nimmt von der Lippe denn nicht
+                    <br/> Bessere Rede mir der Schmerz, und lähmet ein Fluch nicht <br/> Mir die
+                    Sehnen und wirft, wo ich beginne, mich weg?
+                </gewonnenText>
+                <gewonnenText num="2">Herzlichen Glückwunsch. Du hast Hölderlins Panikattacke
+                    beendet, Eberhards Erinnerung auf die Sprünge geholfen und {} Punkte
+                    gesammelt.</gewonnenText>
+            </minispiel>
+
+            <plainText num="13" cTag="H" emo="1" geo="j">Vielen Dank! Jetzt sehe ich wieder klar und
+                kann weiterschreiben. Ich fühle mich so erleichtert!</plainText>
+            <plainText num="14" cTag="EG" geo="j">Und ich erinnere mich wieder. Zumindest etwas.
+                Gibt es da nicht ein Haus, in dem so philosophiert wird, wie hier bei dir? Möchtest
+                du dir das mit mir anschauen, Hölderlin?</plainText>
+            <plainText num="15" cTag="H" emo="0" geo="j">Die Burse? Da gehe ich niemals wieder
+                hin!</plainText>
+        </dialog>
+    </chapter>
+        <chapter cNum="2" name="Hölderlinturm">
+        <geopunkt>
+            <Latitude>48.519363</Latitude>
+            <Longitude>9.055865</Longitude>
+            <Altitude>369</Altitude>
+        </geopunkt>
+        <dialog>
+            <plainText num="1" cTag="H" emo="0" geo="j">Soso</plainText>
+            <plainText num="2" cTag="EG" geo="j">?</plainText>
+            <plainText num="3" cTag="H" emo="0" geo="j">Hölderlin.</plainText>
+            <plainText num="4" cTag="EG" geo="j">Kann man dir helfen?</plainText>
+            <plainText num="5" cTag="H" emo="0" geo="j">Ach. Ich schreibe über die Erinnerung.
+                Kennst du dich in diesem Gebiet aus?</plainText>
+            <plainText num="6" cTag="EG" geo="j">Ich habe selbst Probleme mit der Erinnerung. Ich
+                habe große Teile meines Gedächtnisses verloren.</plainText>
+            <plainText num="7" cTag="H" emo="0" geo="j">Ach, wie schön.</plainText>
+            <plainText num="8" cTag="EG" geo="j">Das ist nicht schön. Ich will mich wieder
+                erinnern.</plainText>
+            <plainText num="9" cTag="H" emo="0" geo="j">Warum?</plainText>
+            <plainText num="10" cTag="EG" geo="j">Warum? Man muss sich doch an die Vergangenheit
+                erinnern, um zu wissen, wo die Zukunft hinführt.</plainText>
+            <plainText num="11" cTag="H" emo="0" geo="j">Ja, das meine ich auch. Die Bewahrung der
+                Erinnerung macht Liebe und ein lebenswertes Leben erst möglich. Aber wenn sie sich
+                auf traumatische Erlebnisse bezieht, wirkt sie auch zerstörerisch. Diese Ambiguität
+                will ich in meiner neusten Elegie festhalten, aber die Worte werden in meinen Kopf
+                nicht konkret. Die Buchstaben vermischen sich. Ich brauche Hilfe.</plainText>
+
+            <minispiel num="12" mId="Bären">
+                <startText cTag="AG">Hilf Hölderlin dabei, seinen
+                    Wortschatz zu sortieren! Dazu musst du alle sinnhaften und korrekt geschriebenen
+                    Worte, die er verzweifelt aus dem Fenster wirft, in der Schatztruhe fangen. Mit
+                    jedem richtig gefangenen Wort erhältst du 5 Punkte. Ein falsches Wort zieht dir
+                    einen Punkt ab.</startText>
+                <gewonnenText num="1">Ach! wo bist du, <hi rend="bold">Liebende</hi>, nun? Sie haben
+                    mein Auge <br/> Mir genommen, mein <hi rend="bold">Herz</hi> hab ich verloren
+                    mit ihr. <br/> Darum irr ich umher, und wohl, wie die <hi rend="bold"
+                        >Schatten</hi>, so muß ich <br/>
+                    <hi rend="bold">Leben</hi> und <hi rend="bold">sinnlos</hi> dünkt lange das
+                    Übrige mir. <br/> Danken möcht ich, aber wofür? verzehret das Letzte <br/>
+                    Selbst die <hi rend="bold">Erinnerung</hi> nicht? nimmt von der Lippe denn nicht
+                    <br/> Bessere Rede mir der Schmerz, und lähmet ein Fluch nicht <br/> Mir die
+                    Sehnen und wirft, wo ich beginne, mich weg?
+                </gewonnenText>
+                <gewonnenText num="2">Herzlichen Glückwunsch. Du hast Hölderlins Panikattacke
+                    beendet, Eberhards Erinnerung auf die Sprünge geholfen und {} Punkte
+                    gesammelt.</gewonnenText>
+            </minispiel>
+
+            <plainText num="13" cTag="H" emo="1" geo="j">Vielen Dank! Jetzt sehe ich wieder klar und
+                kann weiterschreiben. Ich fühle mich so erleichtert!</plainText>
+            <plainText num="14" cTag="EG" geo="j">Und ich erinnere mich wieder. Zumindest etwas.
+                Gibt es da nicht ein Haus, in dem so philosophiert wird, wie hier bei dir? Möchtest
+                du dir das mit mir anschauen, Hölderlin?</plainText>
+            <plainText num="15" cTag="H" emo="0" geo="j">Die Burse? Da gehe ich niemals wieder
+                hin!</plainText>
+        </dialog>
+    </chapter>
+</quest>
+
