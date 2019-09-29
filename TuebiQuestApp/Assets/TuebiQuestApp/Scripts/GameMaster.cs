@@ -27,7 +27,7 @@ public class GameMaster : MonoBehaviour {
         Instance = this;
         if (SelectedLanguage != DefaultLanguage)
             SelectedLanguage = SelectedLanguage == Language.en ? Language.de : Language.en;
-        SetGameState(0);
+       // SetGameState(0);
     }
 
     public void SetGameState(int state)
