@@ -23,7 +23,7 @@ public class Flower : MonoBehaviour {
         maxScale = transform.localScale.x;
         yPosition = transform.position.y;
         transform.localScale = Vector3.one * 0.3f;
-        //SetCurrentRoutine(Grow());
+        SetCurrentRoutine(Grow());
     }
 
     void SetCurrentRoutine(IEnumerator routine)

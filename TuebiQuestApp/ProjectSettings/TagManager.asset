@@ -4,13 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Honey
-  - Meat
   - Rock
-  - Character
-  - Stair
-  - SprechblaseFalsch
   - Sprechblase
+  - SprechblaseFalsch
+  - Meat
+  - Honey
   layers:
   - Default
   - TransparentFX

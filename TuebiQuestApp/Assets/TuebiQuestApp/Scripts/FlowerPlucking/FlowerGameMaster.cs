@@ -69,9 +69,9 @@ public class FlowerGameMaster : MonoBehaviour {
             currentSpawnChance += Time.deltaTime;
         }
         //DebugUIText.text =
-        //    "Location:" + locationScript.GetCurrentLocation() +" \n" +
-        //    "Last Location: " + lastLocation +" \n" +
-        //    "Distance:" + lastLocation.Distance(locationScript.GetCurrentLocation()) +" \n" +
+        //    "Location:" + locationScript.GetCurrentLocation() + " \n" +
+        //    "Last Location: " + lastLocation + " \n" +
+        //    "Distance:" + lastLocation.Distance(locationScript.GetCurrentLocation()) + " \n" +
         //    "Chance: " + currentSpawnChance + currentDistaceSpawnChance;
     }
 
@@ -79,7 +79,7 @@ public class FlowerGameMaster : MonoBehaviour {
     public void PluckFlower(Flower flowerPlucked)
     {
         flowerSpawned = false;
-        lastLocation = locationScript.GetCurrentLocation();
+        //lastLocation = locationScript.GetCurrentLocation();
         currentSpawnChance = -1.0f;
     }
 }
