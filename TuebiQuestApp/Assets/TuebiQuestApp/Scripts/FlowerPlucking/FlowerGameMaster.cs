@@ -37,7 +37,7 @@ public class FlowerGameMaster : MonoBehaviour {
 
     private bool flowerSpawned;
     private double currentSpawnChance;
-    private double currentDistaceSpawnChance;
+    //private double currentDistaceSpawnChance;
 
     private void Start()
     {
@@ -58,7 +58,7 @@ public class FlowerGameMaster : MonoBehaviour {
         }
         else
         {
-            if (Random.Range(30.0f, 100.0f) < currentSpawnChance + currentDistaceSpawnChance)
+            if (Random.Range(30.0f, 100.0f) < currentSpawnChance) //+ currentDistaceSpawnChance
             {
                 flowerSpawned = true;
                 var flower = Instantiate(FlowerInstance, FlowerCamera.transform.position + FlowerCamera.transform.forward * 5, Quaternion.identity);

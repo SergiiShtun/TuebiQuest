@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class healthyhealth : MonoBehaviour {
@@ -57,7 +58,9 @@ public class healthyhealth : MonoBehaviour {
                 heart2.gameObject.SetActive(true);
                 heart3.gameObject.SetActive(true);
                 StartCoroutine(Wait());
-                Application.LoadLevel(Application.loadedLevel);
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
+                //Application.LoadLevel(Application.loadedLevel);
                 break;
         }
     }

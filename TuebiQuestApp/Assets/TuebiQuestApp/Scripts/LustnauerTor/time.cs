@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Threading;
+using UnityEngine.SceneManagement;
+
 public class time : MonoBehaviour
 {
     public int timeLeft = 90; 
@@ -36,6 +38,8 @@ public class time : MonoBehaviour
     {
         countdown.text = "TIMES UP";
         yield return new WaitForSeconds(3);
-        Application.LoadLevel(Application.loadedLevel);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+        //Application.LoadLevel(Application.loadedLevel);
     }
 }

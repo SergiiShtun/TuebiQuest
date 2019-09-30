@@ -20,7 +20,9 @@ public class win : MonoBehaviour {
     {
         timer.text = "WIN WIN";
         yield return new WaitForSeconds(5);
-        Application.LoadLevel(Application.loadedLevel);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+        //Application.LoadLevel(Application.loadedLevel);
     }
 
 }
