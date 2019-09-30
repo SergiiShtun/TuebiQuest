@@ -6,11 +6,11 @@ TagManager:
   tags:
   - Honey
   - Meat
-  - Sprechblase
   - Rock
   - Character
   - Stair
   - SprechblaseFalsch
+  - Sprechblase
   layers:
   - Default
   - TransparentFX

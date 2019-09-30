@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/TuebiQuestApp/Scenes/Minigames.unity
+- path: Assets/TuebiQuestApp/Scenes/BoatsSinking/BoatsSinking.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
