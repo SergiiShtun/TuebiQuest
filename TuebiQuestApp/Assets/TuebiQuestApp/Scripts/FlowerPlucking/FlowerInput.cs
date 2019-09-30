@@ -19,7 +19,7 @@ public class FlowerInput : MonoBehaviour {
         {
             RaycastHit hit;
             //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Ray ray = Camera.current.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.allCameras[0].ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider != null && hit.collider.GetComponent<Flower>() != null)
@@ -30,7 +30,7 @@ public class FlowerInput : MonoBehaviour {
         {
             RaycastHit hit;
             //Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            Ray ray = Camera.current.ScreenPointToRay(Input.GetTouch(0).position);
+            Ray ray = Camera.allCameras[0].ScreenPointToRay(Input.GetTouch(0).position);
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider != null)
