@@ -30,7 +30,7 @@ public class BoatGameMaster : MonoBehaviour {
 
     private bool cameraAvailable;
     private WebCamTexture backCamera;
-    private Texture defaultBackground;
+    //private Texture defaultBackground;
     public RawImage background;
     public AspectRatioFitter fitter;
 
@@ -38,7 +38,7 @@ public class BoatGameMaster : MonoBehaviour {
     {
         Instance = this;
 
-        defaultBackground = background.texture;
+        //defaultBackground = background.texture;
         WebCamDevice[] webCamDevices = WebCamTexture.devices;
 
         if (webCamDevices.Length == 0)
