@@ -64,8 +64,6 @@ public class Eberhardt : MonoBehaviour {
     }
 
 
-
-
     private IEnumerator EndGame()
     {
         //for (int i = 0; i < 100; i++)
