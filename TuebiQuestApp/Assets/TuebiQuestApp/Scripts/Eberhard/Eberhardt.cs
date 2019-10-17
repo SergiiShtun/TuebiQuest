@@ -14,7 +14,8 @@ public class Eberhardt : MonoBehaviour {
     public GameObject EndScreen;
 
 
-    private float speed;
+    public float speed;
+
     private Rigidbody rb;
     private int ebene = 1;
 
@@ -38,7 +39,6 @@ public class Eberhardt : MonoBehaviour {
             speed = -MoveSpeed * EbenenMultiplikator * ebene;
 
         transform.position += Vector3.right * speed * Time.deltaTime;
-
         if (!gameOver && ebene == 10)
         {
             gameOver = true;
@@ -59,7 +59,8 @@ public class Eberhardt : MonoBehaviour {
     public void GoUpEbene()
     {
         ebene++;
-        transform.position += Vector3.up * 0.6f;
+        transform.position += Vector3.up * 1;
+        //transform.position += Vector3.up * 0.6f;
         transform.position += Vector3.forward;
     }
 

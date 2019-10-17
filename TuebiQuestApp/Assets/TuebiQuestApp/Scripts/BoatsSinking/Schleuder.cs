@@ -15,14 +15,41 @@ public class Schleuder : MonoBehaviour {
 
     private SchleuderLine[] sLines;
 
+    public Color c1 = Color.yellow;
+    public Color c2 = Color.red;
+    public int lengthOfLineRenderer = 20;
+
     void Start()
     {
+        LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
+        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.widthMultiplier = 0.2f;
+        //lineRenderer.positionCount = lengthOfLineRenderer;
+
+        // A simple 2 color gradient with a fixed alpha of 1.0f.
+        float alpha = 0.5f;
+        Gradient gradient = new Gradient();
+        gradient.SetKeys(
+            new GradientColorKey[] { new GradientColorKey(c1, 0.0f), new GradientColorKey(c2, 1.0f) },
+            new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
+        );
+        lineRenderer.colorGradient = gradient;
+        //lineRenderer.startColor = Color.red;
+        //lineRenderer.endColor = Color.yellow;
+
         sLines = GetComponentsInChildren<SchleuderLine>();
     }
 
-
+    [System.Obsolete]
     void Update()
     {
+        LineRenderer lineRenderer = GetComponent<LineRenderer>();
+        //var t = Time.time;
+        //for (int i = 0; i < lengthOfLineRenderer; i++)
+        //{
+        //    lineRenderer.SetPosition(i, new Vector3(i * 0.5f, Mathf.Sin(i + t), 0.0f));
+        //    //     print(lineRenderer);
+        //}
         if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             OldMousePosition = Input.mousePosition;
         if (Input.GetMouseButton(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
@@ -31,8 +58,11 @@ public class Schleuder : MonoBehaviour {
 
             ForceVector = Vector3.ClampMagnitude((MousePosition - OldMousePosition) / mouseDistanceFactor, maxForce);
 
-            Debug.DrawLine(transform.position, transform.position - (ForceVector / 100f));
-
+            Debug.DrawLine(transform.position, transform.position - (ForceVector / 100f), Color.green,2,false);
+            var x = transform.position - (ForceVector / 100f);
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, x);
+            print("tp: " + transform.position + "2tp: " + x);
             foreach (SchleuderLine sl in sLines)
                 sl.SetTarget(Vector3.back * ForceVector.magnitude / 100f);
         }
@@ -42,10 +72,13 @@ public class Schleuder : MonoBehaviour {
             Rigidbody rockRb = Instantiate(Rock, transform.position, transform.rotation).GetComponent<Rigidbody>();
             ForceVector = -ForceVector;
             ForceVector.z = ForceVector.y;
-            //print(ForceVector);
+            print(ForceVector);
             rockRb.AddForce(ForceVector);
-            foreach (SchleuderLine sl in sLines)
+            foreach (SchleuderLine sl in sLines) { 
                 sl.SetTarget(Vector3.zero);
+            }
+            lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
+            lineRenderer.SetPosition(1, new Vector3(0,0,0));
         }
     }
 }
