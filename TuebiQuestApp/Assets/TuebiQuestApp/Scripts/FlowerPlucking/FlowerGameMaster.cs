@@ -68,11 +68,11 @@ public class FlowerGameMaster : MonoBehaviour {
 
             currentSpawnChance += Time.deltaTime;
         }
-        //DebugUIText.text =
-        //    "Location:" + locationScript.GetCurrentLocation() + " \n" +
-        //    "Last Location: " + lastLocation + " \n" +
-        //    "Distance:" + lastLocation.Distance(locationScript.GetCurrentLocation()) + " \n" +
-        //    "Chance: " + currentSpawnChance + currentDistaceSpawnChance;
+        DebugUIText.text =
+            "Location:" + " \n" +
+            "Last Location: " + lastLocation + " \n" +
+            "Distance:" +  " \n" +
+            "Chance: " + currentSpawnChance;
     }
 
 

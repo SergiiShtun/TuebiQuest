@@ -24,7 +24,7 @@ public class IntroManager : MonoBehaviour
     void Start()
     {
         gm = GlobalGameManager.Instance;
-        GameObject.Find("StartGame").GetComponent<Button>().onClick.AddListener(delegate { gm.LoadScene("Game"); });
+        GameObject.Find("StartGame").GetComponent<Button>().onClick.AddListener(delegate { gm.LoadScene("Minigames"); });
         //HelpWindow.GetComponentInChildren<Button>().onClick.AddListener(delegate { ToggleHelpWindow(); });
         //GameObject.Find("Help").GetComponent<Button>().onClick.AddListener(delegate { ToggleHelpWindow(); });
         GameObject.Find("MiniGames").GetComponent<Button>().onClick.AddListener(delegate { gm.LoadScene("Minigames"); });
