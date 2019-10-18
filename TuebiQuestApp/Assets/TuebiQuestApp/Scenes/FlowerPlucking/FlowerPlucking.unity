@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5813b2bfa088f1041b7ae53f21980db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugUICanvas: {fileID: 67130682}
+  DebugUIText: {fileID: 67130682}
   FlowerSprites: []
   FlowerInstance: {fileID: 1511241335122762, guid: 0ffbd88003c2c6c4da3ab4ab2c38d1e3,
     type: 3}
