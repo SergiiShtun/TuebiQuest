@@ -17,16 +17,15 @@ public class Schleuder : MonoBehaviour {
 
     public Color c1 = Color.yellow;
     public Color c2 = Color.red;
-    public int lengthOfLineRenderer = 20;
+    public float percentHead = 0.4f;
 
     void Start()
     {
         LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         lineRenderer.widthMultiplier = 0.2f;
-        //lineRenderer.positionCount = lengthOfLineRenderer;
 
-        // A simple 2 color gradient with a fixed alpha of 1.0f.
+        // A simple 2 color gradient with a fixed alpha of 0.5f.
         float alpha = 0.5f;
         Gradient gradient = new Gradient();
         gradient.SetKeys(
@@ -34,8 +33,6 @@ public class Schleuder : MonoBehaviour {
             new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
         );
         lineRenderer.colorGradient = gradient;
-        //lineRenderer.startColor = Color.red;
-        //lineRenderer.endColor = Color.yellow;
 
         sLines = GetComponentsInChildren<SchleuderLine>();
     }
@@ -44,12 +41,6 @@ public class Schleuder : MonoBehaviour {
     void Update()
     {
         LineRenderer lineRenderer = GetComponent<LineRenderer>();
-        //var t = Time.time;
-        //for (int i = 0; i < lengthOfLineRenderer; i++)
-        //{
-        //    lineRenderer.SetPosition(i, new Vector3(i * 0.5f, Mathf.Sin(i + t), 0.0f));
-        //    //     print(lineRenderer);
-        //}
         if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             OldMousePosition = Input.mousePosition;
         if (Input.GetMouseButton(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
@@ -60,6 +51,11 @@ public class Schleuder : MonoBehaviour {
 
             Debug.DrawLine(transform.position, transform.position - (ForceVector / 100f), Color.green,2,false);
             var x = transform.position - (ForceVector / 100f);
+            lineRenderer.widthCurve = new AnimationCurve(
+            new Keyframe(0, 3f)
+            , new Keyframe(0.999f - percentHead, 3f)  // neck of arrow
+            , new Keyframe(1 - percentHead, 1f)  // max width of arrow head
+            , new Keyframe(1, 0f)); // tip of arrow
             lineRenderer.SetPosition(0, transform.position);
             lineRenderer.SetPosition(1, x);
             print("tp: " + transform.position + "2tp: " + x);
@@ -77,6 +73,11 @@ public class Schleuder : MonoBehaviour {
             foreach (SchleuderLine sl in sLines) { 
                 sl.SetTarget(Vector3.zero);
             }
+            lineRenderer.widthCurve = new AnimationCurve(
+             new Keyframe(0, 3f)
+             , new Keyframe(0.999f - percentHead, 3f)  // neck of arrow
+             , new Keyframe(1 - percentHead, 1f)  // max width of arrow head
+             , new Keyframe(1, 0f));
             lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
             lineRenderer.SetPosition(1, new Vector3(0,0,0));
         }

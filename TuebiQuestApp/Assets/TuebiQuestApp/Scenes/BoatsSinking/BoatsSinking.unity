@@ -1671,3 +1671,6 @@ MonoBehaviour:
   Rock: {fileID: 1724322127947820, guid: c83a22f83d6321f419ec2d95f9f6572c, type: 3}
   mouseDistanceFactor: 1.5
   maxForce: 750
+  c1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  c2: {r: 1, g: 0, b: 0, a: 1}
+  percentHead: 0.4
