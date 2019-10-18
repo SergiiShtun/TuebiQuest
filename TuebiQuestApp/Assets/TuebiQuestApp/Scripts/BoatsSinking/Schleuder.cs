@@ -49,7 +49,7 @@ public class Schleuder : MonoBehaviour {
 
             ForceVector = Vector3.ClampMagnitude((MousePosition - OldMousePosition) / mouseDistanceFactor, maxForce);
 
-            Debug.DrawLine(transform.position, transform.position - (ForceVector / 100f), Color.green,2,false);
+            //Debug.DrawLine(transform.position, transform.position - (ForceVector / 100f), Color.green,2,false);
             var x = transform.position - (ForceVector / 100f);
             lineRenderer.widthCurve = new AnimationCurve(
             new Keyframe(0, 3f)
