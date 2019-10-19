@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BearSchleuder : MonoBehaviour {
 
@@ -32,6 +30,8 @@ public class BearSchleuder : MonoBehaviour {
             new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
         );
         lineRenderer.colorGradient = gradient;
+        lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
+        lineRenderer.SetPosition(1, new Vector3(0, 0, 0));
     }
 
     void Update()
@@ -46,7 +46,6 @@ public class BearSchleuder : MonoBehaviour {
 
             ForceVector = Vector3.ClampMagnitude((MousePosition - OldMousePosition) / mouseDistanceFactor, maxForce);
 
-            //Debug.DrawLine(transform.position, transform.position - (ForceVector / 100f));
             var x = transform.position - (ForceVector / 100f);
             lineRenderer.widthCurve = new AnimationCurve(
             new Keyframe(0, 3f)
@@ -63,14 +62,13 @@ public class BearSchleuder : MonoBehaviour {
             Rigidbody throwRb = Instantiate(Random.Range(0, 4) > 0 ? Meat : Honey, transform.position, transform.rotation).GetComponent<Rigidbody>();
             ForceVector = -ForceVector;
             ForceVector.z = ForceVector.y;
-            //print(ForceVector);
             throwRb.AddForce(ForceVector);
 
             lineRenderer.widthCurve = new AnimationCurve(
              new Keyframe(0, 3f)
              , new Keyframe(0.999f - percentHead, 3f)  // neck of arrow
              , new Keyframe(1 - percentHead, 1f)  // max width of arrow head
-             , new Keyframe(1, 0f));
+             , new Keyframe(1, 0f)); // tip of arrow
             lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
             lineRenderer.SetPosition(1, new Vector3(0, 0, 0));
         }

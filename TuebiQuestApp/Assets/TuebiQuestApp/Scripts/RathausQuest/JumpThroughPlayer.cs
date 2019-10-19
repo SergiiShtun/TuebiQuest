@@ -28,7 +28,6 @@ public class JumpThroughPlayer : MonoBehaviour {
         }
 	}
 
-
     bool RaycastGround()
     {
         return Physics.Raycast(transform.position + Vector3.down * col.bounds.size.y / 2f, Vector3.down, 0.1f, 1 << LayerMask.NameToLayer("DoodleFloor"));

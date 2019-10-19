@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DoodleCamera : MonoBehaviour {
-
-
-
     public Transform Target;
     public GameObject Plattform;
     public float MinSpawnDistance;
@@ -14,6 +11,10 @@ public class DoodleCamera : MonoBehaviour {
     private float camYPosition;
     private float lastYSpawn;
     private float nextSpawnDistance;
+
+    float minSpawn = -3.2f;
+    float maxSpawn = 3.2f;
+    float stepSize = 0.5f;
 
     private void Start()
     {
@@ -30,7 +31,13 @@ public class DoodleCamera : MonoBehaviour {
         {
             nextSpawnDistance = Random.Range(MinSpawnDistance, MaxSpawnDistance);
             lastYSpawn = camYPosition;
-            Instantiate(Plattform, transform.position + Vector3.forward * 10 + Vector3.up * 7 + Vector3.right * Random.Range(-3.2f, 3.2f), Quaternion.identity);
+            Plattform.transform.Rotate(new Vector3(0, -175f, 0));
+
+            float randomHealth = Random.Range(minSpawn, maxSpawn);
+            float numSteps = Mathf.Floor(randomHealth / stepSize);
+            float adjustedValue = numSteps * stepSize;
+
+            Instantiate(Plattform, transform.position + Vector3.forward * 10 + Vector3.up * 7 + Vector3.right * adjustedValue, Quaternion.identity);
         }
 
         transform.position = new Vector3(transform.position.x, camYPosition, transform.position.z);
