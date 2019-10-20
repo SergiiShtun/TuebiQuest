@@ -12,9 +12,11 @@ public class DoodleCamera : MonoBehaviour {
     private float lastYSpawn;
     private float nextSpawnDistance;
 
-    float minSpawn = -3.2f;
-    float maxSpawn = 3.2f;
-    float stepSize = 0.5f;
+    public float minSpawn = -3.2f;
+    public float maxSpawn = 3.2f;
+    public float stepSize = 0.5f;
+    float adjustedValue;
+    float prevValue = 1f;
 
     private void Start()
     {
@@ -35,9 +37,18 @@ public class DoodleCamera : MonoBehaviour {
 
             float randomHealth = Random.Range(minSpawn, maxSpawn);
             float numSteps = Mathf.Floor(randomHealth / stepSize);
-            float adjustedValue = numSteps * stepSize;
+            adjustedValue = numSteps * stepSize;
+            if (prevValue < 0 && adjustedValue < 0)
+                adjustedValue *= -1;
+            else if (prevValue > 0 && adjustedValue > 0)
+                adjustedValue *= -1;
+            prevValue = adjustedValue;
 
+            print("av" + adjustedValue);
+            var a = transform.position + Vector3.forward * 10 + Vector3.up * 7 + Vector3.right * adjustedValue;
+            print("a " + a);
             Instantiate(Plattform, transform.position + Vector3.forward * 10 + Vector3.up * 7 + Vector3.right * adjustedValue, Quaternion.identity);
+
         }
 
         transform.position = new Vector3(transform.position.x, camYPosition, transform.position.z);
