@@ -53,14 +53,6 @@ public class FrageMaster : MonoBehaviour
     Color32 greenColor = new Color32(34, 139, 34, 255);
     Color32 redColor = new Color32(255, 0, 0, 255);
 
-    public static event Action HandlePulled = delegate { };
-    [SerializeField]
-    private Row[] rows;
-
-    [SerializeField]
-    private Transform Handle;
-
-
     /// <summary>
     /// Progression overall in the game
     /// </summary>
@@ -139,19 +131,9 @@ public class FrageMaster : MonoBehaviour
 
         Debug.Log("quest " + currentFrage.Question);
         GameCanvas.GetChild(0).GetComponentInChildren<Text>().text = currentFrage.Question;
-        QuestionImage.GetComponent<Image>().color = Color.yellow;
+        //QuestionImage.GetComponent<Image>().color = Color.yellow;
 
         List<int> freeNums = new List<int>() { 1, 2, 3, 4 };
-        for (int i = 0; i < 15; i += 5)
-        {
-            Handle.Rotate(0f, 0f, i);
-        }
-        HandlePulled();
-
-        for (int i = 0; i < 15; i += 5)
-        {
-            Handle.Rotate(0f, 0f, -i);
-        }
         for (int i = 0; i < currentFrage.RightNumberOfAnswers; i++)
         {
             int rightIndex = currentFrage.RightNums[i] + 1;
@@ -192,7 +174,8 @@ public class FrageMaster : MonoBehaviour
         {
             GameCanvas.GetChild(ind).GetComponent<Image>().color = redColor;
             AnswerFeedbackText.text = "Ne, du.";
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(loadNext());
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             PlayerPrefs.SetString("MGameState", "lost");
         }
         PlayerPrefs.SetString("Internet", "Inactive");
@@ -299,33 +282,7 @@ public class FrageMaster : MonoBehaviour
 
     IEnumerator loadNext()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(3);
     }
-
-    private void OnMouseDown()
-    {
-        Debug.Log("Mousedown");
-        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped)
-        {
-            StartCoroutine("PullHandle");
-        }
-    }
-
-    private IEnumerator PullHandle()
-    {
-        for (int i = 0; i < 15; i += 5)
-        {
-            Handle.Rotate(0f, 0f, i);
-            yield return new WaitForSeconds(0.1f);
-        }
-
-        HandlePulled();
-
-        for (int i = 0; i < 15; i += 5)
-        {
-            Handle.Rotate(0f, 0f, -i);
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
-
 }
