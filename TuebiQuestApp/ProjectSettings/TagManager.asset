@@ -52,3 +52,6 @@ TagManager:
   - name: UI
     uniqueID: 3031741951
     locked: 0
+  - name: slotMachine
+    uniqueID: 3455081001
+    locked: 0

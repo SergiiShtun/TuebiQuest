@@ -9,6 +9,8 @@ public class Answer : MonoBehaviour, IPointerClickHandler {
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        FrageMaster.Instance.Answered(correct);
+        string index = eventData.pointerCurrentRaycast.gameObject.name.Substring(
+            eventData.pointerCurrentRaycast.gameObject.name.IndexOf('%') + 1);
+        FrageMaster.Instance.Answered(correct, index);
     }
 }
