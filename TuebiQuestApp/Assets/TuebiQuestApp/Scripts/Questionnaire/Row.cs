@@ -39,28 +39,6 @@ public class Row : MonoBehaviour
             yield return new WaitForSeconds(timeInterval);
         }
 
-        // randomValue = Random.Range(-307, 309);
-        //var randList = new List<int> { -307, -219, -131, -43, 45, 133, 221, 309};
-        //var random = new System.Random();
-        //int index = random.Next(randList.Count);
-        //randomValue = randList[index];
-        //Debug.Log("rand: " + randomValue);
-
-
-        //for (int i = 0; i < Mathf.Abs(randomValue); i++)
-        //{
-        //    if (transform.position.y < -307)
-        //        transform.position = new Vector2(transform.position.x, 131);
-
-        //    if(transform.position.y > 309)
-        //        transform.position = new Vector2(transform.position.x, 131);
-
-        //    transform.position = new Vector2(transform.position.x, transform.position.y - 88);
-
-        //        timeInterval = 0.02f;
-
-        //    yield return new WaitForSeconds(timeInterval);
-        //}
         randomValue = UnityEngine.Random.Range(60, 80);
         Debug.Log("rand: " + randomValue);
 
