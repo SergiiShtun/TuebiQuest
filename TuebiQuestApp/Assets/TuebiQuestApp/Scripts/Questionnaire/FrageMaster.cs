@@ -241,7 +241,9 @@ public class FrageMaster : MonoBehaviour
 
         foreach (XmlNode questionNode in xmlDocument.GetElementsByTagName("question"))
         {
-            string question = questionNode.InnerText;
+            //string question = questionNode.InnerText;
+            string question = questionNode.FirstChild.InnerText;// .GetElementsByTagName("text");
+            //Debug.Log("xml: " + questionTest);
             int tier = int.Parse(questionNode.Attributes["level"].Value) - 1;
             List<string> correctAnswer = new List<string>();
             List<string> falseAnswers = new List<string>();
