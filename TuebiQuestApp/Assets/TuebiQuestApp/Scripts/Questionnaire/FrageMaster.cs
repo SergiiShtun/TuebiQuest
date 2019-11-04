@@ -51,6 +51,11 @@ public class FrageMaster : MonoBehaviour
     public int currentAnswerIndex;
     Color32 greenColor = new Color32(34, 139, 34, 255);
     Color32 redColor = new Color32(255, 0, 0, 255);
+    public GameObject slot;
+    [SerializeField]
+    private Row[] rows;
+    private bool resultsChecked;
+    private int hint;
 
     /// <summary>
     /// Progression overall in the game
@@ -78,6 +83,7 @@ public class FrageMaster : MonoBehaviour
 
     void Start()
     {
+        //slot.SetActive(false);
         Instance = this;
         timer = MaxTime;
 
@@ -111,8 +117,37 @@ public class FrageMaster : MonoBehaviour
         
         timer -= Time.deltaTime;
         TimerText.text = (timer).ToString().Split('.')[0];
+
+        if (!rows[0].rowStopped || !rows[1].rowStopped || !rows[2].rowStopped)
+        {
+            resultsChecked = false;
+        }
+
+        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped && !resultsChecked)
+        {
+            CheckResults();
+        }
+        //if (resultsChecked)
+        //{
+        //    StartCoroutine(waitNext());
+        //}
     }
 
+    private void CheckResults()
+    {
+        if (rows[0].stoppedSlot == rows[1].stoppedSlot && rows[1].stoppedSlot == rows[2].stoppedSlot)
+            hint = 3;
+        else if (rows[0].stoppedSlot == rows[1].stoppedSlot || rows[1].stoppedSlot == rows[2].stoppedSlot)
+            hint = 2;
+        else if (rows[0].stoppedSlot == rows[2].stoppedSlot)
+            hint = 1;
+        else
+            hint = 0;
+
+        Debug.Log("Hint: " + hint);
+        resultsChecked = true;
+        StartCoroutine(waitNext());
+    }
 
     void NewQuestion()
     {
@@ -128,9 +163,8 @@ public class FrageMaster : MonoBehaviour
 
         FrageUICanvas.GetChild(0).GetComponentInChildren<Text>().text = currentFrage.Question;
 
-        Debug.Log("quest " + currentFrage.Question);
         GameCanvas.GetChild(0).GetComponentInChildren<Text>().text = currentFrage.Question;
-        //QuestionImage.GetComponent<Image>().color = Color.yellow;
+        Debug.Log("color: " + QuestionImage.GetComponent<Image>().color);
 
         List<int> freeNums = new List<int>() { 1, 2, 3, 4 };
         for (int i = 0; i < currentFrage.RightNumberOfAnswers; i++)
@@ -166,7 +200,7 @@ public class FrageMaster : MonoBehaviour
             tierAsked[currentTier].Add(currentQuestionIndex); 
             currentLevel++;
             currentTier = currentLevel / 5;
-            GameCanvas.GetChild(ind).GetComponent<Image>().color = greenColor;
+            //GameCanvas.GetChild(ind).GetComponent<Image>().color = greenColor;
             AnswerFeedbackText.text = "Richtig!\nFrage " + (currentLevel + 1) + "\nLevel " + (currentTier + 1);
         }
         else
@@ -283,7 +317,13 @@ public class FrageMaster : MonoBehaviour
 
     IEnumerator loadNext()
     {
+        yield return new WaitForSeconds(10.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        yield return new WaitForSeconds(3);
+    }
+    IEnumerator waitNext()
+    {
+        slot.SetActive(true);
+        yield return new WaitForSeconds(10.0f);
+        slot.SetActive(false);
     }
 }

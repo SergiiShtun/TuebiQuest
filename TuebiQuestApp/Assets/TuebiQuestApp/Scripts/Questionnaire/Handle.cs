@@ -13,11 +13,15 @@ public class Handle : MonoBehaviour, IPointerDownHandler
     [SerializeField]
     private Transform HandleObject;
 
+    public GameObject slot;
+
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDown");
+        slot.SetActive(true);
         if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped)
         {
+            rows[0].vis = true;
             StartCoroutine("PullHandle");
         }
     }
