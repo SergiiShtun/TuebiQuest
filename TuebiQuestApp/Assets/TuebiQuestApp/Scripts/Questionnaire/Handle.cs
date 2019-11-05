@@ -17,13 +17,14 @@ public class Handle : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPointerDown");
-        slot.SetActive(true);
-        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped)
+        if(FrageMaster.rightAnswers > 0)
         {
-            rows[0].vis = true;
-            StartCoroutine("PullHandle");
-        }
+            if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped)
+            {
+                StartCoroutine("PullHandle");
+                FrageMaster.rightAnswers -= 1;
+            }
+        }    
     }
     private IEnumerator PullHandle()
     {
@@ -32,12 +33,23 @@ public class Handle : MonoBehaviour, IPointerDownHandler
             HandleObject.Rotate(0f, 0f, i);
             yield return new WaitForSeconds(0.1f);
         }
-
-        HandlePulled();
+        for (int i = 0; i < 15; i += 5)
+        {
+            HandleObject.Rotate(0f, 0f, -i);
+            yield return new WaitForSeconds(0.1f);
+        }
 
         for (int i = 0; i < 15; i += 5)
         {
             HandleObject.Rotate(0f, 0f, -i);
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        HandlePulled();
+        slot.SetActive(true);
+        for (int i = 0; i < 15; i += 5)
+        {
+            HandleObject.Rotate(0f, 0f, i);
             yield return new WaitForSeconds(0.1f);
         }
     }

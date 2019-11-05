@@ -49,13 +49,18 @@ public class FrageMaster : MonoBehaviour
     public Transform GameCanvas;
     public Image QuestionImage;
     public int currentAnswerIndex;
-    Color32 greenColor = new Color32(34, 139, 34, 255);
-    Color32 redColor = new Color32(255, 0, 0, 255);
+    Color greenColor = new Color(0, 1, 0, 1.0f);
+    Color redColor = new Color(1, 0, 0, 1.0f);
+    Color defaultColor;
     public GameObject slot;
     [SerializeField]
+    private Text hintText;
+    [SerializeField]
     private Row[] rows;
+    public Text levelText;
     private bool resultsChecked;
-    private int hint;
+    private int hint = 0;
+    public static int rightAnswers;
 
     /// <summary>
     /// Progression overall in the game
@@ -83,9 +88,10 @@ public class FrageMaster : MonoBehaviour
 
     void Start()
     {
-        //slot.SetActive(false);
+        slot.SetActive(false);
         Instance = this;
         timer = MaxTime;
+        defaultColor = GameCanvas.GetChild(1).GetChild(0).GetComponent<Image>().color;
 
         ReadXmlQuestion();
 
@@ -117,13 +123,15 @@ public class FrageMaster : MonoBehaviour
         
         timer -= Time.deltaTime;
         TimerText.text = (timer).ToString().Split('.')[0];
+        levelText.text = currentLevel.ToString();
+        hintText.text = "Hints:\n" + rightAnswers;
 
         if (!rows[0].rowStopped || !rows[1].rowStopped || !rows[2].rowStopped)
         {
             resultsChecked = false;
         }
 
-        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped && !resultsChecked)
+        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped && !resultsChecked && rows[0].stoppedSlot != "") 
         {
             CheckResults();
         }
@@ -135,18 +143,40 @@ public class FrageMaster : MonoBehaviour
 
     private void CheckResults()
     {
-        if (rows[0].stoppedSlot == rows[1].stoppedSlot && rows[1].stoppedSlot == rows[2].stoppedSlot)
+        if (rows[0].stoppedSlot == rows[1].stoppedSlot &&
+            rows[1].stoppedSlot == rows[2].stoppedSlot && rows[0].stoppedSlot != "")
+        {
             hint = 3;
-        else if (rows[0].stoppedSlot == rows[1].stoppedSlot || rows[1].stoppedSlot == rows[2].stoppedSlot)
+        }
+            
+        else if (rows[0].stoppedSlot == rows[1].stoppedSlot || rows[1].stoppedSlot == rows[2].stoppedSlot && rows[0].stoppedSlot != "")
             hint = 2;
-        else if (rows[0].stoppedSlot == rows[2].stoppedSlot)
+        else if (rows[0].stoppedSlot == rows[2].stoppedSlot && rows[0].stoppedSlot != "")
             hint = 1;
         else
             hint = 0;
 
-        Debug.Log("Hint: " + hint);
+        removeQuestions(hint);
+        //Debug.Log("Hint: " + hint);
+        hintText.text = "Hints:\n" + rightAnswers;
         resultsChecked = true;
         StartCoroutine(waitNext());
+    }
+    private void removeQuestions(int numberOfHints)
+    {
+        List<int> numberList = new List<int> { 1, 2, 3, 4 };
+        int toRemove = currentFrage.RightNums[0] + 1;
+        
+        numberList.Remove(toRemove);
+        for (int i = 0; i < numberOfHints; i++)
+        {
+            //var random = new System.Random();
+            //int index = random.Next(numberList.Count);
+            int index = numberList[2-i];
+            var txt = GameCanvas.GetChild(index).GetComponentInChildren<Text>();
+            txt.enabled = false;
+            numberList.Remove(index);
+        }
     }
 
     void NewQuestion()
@@ -164,7 +194,6 @@ public class FrageMaster : MonoBehaviour
         FrageUICanvas.GetChild(0).GetComponentInChildren<Text>().text = currentFrage.Question;
 
         GameCanvas.GetChild(0).GetComponentInChildren<Text>().text = currentFrage.Question;
-        Debug.Log("color: " + QuestionImage.GetComponent<Image>().color);
 
         List<int> freeNums = new List<int>() { 1, 2, 3, 4 };
         for (int i = 0; i < currentFrage.RightNumberOfAnswers; i++)
@@ -173,8 +202,10 @@ public class FrageMaster : MonoBehaviour
             FrageUICanvas.GetChild(rightIndex).GetComponentInChildren<Text>().text = currentFrage.RightAnswer[i];
             FrageUICanvas.GetChild(rightIndex).GetComponent<Answer>().correct = true;
 
+            GameCanvas.GetChild(rightIndex).GetComponentInChildren<Text>().enabled = true;
             GameCanvas.GetChild(rightIndex).GetComponentInChildren<Text>().text = currentFrage.RightAnswer[i];
             GameCanvas.GetChild(rightIndex).GetComponent<Answer>().correct = true;
+            GameCanvas.GetChild(rightIndex).GetChild(0).GetComponent<Image>().color = defaultColor;
             currentAnswerIndex = rightIndex;
 
             freeNums.Remove(rightIndex);
@@ -185,8 +216,10 @@ public class FrageMaster : MonoBehaviour
             FrageUICanvas.GetChild(freeNums[i]).GetComponentInChildren<Text>().text = currentFrage.FalseAnswer[i];
             FrageUICanvas.GetChild(freeNums[i]).GetComponent<Answer>().correct = false;
 
+            GameCanvas.GetChild(freeNums[i]).GetComponentInChildren<Text>().enabled = true;
             GameCanvas.GetChild(freeNums[i]).GetComponentInChildren<Text>().text = currentFrage.FalseAnswer[i];
             GameCanvas.GetChild(freeNums[i]).GetComponent<Answer>().correct = false;
+            GameCanvas.GetChild(freeNums[i]).GetChild(0).GetComponent<Image>().color = defaultColor;
 
             wrongAnswers.Add(freeNums[i]);
         }
@@ -200,60 +233,33 @@ public class FrageMaster : MonoBehaviour
             tierAsked[currentTier].Add(currentQuestionIndex); 
             currentLevel++;
             currentTier = currentLevel / 5;
-            //GameCanvas.GetChild(ind).GetComponent<Image>().color = greenColor;
+            var img = GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>();
+            img.color = greenColor;
+            Debug.Log(GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>().color);
             AnswerFeedbackText.text = "Richtig!\nFrage " + (currentLevel + 1) + "\nLevel " + (currentTier + 1);
+            rightAnswers += 1;
+            hintText.text = "Hints:\n" + rightAnswers;
+            StartCoroutine(correctLoadNext());
         }
         else
         {
-            GameCanvas.GetChild(ind).GetComponent<Image>().color = redColor;
+            var img = GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>();
+            img.color = redColor;
+            Debug.Log(GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>().color);
             AnswerFeedbackText.text = "Ne, du.";
             StartCoroutine(loadNext());
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             PlayerPrefs.SetString("MGameState", "lost");
         }
-        PlayerPrefs.SetString("Internet", "Inactive");
-        timer = MaxTime;
-        if(currentLevel <= 15)
-            NewQuestion();
-        else
-        {
-            PlayerPrefs.SetString("MGameState", "won");
-            SceneManager.LoadScene("Intro");
-        }
-    }
-
-    public void FiftyFifty()
-    {
-        if (fiftyFifty)
-            return;
-        for(int i = 0; i < 2; i++)
-        {
-            int rndWrongAnswer = wrongAnswers[Random.Range(0, wrongAnswers.Count)];
-            FrageUICanvas.GetChild(rndWrongAnswer).gameObject.SetActive(false);
-            wrongAnswers.Remove(rndWrongAnswer);
-        }
-        fiftyFifty = true;
-    }
-
-    public void Internet()
-    {
-        if (internet)
-            return;
-        internet = true;
-        PlayerPrefs.SetString("Internet", "Active");
-        PlayerPrefs.SetInt("Tier", currentTier);
-        PlayerPrefs.SetInt("Level", currentLevel);
-        PlayerPrefs.SetInt("Points", currentPoints);
-        PlayerPrefs.SetInt("fifty", fiftyFifty ? 1 : 0);
-        PlayerPrefs.SetInt("internet", internet ? 1 : 0);
-        PlayerPrefs.SetInt("trivia", trivia ? 1 : 0);
-    }
-
-    public void Trivia()
-    {
-        if (trivia)
-            return;
-        trivia = true;
+        //PlayerPrefs.SetString("Internet", "Inactive");
+        //timer = MaxTime;
+        //if(currentLevel <= 15)
+        //    NewQuestion();
+        //else
+        //{
+        //    PlayerPrefs.SetString("MGameState", "won");
+        //    SceneManager.LoadScene("Intro");
+        //}
     }
 
     void ReadXmlQuestion()
@@ -314,16 +320,38 @@ public class FrageMaster : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+    IEnumerator correctLoadNext()
+    {
+        yield return new WaitForSeconds(3.0f);
+        PlayerPrefs.SetString("Internet", "Inactive");
+        timer = MaxTime;
+        if (currentLevel <= 15)
+            NewQuestion();
+        else
+        {
+            PlayerPrefs.SetString("MGameState", "won");
+            SceneManager.LoadScene("Intro");
+        }
+    }
 
     IEnumerator loadNext()
     {
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(3.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetString("Internet", "Inactive");
+        timer = MaxTime;
+        if (currentLevel <= 15)
+            NewQuestion();
+        else
+        {
+            PlayerPrefs.SetString("MGameState", "won");
+            SceneManager.LoadScene("Intro");
+        }
     }
+
     IEnumerator waitNext()
     {
-        slot.SetActive(true);
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(3.0f);
         slot.SetActive(false);
     }
 }
