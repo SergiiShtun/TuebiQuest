@@ -58,6 +58,7 @@ public class FrageMaster : MonoBehaviour
     [SerializeField]
     private Row[] rows;
     public Text levelText;
+    public Text questionMarkText;
     private bool resultsChecked;
     private int hint = 0;
     public static int rightAnswers;
@@ -123,9 +124,10 @@ public class FrageMaster : MonoBehaviour
         
         timer -= Time.deltaTime;
         TimerText.text = (timer).ToString().Split('.')[0];
-        levelText.text = currentLevel.ToString();
+        questionMarkText.text = currentLevel.ToString();
+        levelText.text = (currentTier + 1).ToString();
         hintText.text = "Hints:\n" + rightAnswers;
-
+        Debug.Log("tier: " + currentTier);
         if (!rows[0].rowStopped || !rows[1].rowStopped || !rows[2].rowStopped)
         {
             resultsChecked = false;
@@ -245,7 +247,6 @@ public class FrageMaster : MonoBehaviour
         {
             var img = GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>();
             img.color = redColor;
-            Debug.Log(GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>().color);
             AnswerFeedbackText.text = "Ne, du.";
             StartCoroutine(loadNext());
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
