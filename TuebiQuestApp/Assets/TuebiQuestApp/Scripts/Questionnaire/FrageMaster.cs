@@ -58,7 +58,6 @@ public class FrageMaster : MonoBehaviour
     [SerializeField]
     private Row[] rows;
     public Text levelText;
-    public Text questionMarkText;
     private bool resultsChecked;
     private int hint = 0;
     public static int rightAnswers;
@@ -82,9 +81,6 @@ public class FrageMaster : MonoBehaviour
     private Frage currentFrage;
     private bool gameOver;
 
-    private bool fiftyFifty;
-    private bool trivia;
-    private bool internet;
     List<int> wrongAnswers;
 
     void Start()
@@ -119,13 +115,13 @@ public class FrageMaster : MonoBehaviour
             AnswerFeedbackText.text = "Zu lange.";
             PlayerPrefs.SetString("MGameState", "lost");
             PlayerPrefs.SetString("Internet", "Inactive");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            currentLevel -= 2;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
         timer -= Time.deltaTime;
         TimerText.text = (timer).ToString().Split('.')[0];
-        questionMarkText.text = currentLevel.ToString();
-        levelText.text = (currentTier + 1).ToString();
+        levelText.text = (currentTier + 1).ToString() + "/" + currentLevel.ToString();
         hintText.text = "Hints:\n" + rightAnswers;
         Debug.Log("tier: " + currentTier);
         if (!rows[0].rowStopped || !rows[1].rowStopped || !rows[2].rowStopped)
@@ -137,10 +133,6 @@ public class FrageMaster : MonoBehaviour
         {
             CheckResults();
         }
-        //if (resultsChecked)
-        //{
-        //    StartCoroutine(waitNext());
-        //}
     }
 
     private void CheckResults()
@@ -159,7 +151,6 @@ public class FrageMaster : MonoBehaviour
             hint = 0;
 
         removeQuestions(hint);
-        //Debug.Log("Hint: " + hint);
         hintText.text = "Hints:\n" + rightAnswers;
         resultsChecked = true;
         StartCoroutine(waitNext());
@@ -172,8 +163,6 @@ public class FrageMaster : MonoBehaviour
         numberList.Remove(toRemove);
         for (int i = 0; i < numberOfHints; i++)
         {
-            //var random = new System.Random();
-            //int index = random.Next(numberList.Count);
             int index = numberList[2-i];
             var txt = GameCanvas.GetChild(index).GetComponentInChildren<Text>();
             txt.enabled = false;
@@ -239,7 +228,12 @@ public class FrageMaster : MonoBehaviour
             img.color = greenColor;
             Debug.Log(GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>().color);
             AnswerFeedbackText.text = "Richtig!\nFrage " + (currentLevel + 1) + "\nLevel " + (currentTier + 1);
-            rightAnswers += 1;
+            if (currentTier > 0 && (currentLevel % 2) == 0)
+            {
+                rightAnswers += 1;
+            }
+            else if ((currentTier == 0 && currentLevel >= 5) || (currentTier == 1 && currentLevel >= 10))
+                rightAnswers += 1;
             hintText.text = "Hints:\n" + rightAnswers;
             StartCoroutine(correctLoadNext());
         }
@@ -252,15 +246,6 @@ public class FrageMaster : MonoBehaviour
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             PlayerPrefs.SetString("MGameState", "lost");
         }
-        //PlayerPrefs.SetString("Internet", "Inactive");
-        //timer = MaxTime;
-        //if(currentLevel <= 15)
-        //    NewQuestion();
-        //else
-        //{
-        //    PlayerPrefs.SetString("MGameState", "won");
-        //    SceneManager.LoadScene("Intro");
-        //}
     }
 
     void ReadXmlQuestion()
@@ -282,9 +267,7 @@ public class FrageMaster : MonoBehaviour
 
         foreach (XmlNode questionNode in xmlDocument.GetElementsByTagName("question"))
         {
-            //string question = questionNode.InnerText;
-            string question = questionNode.FirstChild.InnerText;// .GetElementsByTagName("text");
-            //Debug.Log("xml: " + questionTest);
+            string question = questionNode.FirstChild.InnerText;
             int tier = int.Parse(questionNode.Attributes["level"].Value) - 1;
             List<string> correctAnswer = new List<string>();
             List<string> falseAnswers = new List<string>();
@@ -337,8 +320,24 @@ public class FrageMaster : MonoBehaviour
 
     IEnumerator loadNext()
     {
-        yield return new WaitForSeconds(3.0f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(2.0f);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (currentLevel > 2 && currentTier > 0)
+        {
+            currentLevel -= 2;
+            currentTier = currentLevel / 5;
+        }
+        else if(currentLevel > 2 && currentTier == 0)
+        {
+            currentLevel -= 2;
+            currentTier = currentLevel / 5;
+        }
+        else
+        {
+            currentLevel = 0;
+            currentTier = 0;
+        }     
+
         PlayerPrefs.SetString("Internet", "Inactive");
         timer = MaxTime;
         if (currentLevel <= 15)
@@ -352,7 +351,7 @@ public class FrageMaster : MonoBehaviour
 
     IEnumerator waitNext()
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(2.0f);
         slot.SetActive(false);
     }
 }

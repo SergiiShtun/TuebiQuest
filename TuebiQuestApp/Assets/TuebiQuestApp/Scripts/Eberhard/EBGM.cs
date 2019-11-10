@@ -29,7 +29,6 @@ public class EBGM : MonoBehaviour
     /// </summary>
     public void EndGame()
     {
-        // ToDo: Finish Game
         int bonus = 0;
         if (timer < 20)
             bonus = 25;

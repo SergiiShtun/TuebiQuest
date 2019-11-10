@@ -16,7 +16,7 @@ public class EBPlayer : MonoBehaviour {
     private Vector3 SpawnPosition;
 
 	void Start () {
-        SpawnPosition = Camera.main.transform.position + Vector3.down * 5 + Vector3.forward * 10;
+        SpawnPosition = Camera.main.transform.position + Vector3.down * 15 + Vector3.forward * 100;
     }
 	
 
