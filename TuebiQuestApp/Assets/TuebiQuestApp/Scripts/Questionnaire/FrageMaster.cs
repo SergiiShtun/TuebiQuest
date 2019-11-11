@@ -59,8 +59,8 @@ public class FrageMaster : MonoBehaviour
     private Row[] rows;
     public Text levelText;
     private bool resultsChecked;
-    private int hint = 0;
-    public static int rightAnswers;
+    private int hint = 1;
+    public static int rightAnswers = 10;
 
     /// <summary>
     /// Progression overall in the game
@@ -123,13 +123,12 @@ public class FrageMaster : MonoBehaviour
         TimerText.text = (timer).ToString().Split('.')[0];
         levelText.text = (currentTier + 1).ToString() + "/" + currentLevel.ToString();
         hintText.text = "Hints:\n" + rightAnswers;
-        Debug.Log("tier: " + currentTier);
         if (!rows[0].rowStopped || !rows[1].rowStopped || !rows[2].rowStopped)
         {
             resultsChecked = false;
         }
 
-        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped && !resultsChecked && rows[0].stoppedSlot != "") 
+        if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped && !resultsChecked && rows[2].stoppedSlot != "" && rows[1].stoppedSlot != "" && rows[0].stoppedSlot != "") 
         {
             CheckResults();
         }

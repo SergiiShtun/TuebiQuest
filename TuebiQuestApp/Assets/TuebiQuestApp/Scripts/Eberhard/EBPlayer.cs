@@ -6,7 +6,7 @@ using UnityEngine;
 public class EBPlayer : MonoBehaviour {
 
     public GameObject Ziegel;
-    public float velocityMultiplier = 7;
+    public float velocityMultiplier = 9;
     public float zGeschw = 5;
 
     private Transform currentZiegel;
@@ -16,7 +16,7 @@ public class EBPlayer : MonoBehaviour {
     private Vector3 SpawnPosition;
 
 	void Start () {
-        SpawnPosition = Camera.main.transform.position + Vector3.down * 15 + Vector3.forward * 100;
+        SpawnPosition = Camera.main.transform.position + Vector3.down * 8 + Vector3.forward * 10;
     }
 	
 

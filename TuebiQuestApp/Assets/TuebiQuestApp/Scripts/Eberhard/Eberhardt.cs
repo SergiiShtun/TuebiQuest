@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class Eberhardt : MonoBehaviour {
 
     public float MaxMoveRange;
-    public float MoveSpeed = 1;
-    public float EbenenMultiplikator = 1.2f;
+    public float MoveSpeed;
+    public float EbenenMultiplikator;
 
     public SpriteRenderer FadeScreen;
     public GameObject EndScreen;
@@ -32,7 +32,6 @@ public class Eberhardt : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
         if (transform.position.x < -MaxMoveRange)
             speed = MoveSpeed * EbenenMultiplikator * ebene;
         else if (transform.position.x > MaxMoveRange)
