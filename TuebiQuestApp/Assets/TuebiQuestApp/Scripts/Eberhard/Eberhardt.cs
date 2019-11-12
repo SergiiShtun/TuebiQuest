@@ -58,6 +58,11 @@ public class Eberhardt : MonoBehaviour {
     public void GoUpEbene()
     {
         ebene++;
+        if(ebene >= 8)
+        {
+            MaxMoveRange = 1.5f;
+            Debug.Log("Range " + MaxMoveRange);
+        }
         transform.position += Vector3.up * 1;
         //transform.position += Vector3.up * 0.6f;
         transform.position += Vector3.forward;

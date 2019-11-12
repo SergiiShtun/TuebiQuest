@@ -8,15 +8,16 @@ public class Ziegel : MonoBehaviour
 
     public Text PointsText;
 
-    private int Points = 0;
-    private int PointsToGet = 5;
+    private int Points;
+    private int PointsToGet;
     private float ebene;
     
 
     // Use this for initialization
     void Start () {
         PointsText = GameObject.Find("PointsText").GetComponent<Text>();
-        Points = int.Parse(PointsText.text.Substring(8));
+        //PointsText.text = "lol";
+        //Points = int.Parse(PointsText.text.Substring(8));
         Destroy(gameObject, 2.0f);
 	}
 
@@ -27,21 +28,24 @@ public class Ziegel : MonoBehaviour
         //print("Collision");
         if (collision.collider.tag == "Character")
         {
-            Points += PointsToGet;
-            PointsToGet += 5;
+            EBGM.points += EBGM.pointsToGet;
+            EBGM.pointsToGet += 5;
+            PointsToGet =  EBGM.pointsToGet;
+            Points = EBGM.points;
             //print("+" + PointsToGet);
             Destroy(gameObject);
-            PointsText.text = "Points: " + Points.ToString();
+            PointsText.text = Points.ToString();
             collision.collider.GetComponent<Eberhardt>().GoUpEbene();
         }
         else if (collision.collider.tag == "Stair")
         {
-            Points -= 5;
-            if (Points < 0)
-                Points = 0;
+            EBGM.points -= 1;
+            Points = EBGM.points;
+            if (EBGM.points < 0)
+                EBGM.points = 0;
             //print("-5");
             Destroy(gameObject);
-            PointsText.text = "Points: " + Points.ToString();
+            PointsText.text = Points.ToString();
         }
     }
 

@@ -8,9 +8,11 @@ public class EBGM : MonoBehaviour
 
     private float timer;
     private Text timeText;
-
     public static EBGM Instance;
     public Transform Eberhardt;
+
+    public static int points = 0;
+    public static int pointsToGet  = 5;
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class EBGM : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        timeText.text = "Time: " + timer.ToString().Split('.')[0];
+        timeText.text = timer.ToString().Split('.')[0];
     }
 
     /// <summary>
