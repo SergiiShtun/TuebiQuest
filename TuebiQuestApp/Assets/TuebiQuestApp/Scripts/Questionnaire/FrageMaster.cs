@@ -61,6 +61,7 @@ public class FrageMaster : MonoBehaviour
     private bool resultsChecked;
     private int hint = 1;
     public static int rightAnswers = 10;
+    public List<GameObject> answerGameObjects = new List<GameObject>();
 
     /// <summary>
     /// Progression overall in the game
@@ -171,6 +172,11 @@ public class FrageMaster : MonoBehaviour
 
     void NewQuestion()
     {
+        foreach (var answer in answerGameObjects)
+        {
+            answer.GetComponent<GraphicRaycaster>().enabled = true;
+        }
+
         wrongAnswers = new List<int>();
         for (int i = 1; i < 5; i++)
             FrageUICanvas.GetChild(i).gameObject.SetActive(true);
@@ -218,6 +224,12 @@ public class FrageMaster : MonoBehaviour
     public void Answered(bool correct, string index)
     {
         var ind = Convert.ToInt32(index);
+        //answerGameObjects.RemoveAt(ind);
+        foreach (var answer in answerGameObjects)
+        {
+            if (!answer.name.Contains(index))
+                answer.GetComponent<GraphicRaycaster>().enabled = false;
+        }
         if (correct)
         {
             tierAsked[currentTier].Add(currentQuestionIndex); 

@@ -63,9 +63,15 @@ public class Eberhardt : MonoBehaviour {
             MaxMoveRange = 1.5f;
             Debug.Log("Range " + MaxMoveRange);
         }
-        transform.position += Vector3.up * 1;
-        //transform.position += Vector3.up * 0.6f;
-        transform.position += Vector3.forward;
+        if(ebene != 10)
+        {
+            transform.position += Vector3.up * 1;
+            transform.position += Vector3.forward;
+        }
+        if(ebene == 10)
+        {
+            transform.position = new Vector3(-0.15f,-2f,transform.position.z);
+        }
     }
 
 

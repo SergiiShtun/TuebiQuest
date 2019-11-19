@@ -470,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222, y: -649}
+  m_AnchoredPosition: {x: 201.5, y: -645.6}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276675345
@@ -724,8 +724,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Eberhardt: {fileID: 15336687}
-  points: 0
-  pointsToGet: 5
 --- !u!4 &547126200
 Transform:
   m_ObjectHideFlags: 0
@@ -1853,8 +1851,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 21, y: -71}
-  m_SizeDelta: {x: 51.2, y: 48.7}
+  m_AnchoredPosition: {x: 28.69, y: -71.43}
+  m_SizeDelta: {x: 65.82, y: 49.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837599517
 MonoBehaviour:
