@@ -40,11 +40,10 @@ public class Ziegel : MonoBehaviour
         else if (collision.collider.tag == "Stair")
         {
             EBGM.points -= 1;
-            Points = EBGM.points;
-            if (EBGM.points < 0)
+            if (EBGM.points <= 0)
                 EBGM.points = 0;
-            //print("-5");
-            Destroy(gameObject);
+            Points = EBGM.points;
+            Destroy(gameObject,0.5f);
             PointsText.text = Points.ToString();
         }
     }

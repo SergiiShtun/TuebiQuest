@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 444}
   m_MaxSize: {x: 22008, y: 10022}
   vertical: 0
-  controlID: 14272
+  controlID: 28052
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 14116
+  controlID: 28053
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,9 +196,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 59.062492, y: 234.775, z: 0}
+    m_Target: {x: -1.7719371, y: -2.4220808, z: -0.65664864}
     speed: 2
-    m_Value: {x: 59.062492, y: 234.775, z: 0}
+    m_Value: {x: -1.7719371, y: -2.4220808, z: -0.65664864}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -231,9 +231,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 157.00407
+    m_Target: 10.456168
     speed: 2
-    m_Value: 157.00407
+    m_Value: 10.456168
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -675,7 +675,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff243200008c3200001433000052330000743300007c3300009c330000a4330000b8330000
+      m_ExpandedIDs: 88a4ffff88a5ffff74a8ffffd4acffff62adffff84aeffffc0b2ffff48b3ffffb2b4ffffdec8ffff8efbffff243200008c3200001433000052330000743300007c3300009c330000a4330000b8330000faa1000064a2000008ba0000b8bc000096be0000eac00000d6c20000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -763,19 +763,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/TuebiQuestApp/Graphics/Materials/Eberhard
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/TuebiQuestApp/Graphics/Materials/Eberhard
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/sergiishtun/studying/ss19/Bachelorarbeit/TuebiQuest/TuebiQuest/TuebiQuestApp
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: ae2b0000
-    m_LastClickedID: 11182
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8c2f0000
+    m_LastClickedID: 12172
     m_ExpandedIDs: 00000000ae2b00007a2c0000d62c00003e2e00009c2e0000fa30000012310000f8330000fa330000fc330000fe33000000340000023400000434000006340000083400000a3400000c3400000e34000010340000123400001434000016340000183400001a3400001c3400001e340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -829,10 +829,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 30320000
-    m_LastClickedInstanceID: 12848
+    m_SelectedInstanceIDs: a4c20000
+    m_LastClickedInstanceID: 49828
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 00000000fc240000
+    m_ExpandedInstanceIDs: 00000000fc24000008310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -856,7 +856,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 169}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 193
 --- !u!114 &12
@@ -878,8 +878,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 651
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}

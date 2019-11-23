@@ -11,6 +11,7 @@ public class Eberhardt : MonoBehaviour {
     public float EbenenMultiplikator;
 
     public SpriteRenderer FadeScreen;
+    public SpriteRenderer Gate;
     public GameObject EndScreen;
 
 
@@ -37,7 +38,17 @@ public class Eberhardt : MonoBehaviour {
         else if (transform.position.x > MaxMoveRange)
             speed = -MoveSpeed * EbenenMultiplikator * ebene;
 
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        if(ebene != 10)
+            transform.position += Vector3.right * speed * Time.deltaTime;
+        else
+        {
+            transform.position = new Vector3(-0.15f, -2f, transform.position.z);
+            if (Gate.transform.position.y <= -0.5)
+                Gate.transform.position = new Vector3(Gate.transform.position.x, -0.5f, Gate.transform.position.z);
+            else
+                Gate.transform.position += Vector3.down * 0.1f * 0.5f;
+        }
+           
         if (!gameOver && ebene == 10)
         {
             gameOver = true;
@@ -53,8 +64,6 @@ public class Eberhardt : MonoBehaviour {
         }
     }
 
-
-
     public void GoUpEbene()
     {
         ebene++;
@@ -68,10 +77,10 @@ public class Eberhardt : MonoBehaviour {
             transform.position += Vector3.up * 1;
             transform.position += Vector3.forward;
         }
-        if(ebene == 10)
-        {
-            transform.position = new Vector3(-0.15f,-2f,transform.position.z);
-        }
+        //if(ebene == 10)
+        //{
+        //    transform.position = new Vector3(-0.15f,-2f,transform.position.z);
+        //}
     }
 
 
