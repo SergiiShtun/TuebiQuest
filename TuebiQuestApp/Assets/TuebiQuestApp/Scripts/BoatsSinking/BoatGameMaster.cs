@@ -52,7 +52,8 @@ public class BoatGameMaster : MonoBehaviour {
         {
             //if (!webCamDevices[i].isFrontFacing)
             //{
-                backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
+            //backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
+            backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
             //}
         }
         backCamera.Play();

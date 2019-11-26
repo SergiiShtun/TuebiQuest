@@ -12,7 +12,13 @@ public class EBPlayer : MonoBehaviour {
 
     private Vector3 SpawnPosition;
 
-	void Start () {
+    private void Awake()
+    {
+        Input.multiTouchEnabled = false;
+    }
+
+    void Start () {
+        Input.multiTouchEnabled = false;
         SpawnPosition = Camera.main.transform.position + Vector3.down * 8 + Vector3.forward * 10;
     }
 	
@@ -20,6 +26,7 @@ public class EBPlayer : MonoBehaviour {
 	void Update () {
         if(Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
+            Debug.Log("began " + Input.touchCount);
             SpawnPosition = Input.touchCount > 0 ? Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position) :
                                          Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (SpawnPosition.y < 7)
@@ -32,6 +39,7 @@ public class EBPlayer : MonoBehaviour {
         }
         if(currentZiegel != null && (Input.GetMouseButton(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)))
         {
+            Debug.Log("moved " + Input.touchCount);
             Vector3 mouseposition = Input.touchCount > 0 ? Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position) :
                                          Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (mouseposition.y < 7)
@@ -44,6 +52,7 @@ public class EBPlayer : MonoBehaviour {
         }
         if(currentZiegel != null && (Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)))
         {
+            Debug.Log("end " + Input.touchCount);
             currentZiegel.GetComponent<Rigidbody>().velocity = MaxSpeed;
             currentZiegel = null;
             MaxSpeed = Vector3.zero;

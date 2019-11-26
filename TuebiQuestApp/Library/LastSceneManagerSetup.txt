@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/TuebiQuestApp/Scenes/Questionnaire/Questionnaire.unity
+- path: Assets/TuebiQuestApp/Scenes/Eberhard/Eberhard.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

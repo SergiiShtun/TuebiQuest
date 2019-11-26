@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 651
-  m_MinSize: {x: 913, y: 444}
-  m_MaxSize: {x: 22008, y: 10022}
+  m_MinSize: {x: 911, y: 422}
+  m_MaxSize: {x: 22006, y: 10022}
   vertical: 0
-  controlID: 28052
+  controlID: 12640
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 470
     height: 651
-  m_MinSize: {x: 202, y: 444}
-  m_MaxSize: {x: 4002, y: 8044}
+  m_MinSize: {x: 202, y: 422}
+  m_MaxSize: {x: 4002, y: 8022}
   vertical: 1
-  controlID: 28053
+  controlID: 12641
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,8 +152,8 @@ MonoBehaviour:
     y: 0
     width: 470
     height: 428
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -196,9 +196,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.7719371, y: -2.4220808, z: -0.65664864}
+    m_Target: {x: 0, y: -19.530743, z: 57.51783}
     speed: 2
-    m_Value: {x: -1.7719371, y: -2.4220808, z: -0.65664864}
+    m_Value: {x: 0, y: -19.530743, z: 57.51783}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -231,9 +231,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.456168
+    m_Target: 296.3258
     speed: 2
-    m_Value: 10.456168
+    m_Value: 296.3258
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -611,8 +611,8 @@ MonoBehaviour:
     y: 428
     width: 470
     height: 223
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -637,8 +637,8 @@ MonoBehaviour:
     y: 0
     width: 218
     height: 651
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -675,7 +675,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 88a4ffff88a5ffff74a8ffffd4acffff62adffff84aeffffc0b2ffff48b3ffffb2b4ffffdec8ffff8efbffff243200008c3200001433000052330000743300007c3300009c330000a4330000b8330000faa1000064a2000008ba0000b8bc000096be0000eac00000d6c20000
+      m_ExpandedIDs: 50b9ffff4ebaffffccbefffffcbeffff06bfffff12bfffff1ebfffff32bfffff3ebfffff4abfffff56bfffff62bfffff6ebffffff2bfffffa0c1ffffd0c1ffffdac1ffffe6c1fffff2c1ffff06c2ffff12c2ffff1ec2ffff2ac2ffff36c2ffff42c2ffffc6c2ffffd6c3ffff08c4ffff4ac6ffff66c6ffff7ec6ffff96c6ffffa8c6ffffb4c6ffffc6c6ffffdac6fffff6c6ffff88c7ffffd2caffff04cbffff4acdffff6acdffff86cdffffa2cdffffb8cdffffc8cdffffdecdfffff6cdffff16ceffffacceffff92cfffff42d1ffffb0d1ffffbcd2ffffeed2ffff30d5ffff4cd5ffff64d5ffff7cd5ffff88d5ffff9ed5ffffb0d5ffffc4d5ffffe0d5ffff74d6ffff0ae2ffffb0e2ffff4ce3ffffd2e3ffffe0e4ffff0ee5ffff50e7ffff6ce7ffff84e7ffff9ce7ffffa8e7ffffbee7ffffd0e7ffffe4e7ffff00e8ffff94e8fffff6eaffff66ecffff98ecffffd0eeffffeceeffff04efffff1cefffff2eefffff44efffff56efffff6aefffff84efffff16f0ffff16f5ffff32f6ffff62f6ffffa4f8ffffc0f8ffffd8f8fffff0f8fffffcf8ffff12f9ffff24f9ffff38f9ffff54f9ffffe8f9ffff74fbffff704400009e4400000045000068450000b25e0000dc5e00007e6f0000d26f0000b8710000e2710000e272000036730000b4740000247500004e75000056c500005ec50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -718,8 +718,8 @@ MonoBehaviour:
     y: 0
     width: 315
     height: 651
-  m_MinSize: {x: 234, y: 272}
-  m_MaxSize: {x: 10004, y: 10022}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -763,20 +763,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TuebiQuestApp/Graphics/Materials/Eberhard
+    - Assets/TuebiQuestApp/Scenes/Eberhard
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TuebiQuestApp/Graphics/Materials/Eberhard
+  - Assets/TuebiQuestApp/Scenes/Eberhard
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/sergiishtun/studying/ss19/Bachelorarbeit/TuebiQuest/TuebiQuest/TuebiQuestApp
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c2f0000
-    m_LastClickedID: 12172
-    m_ExpandedIDs: 00000000ae2b00007a2c0000d62c00003e2e00009c2e0000fa30000012310000f8330000fa330000fc330000fe33000000340000023400000434000006340000083400000a3400000c3400000e34000010340000123400001434000016340000183400001a3400001c3400001e340000
+    m_SelectedIDs: fe2f0000
+    m_LastClickedID: 12286
+    m_ExpandedIDs: 00000000bc2b0000882c0000e42c00005c2e0000ba2e0000c62f000022300000183100004e33000050330000523300005433000056330000583300005a3300005c3300005e33000060330000623300006433000066330000683300006a3300006c3300006e330000703300007233000074330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -804,7 +804,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae2b00007a2c0000d62c00003e2e00009c2e0000fa30000012310000f8330000fa330000fc330000fe33000000340000023400000434000006340000083400000a3400000c3400000e34000010340000123400001434000016340000183400001a3400001c3400001e340000
+    m_ExpandedIDs: 00000000bc2b0000882c0000e42c00005c2e0000ba2e0000c62f000022300000183100004e33000050330000523300005433000056330000583300005a3300005c3300005e33000060330000623300006433000066330000683300006a3300006c3300006e330000703300007233000074330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -829,10 +829,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a4c20000
-    m_LastClickedInstanceID: 49828
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 00000000fc24000008310000
+    m_SelectedInstanceIDs: c42c0000
+    m_LastClickedInstanceID: 11460
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -848,7 +848,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -856,7 +856,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 169}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 193
 --- !u!114 &12

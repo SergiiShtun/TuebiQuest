@@ -16,7 +16,6 @@ public class MainGameManager : MonoBehaviour
     public SaveLoadManager SaveLoadManager { get; private set; }
     public GlobalLocationScript GlobalLocationManager { get; private set; }
 
-    public VuforiaMonoBehaviour ArCamera;
     public Transform PlainTextContainer;
 
     public int CurrentPoints;
@@ -47,11 +46,6 @@ public class MainGameManager : MonoBehaviour
             
             ChapterManager.Progress();
         }
-    }
-
-    public void ToggleCamera()
-    {
-        ArCamera.enabled = !ArCamera.enabled; 
     }
 
     //Only for reset save button, delete later

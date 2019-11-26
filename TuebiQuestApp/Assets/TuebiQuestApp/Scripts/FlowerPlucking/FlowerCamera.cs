@@ -33,7 +33,8 @@ public class FlowerCamera : MonoBehaviour {
         {
             //if (!webCamDevices[i].isFrontFacing)
             //{
-            backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
+            //backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
+            backCamera = new WebCamTexture(webCamDevices[0].name, Screen.width, Screen.height);
             //}
         }
         backCamera.Play();
