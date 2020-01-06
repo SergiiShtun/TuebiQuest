@@ -59,6 +59,12 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
@@ -134,7 +140,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10898}
     - Class: 114
-      Script: {instanceID: 15002}
+      Script: {instanceID: 23110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -651,8 +657,6 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9480}
-    - Class: 114
       Script: {instanceID: 9482}
     - Class: 114
       Script: {instanceID: 9488}
@@ -1113,7 +1117,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 8471e96c6e530389a5ee3c394f6e7b63
+      Hash: f135436c8719068b89aeb07269791a84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Handle
@@ -1383,7 +1387,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 4226555bab2868b52f41bb581b7a5f47
+      Hash: 69dc3da5672c36eadd034b455582f391
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FrageMaster

@@ -11,19 +11,11 @@ public class IntroManager : MonoBehaviour
 
     GlobalGameManager gm;
     float buestenTimer = 0;
-    private void Update()
-    {
-        if(Input.touchCount > 0 || Input.GetMouseButton(0))
-        {
-            buestenTimer += Time.deltaTime;
-            if (buestenTimer > 2)
-                SceneManager.LoadScene(10);
-        }
-    }
-
+    
     void Start()
     {
         gm = GlobalGameManager.Instance;
+        Screen.orientation = ScreenOrientation.Portrait;
         GameObject.Find("StartGame").GetComponent<Button>().onClick.AddListener(delegate { gm.LoadScene("Minigames"); });
         //HelpWindow.GetComponentInChildren<Button>().onClick.AddListener(delegate { ToggleHelpWindow(); });
         //GameObject.Find("Help").GetComponent<Button>().onClick.AddListener(delegate { ToggleHelpWindow(); });
@@ -31,6 +23,15 @@ public class IntroManager : MonoBehaviour
         //print("Button Func" + GlobalGameManager.Instance);
     }
 
+    private void Update()
+    {
+        if (Input.touchCount > 0 || Input.GetMouseButton(0))
+        {
+            buestenTimer += Time.deltaTime;
+            if (buestenTimer > 2)
+                SceneManager.LoadScene(10);
+        }
+    }
     public void ToggleHelpWindow()
     {
         if(HelpWindow.activeInHierarchy)

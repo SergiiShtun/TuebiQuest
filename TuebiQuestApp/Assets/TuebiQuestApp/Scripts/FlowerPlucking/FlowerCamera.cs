@@ -29,14 +29,8 @@ public class FlowerCamera : MonoBehaviour {
             return;
         }
 
-        for (int i = 0; i < webCamDevices.Length; i++)
-        {
-            //if (!webCamDevices[i].isFrontFacing)
-            //{
-            //backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
-            backCamera = new WebCamTexture(webCamDevices[0].name, Screen.width, Screen.height);
-            //}
-        }
+        backCamera = new WebCamTexture(webCamDevices[0].name, Screen.width, Screen.height);
+
         backCamera.Play();
         background.texture = backCamera;
 
@@ -60,7 +54,7 @@ public class FlowerCamera : MonoBehaviour {
         float scaleY = backCamera.videoVerticallyMirrored ? -1f : 1f;
         background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
 
-        int orientation = backCamera.videoRotationAngle;
+        int orientation = -backCamera.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
 
         GyroModifyCamera();

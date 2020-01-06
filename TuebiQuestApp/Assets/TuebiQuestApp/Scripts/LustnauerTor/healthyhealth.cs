@@ -15,6 +15,7 @@ public class healthyhealth : MonoBehaviour {
     public bool FirstChance = true;
 
 	void Start () {
+        Screen.orientation = ScreenOrientation.Landscape;
         health = 3;
         stars = 3;
         heart1.gameObject.SetActive(true);

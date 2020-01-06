@@ -17,7 +17,7 @@ public class EBGM : MonoBehaviour
     void Start()
     {
         Instance = this;
-        //timeText = GameObject.Find("TimeText").GetComponent<Text>();
+        Screen.orientation = ScreenOrientation.Portrait;
         timeText = GameObject.Find("TimeText").GetComponent<Text>();
         points = 0;
         pointsToGet = 5;

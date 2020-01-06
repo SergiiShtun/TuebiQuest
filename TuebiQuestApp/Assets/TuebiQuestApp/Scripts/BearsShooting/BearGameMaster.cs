@@ -29,6 +29,7 @@ public class BearGameMaster : MonoBehaviour {
     private void Start()
     {
         Instance = this;
+        Screen.orientation = ScreenOrientation.Portrait;
         releaseBlocking = new float[3];
     }
 
@@ -66,11 +67,11 @@ public class BearGameMaster : MonoBehaviour {
                 PlayerPrefs.SetString("MGameState", "won");
             else
                 PlayerPrefs.SetString("MGameState", "lost");
-            GameTimerText.text = "Time: " + 0;
+            GameTimerText.text = "0";
         }
         else if (!GameOver)
         {
-            GameTimerText.text = "Time: " + (180 - GameTimer).ToString().Split('.')[0];
+            GameTimerText.text = (180 - GameTimer).ToString().Split('.')[0];
         }
         else if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
             SceneManager.LoadScene(1);
@@ -79,7 +80,7 @@ public class BearGameMaster : MonoBehaviour {
     public void CollectPoints(int points)
     {
         Points += points;
-        PointsText.text = "Points: " + Points;
+        PointsText.text = Points.ToString();
         if (Points >= 300)
             pointLimitReached = true;
     }

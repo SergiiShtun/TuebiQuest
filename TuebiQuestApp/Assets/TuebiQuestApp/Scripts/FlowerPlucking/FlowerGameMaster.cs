@@ -41,6 +41,7 @@ public class FlowerGameMaster : MonoBehaviour {
 
     private void Start()
     {
+        Screen.orientation = ScreenOrientation.Landscape;
         //locationScript = GlobalGameManager.Instance.GetComponent<GlobalLocationScript>();
         //lastLocation = locationScript.GetCurrentLocation();
     }

@@ -25,6 +25,7 @@ public class GameMaster : MonoBehaviour {
     private void Start()
     {
         Instance = this;
+        Screen.orientation = ScreenOrientation.Portrait;
         if (SelectedLanguage != DefaultLanguage)
             SelectedLanguage = SelectedLanguage == Language.en ? Language.de : Language.en;
        // SetGameState(0);

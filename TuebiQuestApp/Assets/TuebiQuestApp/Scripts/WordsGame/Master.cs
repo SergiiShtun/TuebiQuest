@@ -25,6 +25,7 @@ public class Master : MonoBehaviour
     void Start()
     {
         Vector2 position = new Vector2(Random.Range(-25.0f, 25.0f), 14.3f);
+        Screen.orientation = ScreenOrientation.Portrait;
         //Instantiate(Sprechfeld, position, Quaternion.identity);
         randTimer = 1;
         ThrowingObject = GameObject.Find("shoutingMonkey").transform;

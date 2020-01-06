@@ -39,12 +39,7 @@ public class FrageMaster : MonoBehaviour
 
     public Transform FrageUICanvas;
     public float MaxTime;
-    public Text AnswerFeedbackText;
     public Text TimerText;
-    public Button fiftyButton;
-    public Button internetButton;
-    public Button triviaButton;
-
 
     public Transform GameCanvas;
     public Image QuestionImage;
@@ -60,7 +55,7 @@ public class FrageMaster : MonoBehaviour
     public Text levelText;
     private bool resultsChecked;
     private int hint = 1;
-    public static int rightAnswers = 10;
+    public static int rightAnswers = 1;
     public List<GameObject> answerGameObjects = new List<GameObject>();
 
     /// <summary>
@@ -86,6 +81,7 @@ public class FrageMaster : MonoBehaviour
 
     void Start()
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         slot.SetActive(false);
         Instance = this;
         timer = MaxTime;
@@ -98,10 +94,6 @@ public class FrageMaster : MonoBehaviour
             currentLevel = PlayerPrefs.GetInt("Level");
             currentPoints = PlayerPrefs.GetInt("Points");
             currentTier = PlayerPrefs.GetInt("Tier");
-            fiftyButton.interactable = PlayerPrefs.GetInt("fifty") == 0;
-            internetButton.interactable = PlayerPrefs.GetInt("internet") == 0;
-            triviaButton.interactable = PlayerPrefs.GetInt("trivia") == 0;
-            AnswerFeedbackText.text = "\nFrage " + (currentLevel + 1) + "\nLevel " + (currentTier + 1);
         }
 
         PlayerPrefs.SetString("Internet", "Inactive");
@@ -113,11 +105,9 @@ public class FrageMaster : MonoBehaviour
         if (timer < 0)
         {
             print("GameOver");
-            AnswerFeedbackText.text = "Zu lange.";
             PlayerPrefs.SetString("MGameState", "lost");
             PlayerPrefs.SetString("Internet", "Inactive");
             currentLevel -= 2;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
         timer -= Time.deltaTime;
@@ -153,6 +143,10 @@ public class FrageMaster : MonoBehaviour
         removeQuestions(hint);
         hintText.text = "Hints:\n" + rightAnswers;
         resultsChecked = true;
+        foreach(var answer in answerGameObjects)
+        {
+            answer.GetComponent<GraphicRaycaster>().enabled = true;
+        }
         StartCoroutine(waitNext());
     }
     private void removeQuestions(int numberOfHints)
@@ -224,10 +218,8 @@ public class FrageMaster : MonoBehaviour
     public void Answered(bool correct, string index)
     {
         var ind = Convert.ToInt32(index);
-        //answerGameObjects.RemoveAt(ind);
         foreach (var answer in answerGameObjects)
         {
-            if (!answer.name.Contains(index))
                 answer.GetComponent<GraphicRaycaster>().enabled = false;
         }
         if (correct)
@@ -237,8 +229,6 @@ public class FrageMaster : MonoBehaviour
             currentTier = currentLevel / 5;
             var img = GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>();
             img.color = greenColor;
-            Debug.Log(GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>().color);
-            AnswerFeedbackText.text = "Richtig!\nFrage " + (currentLevel + 1) + "\nLevel " + (currentTier + 1);
             if (currentTier > 0 && (currentLevel % 2) == 0)
             {
                 rightAnswers += 1;
@@ -252,9 +242,7 @@ public class FrageMaster : MonoBehaviour
         {
             var img = GameCanvas.GetChild(ind).GetChild(0).GetComponent<Image>();
             img.color = redColor;
-            AnswerFeedbackText.text = "Ne, du.";
             StartCoroutine(loadNext());
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             PlayerPrefs.SetString("MGameState", "lost");
         }
     }
@@ -332,7 +320,6 @@ public class FrageMaster : MonoBehaviour
     IEnumerator loadNext()
     {
         yield return new WaitForSeconds(2.0f);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         if (currentLevel > 2 && currentTier > 0)
         {
             currentLevel -= 2;

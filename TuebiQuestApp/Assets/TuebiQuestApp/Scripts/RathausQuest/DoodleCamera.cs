@@ -21,6 +21,7 @@ public class DoodleCamera : MonoBehaviour {
     private void Start()
     {
         nextSpawnDistance = Random.Range(MinSpawnDistance, MaxSpawnDistance);
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
     void Update () {

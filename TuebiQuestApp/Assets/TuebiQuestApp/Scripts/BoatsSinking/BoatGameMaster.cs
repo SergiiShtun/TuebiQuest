@@ -30,15 +30,13 @@ public class BoatGameMaster : MonoBehaviour {
 
     private bool cameraAvailable;
     private WebCamTexture backCamera;
-    //private Texture defaultBackground;
     public RawImage background;
     public AspectRatioFitter fitter;
 
-	void Start ()
+    void Start ()
     {
         Instance = this;
-
-        //defaultBackground = background.texture;
+        Screen.orientation = ScreenOrientation.Portrait;
         WebCamDevice[] webCamDevices = WebCamTexture.devices;
 
         if (webCamDevices.Length == 0)
@@ -48,14 +46,8 @@ public class BoatGameMaster : MonoBehaviour {
             return;
         }
 
-        for (int i = 0; i < webCamDevices.Length; i++)
-        {
-            //if (!webCamDevices[i].isFrontFacing)
-            //{
-            //backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
-            backCamera = new WebCamTexture(webCamDevices[i].name, Screen.width, Screen.height);
-            //}
-        }
+        backCamera = new WebCamTexture(webCamDevices[0].name, Screen.width, Screen.height);
+        
         backCamera.Play();
         background.texture = backCamera;
 
@@ -78,12 +70,14 @@ public class BoatGameMaster : MonoBehaviour {
         fitter.aspectRatio = ratio;
 
         float scaleY = backCamera.videoVerticallyMirrored ? -1f : 1f;
-        background.rectTransform.localScale = new Vector3(1f,scaleY,1f);
+        background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
 
-        int orientation = backCamera.videoRotationAngle;
+        int orientation = -backCamera.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
 
-		if(!GameOver && timer < 0)
+
+
+        if (!GameOver && timer < 0)
         {
             BoatSpawnLength = UnityEngine.Random.Range(10f, 30f);
             Instantiate(Boat, transform.position + Vector3.right * RightOffset + BoatSpawnDirection * BoatSpawnLength + Vector3.up * BoatUpOffset, Quaternion.identity);
@@ -92,10 +86,16 @@ public class BoatGameMaster : MonoBehaviour {
         }
         timer -= Time.deltaTime;
         GameTimer += Time.deltaTime;
-        if(!GameOver)
-            TimerText.text = "Time: " + (60 - GameTimer).ToString().Split('.')[0];
+        if (!GameOver)
+        {
+            if (GameTimer == 0.0f)
+                TimerText.text = "0";
+            TimerText.text = (90 - GameTimer).ToString().Split('.')[0];
+        }
 
-        if(!GameOver && (GameTimer > 60 || Points >= 300))
+            
+
+        if(!GameOver && (GameTimer > 90 || Points >= 300))
         {
             GameOver = true;
             Array.ForEach(FindObjectsOfType<Rock>(), r => Destroy(r.gameObject));
@@ -113,7 +113,7 @@ public class BoatGameMaster : MonoBehaviour {
             Points = 0;
         if (Points > 300)
             Points = 300;
-        PointsText.text = Points > 200 ? Points + "/300" : Points + "/200";
+        PointsText.text = Points + "/300";
     }
 
     private IEnumerator EndGame()
@@ -124,7 +124,7 @@ public class BoatGameMaster : MonoBehaviour {
             yield return null;
         }
         var text = Instantiate(EndScreen, Vector3.zero, Quaternion.identity).GetComponentInChildren<Text>();
-        text.text = "Hurra du hast gewonnen! \n Der coole Satz ist cool! \n " + PointsText.text;
+        text.text = "Hurra du hast gewonnen! \n" + PointsText.text;
     }
 
 

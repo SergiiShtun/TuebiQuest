@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.UI;
 
 public class Handle : MonoBehaviour, IPointerDownHandler
 {
     public static event Action HandlePulled = delegate { };
     [SerializeField]
     private Row[] rows;
+    public List<GameObject> answerGameObjects = new List<GameObject>();
 
     [SerializeField]
     private Transform HandleObject;
@@ -19,6 +21,10 @@ public class Handle : MonoBehaviour, IPointerDownHandler
     {
         if(FrageMaster.rightAnswers > 0)
         {
+            foreach (var answer in answerGameObjects)
+            {
+                answer.GetComponent<GraphicRaycaster>().enabled = false;
+            }
             if (rows[0].rowStopped && rows[1].rowStopped && rows[2].rowStopped)
             {
                 StartCoroutine("PullHandle");
